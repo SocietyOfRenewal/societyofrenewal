@@ -3,6 +3,9 @@ import { Resend } from "resend";
 import { env } from "@/lib/env";
 import { logStructured } from "@/lib/log";
 
+const DEFAULT_SENDER =
+  env.EMAIL_FROM ?? "Society of Renewal <waitlist@societyofrenewal.org>";
+
 const resendClient = env.EMAIL_PROVIDER_API_KEY
   ? new Resend(env.EMAIL_PROVIDER_API_KEY)
   : null;
@@ -62,7 +65,7 @@ export async function sendWaitlistConfirmationEmail({
 
   try {
     const response = await resendClient.emails.send({
-      from: "Society of Renewal <waitlist@notifications.societyofrenewal.org>",
+      from: DEFAULT_SENDER,
       to: email,
       subject,
       html,
