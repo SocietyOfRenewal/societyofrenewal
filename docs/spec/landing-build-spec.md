@@ -105,14 +105,14 @@ This specification is written for the Society of Renewal product, design, and en
 
 ## 6. Component Inventory
 
-| Component | Responsibility | Notes |
-| --- | --- | --- |
-| `DropletIntro` | Wraps page content, manages overlay animation and reduced-motion fallback. | Accepts `children`. Should guard `window` references for SSR. |
-| `RippleButton` | Encapsulates CTA ripple behaviour and analytics emission. | Exposes optional `onClick`; first activation triggers `ripple_activated` event. |
-| `WaitlistForm` | Handles form inputs via React Hook Form + Zod. | Provides inline validation, accessible alerts, and hidden submit button. |
-| `LinkRow` | Renders muted inline links. | Ensure focus states and `rel="noopener"`. |
-| `Toast`/`Alert` | Communicates submission status. | May use shadcn/ui alert component. |
-| `app/api/waitlist` | Processes submissions, stores data, issues confirmation emails. | Includes rate limit, Turnstile verification, encrypted token issuance. |
+| Component          | Responsibility                                                             | Notes                                                                           |
+| ------------------ | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| `DropletIntro`     | Wraps page content, manages overlay animation and reduced-motion fallback. | Accepts `children`. Should guard `window` references for SSR.                   |
+| `RippleButton`     | Encapsulates CTA ripple behaviour and analytics emission.                  | Exposes optional `onClick`; first activation triggers `ripple_activated` event. |
+| `WaitlistForm`     | Handles form inputs via React Hook Form + Zod.                             | Provides inline validation, accessible alerts, and hidden submit button.        |
+| `LinkRow`          | Renders muted inline links.                                                | Ensure focus states and `rel="noopener"`.                                       |
+| `Toast`/`Alert`    | Communicates submission status.                                            | May use shadcn/ui alert component.                                              |
+| `app/api/waitlist` | Processes submissions, stores data, issues confirmation emails.            | Includes rate limit, Turnstile verification, encrypted token issuance.          |
 
 ---
 
@@ -186,7 +186,8 @@ export function DropletIntro({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const listener = (event: MediaQueryListEvent) => setPrefersReduced(event.matches);
+    const listener = (event: MediaQueryListEvent) =>
+      setPrefersReduced(event.matches);
     setPrefersReduced(mq.matches);
     mq.addEventListener("change", listener);
     return () => mq.removeEventListener("change", listener);
@@ -283,7 +284,12 @@ export function WaitlistForm() {
         </legend>
         <div className="flex gap-3">
           <label className="inline-flex items-center gap-2">
-            <input type="radio" value="lottery" defaultChecked {...register("path")} />
+            <input
+              type="radio"
+              value="lottery"
+              defaultChecked
+              {...register("path")}
+            />
             <span>Lottery</span>
           </label>
           <label className="inline-flex items-center gap-2">
@@ -294,7 +300,9 @@ export function WaitlistForm() {
       </fieldset>
 
       <div className="space-y-2">
-        <Label htmlFor="reason">(Optional) Tell us why you should be next</Label>
+        <Label htmlFor="reason">
+          (Optional) Tell us why you should be next
+        </Label>
         <Textarea
           id="reason"
           rows={4}
@@ -417,19 +425,19 @@ export default function Page() {
 
 ### 9.2 Database Schema (`waitlist`)
 
-| Column | Type | Notes |
-| --- | --- | --- |
-| `id` | `serial` | Primary key. |
-| `email` | `varchar(320)` | Lowercased and trimmed email. |
-| `email_hash` | `char(64)` | SHA-256 digest; unique index. |
-| `path` | `varchar(16)` | `lottery` or `need`. |
-| `reason` | `text` | Optional rationale. |
-| `status` | `varchar(16)` | `pending` (default) or `confirmed`. |
-| `token` | `varchar(128)` | Confirmation token. |
-| `ip` | `varchar(64)` | Captured for rate limiting. |
-| `user_agent` | `varchar(512)` | Raw header string. |
-| `created_at` | `timestamptz` | Default `now()`. |
-| `confirmed_at` | `timestamptz` | Set on confirmation. |
+| Column         | Type           | Notes                               |
+| -------------- | -------------- | ----------------------------------- |
+| `id`           | `serial`       | Primary key.                        |
+| `email`        | `varchar(320)` | Lowercased and trimmed email.       |
+| `email_hash`   | `char(64)`     | SHA-256 digest; unique index.       |
+| `path`         | `varchar(16)`  | `lottery` or `need`.                |
+| `reason`       | `text`         | Optional rationale.                 |
+| `status`       | `varchar(16)`  | `pending` (default) or `confirmed`. |
+| `token`        | `varchar(128)` | Confirmation token.                 |
+| `ip`           | `varchar(64)`  | Captured for rate limiting.         |
+| `user_agent`   | `varchar(512)` | Raw header string.                  |
+| `created_at`   | `timestamptz`  | Default `now()`.                    |
+| `confirmed_at` | `timestamptz`  | Set on confirmation.                |
 
 Indexes: `waitlist_email_hash_idx` (unique) and `waitlist_token_idx` (for confirmation lookup).
 
@@ -447,11 +455,15 @@ export async function up(db: Kysely<any>): Promise<void> {
     .addColumn("email_hash", "char(64)", (col) => col.notNull().unique())
     .addColumn("path", "varchar(16)", (col) => col.notNull())
     .addColumn("reason", "text")
-    .addColumn("status", "varchar(16)", (col) => col.notNull().defaultTo("pending"))
+    .addColumn("status", "varchar(16)", (col) =>
+      col.notNull().defaultTo("pending"),
+    )
     .addColumn("token", "varchar(128)", (col) => col.notNull())
     .addColumn("ip", "varchar(64)")
     .addColumn("user_agent", "varchar(512)")
-    .addColumn("created_at", "timestamptz", (col) => col.notNull().defaultTo(sql`now()`))
+    .addColumn("created_at", "timestamptz", (col) =>
+      col.notNull().defaultTo(sql`now()`),
+    )
     .addColumn("confirmed_at", "timestamptz")
     .execute();
 
