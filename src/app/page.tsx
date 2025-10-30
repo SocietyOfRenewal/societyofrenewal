@@ -7,6 +7,8 @@ import DropletIntro from '@/components/DropletIntro';
 import LinkRow from '@/components/LinkRow';
 import WaitlistForm from '@/components/WaitlistForm';
 
+import type { ReactNode } from 'react';
+
 const heroVariants = {
   hidden: { opacity: 0, y: 24 },
   show: { opacity: 1, y: 0 },
@@ -22,10 +24,15 @@ const staggerChildren = {
   },
 };
 
+type MiniFaqItem = {
+  question: string;
+  answer: string | ReactNode;
+};
+
 export default function Page() {
   const shouldReduceMotion = useReducedMotion();
 
-  const miniFaq = [
+  const miniFaq: MiniFaqItem[] = [
     {
       question: 'Is this a political movement?',
       answer:
@@ -49,6 +56,22 @@ export default function Page() {
       question: 'What keeps this honest?',
       answer:
         'Public rules, auditable funding, private ballots with verifiable outcomes, and a living Charter you can amend.',
+    },
+    {
+      question: '“You can’t just create money out of thin air!”',
+      answer: (
+        <span>
+          Short answer: all money is created. The real questions are who creates
+          it, how, and with what guardrails. Read the{' '}
+          <Link
+            href="/faq#money-creation"
+            className="text-slate-200 underline decoration-slate-500 underline-offset-4 hover:text-slate-100"
+          >
+            money creation explainer
+          </Link>{' '}
+          for the full breakdown.
+        </span>
+      ),
     },
   ];
 
