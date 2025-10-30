@@ -1,6 +1,7 @@
 import { Resend } from "resend";
 
 import { env } from "@/lib/env";
+import { logStructured } from "@/lib/log";
 
 const resendClient = env.EMAIL_PROVIDER_API_KEY
   ? new Resend(env.EMAIL_PROVIDER_API_KEY)
@@ -47,17 +48,45 @@ export async function sendWaitlistConfirmationEmail({
   `;
 
   if (!resendClient) {
-    console.info(
-      "[waitlist] Resend API key not configured. Confirmation link:",
-      confirmationUrl.toString(),
-    );
+    logStructured({
+      level: "warn",
+      event: "waitlist.email.skipped",
+      message: "Resend API key not configured; email logged to console.",
+      data: {
+        email,
+        confirmationUrl: confirmationUrl.toString(),
+      },
+    });
     return;
   }
 
-  await resendClient.emails.send({
-    from: "Society of Renewal <waitlist@notifications.societyofrenewal.org>",
-    to: email,
-    subject,
-    html,
-  });
+  try {
+    const response = await resendClient.emails.send({
+      from: "Society of Renewal <waitlist@notifications.societyofrenewal.org>",
+      to: email,
+      subject,
+      html,
+    });
+
+    logStructured({
+      level: "info",
+      event: "waitlist.email.sent",
+      data: {
+        email,
+        messageId: response?.data?.id ?? null,
+        error: response?.error ?? null,
+      },
+    });
+  } catch (error) {
+    logStructured({
+      level: "error",
+      event: "waitlist.email.error",
+      message:
+        error instanceof Error ? error.message : "Unknown error sending email",
+      data: {
+        email,
+      },
+    });
+    throw error;
+  }
 }
