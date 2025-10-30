@@ -3,7 +3,7 @@
 - [Charter of Renewal](../charter/README.md) - The foundational constitutional document
 - [Founding Book](../founding-book/README.md) - Philosophical and scientific foundation
 - [Content Hub](README.md) - Program roadmap and navigation
-- [Agent Build Spec](../spec/agent-build-spec.md) - Implementation requirements
+- [Landing Build Spec](../spec/landing-build-spec.md) - Implementation requirements
 - [Contributing Guide](../../CONTRIBUTING.md) - Workflow and coding standards
 - [Whitepaper v0.6.0](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) - Protocol deep dive
 
