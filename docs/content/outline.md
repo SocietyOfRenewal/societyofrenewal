@@ -1,8 +1,10 @@
 ## Documentation Navigation
 
-- **[Charter of Renewal](docs/charter/)** - The foundational constitutional document
-- **[Founding Book](docs/founding-book/)** - Philosophical and scientific foundation
+- **[Charter of Renewal](../charter/)** - Foundational constitutional document
+- **[Founding Book](../founding-book/)** - Philosophical and scientific foundation
 - **[Landing Page](landing-page.md)** - Public-facing introduction
+- **[Landing Build Spec](../spec/landing-build-spec.md)** - Implementation requirements
+- **[Contributing Guide](../../CONTRIBUTING.md)** - Workflow & commit standards
 
 ---
 
