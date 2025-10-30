@@ -3,8 +3,8 @@
 ## Navigation
 
 - **[Landing Page Copy](landing-page.md)** — Finalized hero narrative, CTA, and link slate
-- **[Charter of Renewal](../charter/)** — Constitutional framework
-- **[Founding Book](../founding-book/)** — Philosophical and scientific foundation
+- **[Charter of Renewal](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md)** — Constitutional framework (temporary location)
+- **[Founding Book](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md)** — Philosophical and scientific foundation (temporary location)
 - **[Landing Build Spec](../spec/landing-build-spec.md)** — Implementation requirements for the waitlist app
 - **[Contributing Guide](../../CONTRIBUTING.md)** — Workflow, linting, and commit standards
 

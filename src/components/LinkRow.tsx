@@ -4,15 +4,15 @@ import { cn } from "@/lib/utils";
 
 const resources = [
   {
-    href: "https://renewal.wiki",
+    href: "https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md",
     label: "Read the Charter →",
   },
   {
-    href: "https://societyofrenewal.org/founding-document",
+    href: "https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md",
     label: "Explore the Founding Document →",
   },
   {
-    href: "https://github.com/CloneOfNone/essentia/blob/main/docs/whitepaper.md",
+    href: "https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md",
     label: "Whitepaper v0.6.0 →",
   },
 ];
