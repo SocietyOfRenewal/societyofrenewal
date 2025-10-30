@@ -138,15 +138,13 @@ export default function WaitlistForm() {
 
     if (response.status === 422) {
       setStatus("error");
-      const data = (await response.json().catch(() => null)) as
-        | {
-            message?: string;
-            issues?: {
-              fieldErrors?: Record<string, string[]>;
-              formErrors?: string[];
-            };
-          }
-        | null;
+      const data = (await response.json().catch(() => null)) as {
+        message?: string;
+        issues?: {
+          fieldErrors?: Record<string, string[]>;
+          formErrors?: string[];
+        };
+      } | null;
 
       const fieldErrors = data?.issues?.fieldErrors ?? {};
       Object.entries(fieldErrors).forEach(([field, messages]) => {
