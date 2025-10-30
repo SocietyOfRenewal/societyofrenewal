@@ -10,6 +10,7 @@ const envSchema = z.object({
     .string()
     .optional()
     .transform((value) => value ?? process.env.RESEND_API_KEY ?? undefined),
+  EMAIL_FROM: z.string().optional(),
   RESEND_AUDIENCE_ID: z.string().optional(),
   TURNSTILE_SECRET: z.string().optional(),
   KV_REST_API_URL: z.string().optional(),
