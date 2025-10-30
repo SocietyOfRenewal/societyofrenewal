@@ -29,9 +29,10 @@ Automated contributors must review the following materials before making changes
 ## Change Checklist
 
 1. `git pull --rebase origin main`
-2. Review the appropriate sections of `docs/spec/landing-build-spec.md`
-3. Update or add tests when altering behaviour; document coverage in the PR
-4. Keep documentation in sync with code changes
-5. Ensure commits follow the format in `COMMITTING.md`
+2. Review the relevant portions of `docs/spec/landing-build-spec.md`
+3. Make the necessary code changes and update tests/docs together
+4. Run `npm run format`, `npm run lint`, and `npm run build`; do not commit until all succeed
+5. Stage logical chunks (`git add …`), then create commits following `COMMITTING.md` (subject/body format, spec citations)
+6. Repeat checks after rebasing or resolving conflicts
 
 Never commit secrets. Keep sensitive configuration in `.env.local` as described in `docs/environment/setup.md`.
