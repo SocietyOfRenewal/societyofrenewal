@@ -31,3 +31,7 @@ npm run dev
 
 Visit `http://localhost:3000` and submit the waitlist form to verify email logging behaviour.
 
+## Troubleshooting
+
+- **`relation "waitlist" does not exist` / `42P01` errors:** migrations have not been applied to your target database. Re-run `npm run db:migrate` with `POSTGRES_URL` pointing to the correct instance.
+- **`Connection terminated unexpectedly`:** verify the Postgres service is running and that credentials, networking rules, and SSL requirements match your `POSTGRES_URL`.

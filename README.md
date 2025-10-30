@@ -49,13 +49,13 @@ KV_REST_API_TOKEN=optional
 
 ### Database Migrations
 
-Run migrations with:
+Run migrations **before hitting any API** with:
 
 ```bash
 npm run db:migrate
 ```
 
-The migrator uses `src/db/migrations` and targets the configured `DATABASE_URL` (Vercel Postgres ready).
+The migrator uses `src/db/migrations` and targets the configured `DATABASE_URL`/`POSTGRES_URL`. Seeing errors such as `relation "waitlist" does not exist (42P01)` means migrations haven’t run against that database yet.
 
 ### Available Scripts
 
