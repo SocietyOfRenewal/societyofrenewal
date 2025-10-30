@@ -1,9 +1,9 @@
 ## Navigation
 
-- [Charter of Renewal](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md) - The foundational constitutional document (temporary location)
-- [Founding Book](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md) - Philosophical and scientific foundation (temporary location)
+- [Charter of Renewal](../charter/README.md) - The foundational constitutional document
+- [Founding Book](../founding-book/README.md) - Philosophical and scientific foundation
 - [Content Hub](README.md) - Program roadmap and navigation
-- [Landing Build Spec](../spec/landing-build-spec.md) - Implementation requirements
+- [Agent Build Spec](../spec/agent-build-spec.md) - Implementation requirements
 - [Contributing Guide](../../CONTRIBUTING.md) - Workflow and coding standards
 - [Whitepaper v0.6.0](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) - Protocol deep dive
 
@@ -28,4 +28,8 @@
 
 _(beneath it, in faint smaller text)_
 
-> [Read the Charter →](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md) [Explore the Founding Document →](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md) [Whitepaper v0.6.0 →](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md)
+> [Read the Charter →](../charter/README.md) [Explore the Founding Document →](../founding-book/README.md) [Whitepaper v0.6.0 →](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md)
+
+---
+
+> Continue to read → [Content Hub](README.md)

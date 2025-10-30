@@ -2,8 +2,8 @@
 
 - [Founding Book Home](README.md) - Overview and navigation
 - [Founding Book Outline](outline.md) - Development status and structure
-- [Charter of Renewal](../charter/) - The constitutional document
-- [Main Project Outline](../../outline.md) - Overall project structure
+- [Charter of Renewal](../charter/README.md) - The constitutional document
+- [Main Project Outline](../content/README.md) - Overall project structure
 
 ---
 
@@ -230,3 +230,7 @@ Because every other promise—UBI, education, safety without domination, democra
 Part A names our ground: **interdependence** and **dignity**. The rest of this book earns those claims the only way that counts—by **showing the evidence** and **specifying the architecture**. Part B begins with the science: what scarcity does to minds, why education outperforms punishment, how trustworthy identity and privacy can coexist, and how economies can secure a freedom floor without stoking inflation. Then we translate proof into practice: platforms, governance, UBI, safety, membership, and federated growth—each designed to pass the Dignity Constraint’s four tests.
 
 Turn the page. Let’s prove that care scales.
+
+---
+
+> Continue to read → [Founding Book Outline](outline.md)
