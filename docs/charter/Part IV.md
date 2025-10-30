@@ -1,7 +1,3 @@
-Absolutely. Let’s write **Part IV** so it replaces “immigration” and “evangelism” with language that fits our ethos: _open joining, federation, invitation-by-service, and sanctuary_ — borderless, lawful, global-by-design.
-
----
-
 ## Navigation
 
 - [Charter Home](README.md) - Overview and navigation
@@ -11,6 +7,12 @@ Absolutely. Let’s write **Part IV** so it replaces “immigration” and “ev
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
 - [Founding Book](../founding-book/) - Philosophical foundation
 - [Main Project Outline](../../outline.md) - Overall project structure
+
+---
+
+# Context
+
+Absolutely. Let’s write **Part IV** so it replaces “immigration” and “evangelism” with language that fits our ethos: _open joining, federation, invitation-by-service, and sanctuary_ — borderless, lawful, global-by-design.
 
 ---
 

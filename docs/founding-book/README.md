@@ -1,5 +1,12 @@
 # Founding Book
 
+## Navigation
+
+- [Outline](outline.md) - Complete structure and development status
+- [Part A: Declaration of Interdependence](Part%20A.md) - Core principles and the Dignity Constraint
+
+---
+
 The Founding Book is the philosophical and scientific foundation for the Society of Renewal. It provides the evidence base, reasoning, and detailed explanations that support the Charter of Renewal.
 
 ## Overview
@@ -57,11 +64,6 @@ This is a **work in progress**. The current version includes:
 - Complete outline and structure
 - Part A with the Declaration of Interdependence and Dignity Constraint
 - Detailed planning for remaining sections
-
-## Navigation
-
-- [Outline](outline.md) - Complete structure and development status
-- [Part A: Declaration of Interdependence](Part%20A.md) - Core principles and the Dignity Constraint
 
 ## Related Documents
 
