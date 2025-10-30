@@ -23,7 +23,7 @@ export default function OgImage() {
       >
         <div
           style={{
-            display: "inline-flex",
+            display: "flex",
             alignItems: "center",
             gap: "12px",
             padding: "10px 18px",
