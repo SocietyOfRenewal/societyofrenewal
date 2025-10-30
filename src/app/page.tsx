@@ -100,7 +100,7 @@ export default function Page() {
                 keeps that promise verifiable.
               </p>
               <p className="text-sm text-slate-400">
-                Want the deep dive? Explore the{" "}
+                Explore the{" "}
                 <Link
                   href="/faq"
                   className="text-slate-200 underline decoration-slate-500 underline-offset-4 hover:text-slate-100"
