@@ -68,9 +68,10 @@ export default function WaitlistForm() {
 
   const onSubmit = async (values: WaitlistFormValues) => {
     const parsed = waitlistFormSchema.parse(values);
+    const trimmedReason = parsed.reason?.trim() ?? "";
     const payload = {
       ...parsed,
-      reason: parsed.reason?.trim() ? parsed.reason.trim() : null,
+      reason: trimmedReason.length > 0 ? trimmedReason : undefined,
     };
 
     setStatus("idle");
@@ -129,6 +130,40 @@ export default function WaitlistForm() {
       toast.info("You are already confirmed. Watch your inbox for updates.");
       try {
         track("waitlist_submit_error", { reason: "exists" });
+      } catch {
+        /* noop */
+      }
+      return;
+    }
+
+    if (response.status === 422) {
+      setStatus("error");
+      const data = (await response.json().catch(() => null)) as
+        | {
+            message?: string;
+            issues?: {
+              fieldErrors?: Record<string, string[]>;
+              formErrors?: string[];
+            };
+          }
+        | null;
+
+      const fieldErrors = data?.issues?.fieldErrors ?? {};
+      Object.entries(fieldErrors).forEach(([field, messages]) => {
+        if (!messages || messages.length === 0) return;
+        form.setError(field as keyof WaitlistFormValues, {
+          type: "manual",
+          message: messages[0],
+        });
+      });
+
+      const toastMessage =
+        data?.message ??
+        data?.issues?.formErrors?.[0] ??
+        "Please review the highlighted fields.";
+      toast.error(toastMessage);
+      try {
+        track("waitlist_submit_error", { reason: "validation" });
       } catch {
         /* noop */
       }
