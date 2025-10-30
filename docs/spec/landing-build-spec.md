@@ -97,7 +97,7 @@ This specification is written for the Society of Renewal product, design, and en
 - **Title:** `Join the Society of Renewal`
 - **Paragraph 1:** Use exact copy from `docs/content/landing-page.md` (compassion as infrastructure).
 - **Paragraph 2:** Approved vision paragraph with italicised “Universal Basic Income”.
-- **Inline Links:** `[Read the Charter →] [Explore the Founding Document →] [Whitepaper v0.6.0 →]` — open in new tabs with `rel="noopener"`.
+- **Inline Links:** `[Read the Charter →](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md) [Explore the Founding Document →](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md) [Whitepaper v0.6.0 →](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md)` — open in new tabs with `rel="noopener"`.
 - **CTA Text:** `Join the Waitlist`
 - **CTA Subtext (metadata/tooltips where useful):** `Lottery or need-based invitations. Always transparent.`
 
@@ -363,7 +363,7 @@ export default function Page() {
 
         <div className="mt-8 flex flex-wrap gap-6 text-sm text-zinc-400">
           <Link
-            href="https://renewal.wiki"
+            href="https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md"
             target="_blank"
             rel="noopener"
             className="hover:text-zinc-200"
@@ -371,7 +371,7 @@ export default function Page() {
             Read the Charter →
           </Link>
           <Link
-            href="https://societyofrenewal.org/founding-document"
+            href="https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md"
             target="_blank"
             rel="noopener"
             className="hover:text-zinc-200"
@@ -379,7 +379,7 @@ export default function Page() {
             Explore the Founding Document →
           </Link>
           <Link
-            href="https://github.com/CloneOfNone/essentia/blob/main/docs/whitepaper.md"
+            href="https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md"
             target="_blank"
             rel="noopener"
             className="hover:text-zinc-200"

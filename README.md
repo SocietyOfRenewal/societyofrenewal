@@ -88,7 +88,10 @@ The migrator uses `src/db/migrations` and targets the configured `DATABASE_URL` 
 
 - [`docs/spec/landing-build-spec.md`](docs/spec/landing-build-spec.md) – detailed implementation requirements
 - [`docs/content/landing-page.md`](docs/content/landing-page.md) – finalized copy deck for the hero experience
-- [`docs/content/outline.md`](docs/content/outline.md) – broader program roadmap and navigation to supporting materials
+- [`docs/content/README.md`](docs/content/README.md) – consolidated navigation and roadmap
+- [Essentia Whitepaper repository](https://github.com/SocietyOfRenewal/essentia) – protocol research archive
+- [Charter of Renewal (temporary location)](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md)
+- [Founding Book (temporary location)](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md)
 
 ## QA Checklist
 

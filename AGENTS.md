@@ -1,5 +1,13 @@
 # Agent Implementation Guide
 
+## Navigation
+
+- [Content Hub](docs/content/README.md)
+- [Landing Build Spec](docs/spec/landing-build-spec.md)
+- [Environment Setup](docs/environment/setup.md)
+- [Contributing Guide](CONTRIBUTING.md)
+- [Committing Standards](COMMITTING.md)
+
 Automated contributors must review the following materials before making changes to the Society of Renewal landing experience.
 
 ## Required Reading
@@ -27,4 +35,3 @@ Automated contributors must review the following materials before making changes
 5. Ensure commits follow the format in `COMMITTING.md`
 
 Never commit secrets. Keep sensitive configuration in `.env.local` as described in `docs/environment/setup.md`.
-
