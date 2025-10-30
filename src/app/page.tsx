@@ -57,7 +57,7 @@ export default function Page() {
       <main className="relative overflow-hidden">
         <div
           aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(94,234,212,0.12)_0%,_rgba(2,6,23,0)_60%)]"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(94,234,212,0.12)_0%,_rgba(2,6,23,0)_100vh)]"
         />
         <div className="absolute inset-x-0 top-0 -z-10 h-24 bg-gradient-to-b from-black via-black/70 to-transparent" />
 
