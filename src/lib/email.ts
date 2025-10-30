@@ -1,10 +1,10 @@
-import { Resend } from "resend";
+import { Resend } from 'resend';
 
-import { env } from "@/lib/env";
-import { logStructured } from "@/lib/log";
+import { env } from '@/lib/env';
+import { logStructured } from '@/lib/log';
 
 const DEFAULT_SENDER =
-  env.EMAIL_FROM ?? "Society of Renewal <waitlist@societyofrenewal.org>";
+  env.EMAIL_FROM ?? 'Society of Renewal <waitlist@societyofrenewal.org>';
 
 const resendClient = env.EMAIL_PROVIDER_API_KEY
   ? new Resend(env.EMAIL_PROVIDER_API_KEY)
@@ -19,10 +19,10 @@ export async function sendWaitlistConfirmationEmail({
   email,
   token,
 }: WaitlistConfirmationPayload) {
-  const confirmationUrl = new URL("/waitlist/confirm", env.APP_URL);
-  confirmationUrl.searchParams.set("token", token);
+  const confirmationUrl = new URL('/waitlist/confirm', env.APP_URL);
+  confirmationUrl.searchParams.set('token', token);
 
-  const subject = "Confirm your Society of Renewal waitlist spot";
+  const subject = 'Confirm your Society of Renewal waitlist spot';
   const html = `
     <table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;background-color:#030711;padding:32px 0;color:#f8fafc;font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;">
       <tr>
@@ -52,9 +52,9 @@ export async function sendWaitlistConfirmationEmail({
 
   if (!resendClient) {
     logStructured({
-      level: "warn",
-      event: "waitlist.email.skipped",
-      message: "Resend API key not configured; email logged to console.",
+      level: 'warn',
+      event: 'waitlist.email.skipped',
+      message: 'Resend API key not configured; email logged to console.',
       data: {
         email,
         confirmationUrl: confirmationUrl.toString(),
@@ -72,8 +72,8 @@ export async function sendWaitlistConfirmationEmail({
     });
 
     logStructured({
-      level: "info",
-      event: "waitlist.email.sent",
+      level: 'info',
+      event: 'waitlist.email.sent',
       data: {
         email,
         messageId: response?.data?.id ?? null,
@@ -82,10 +82,10 @@ export async function sendWaitlistConfirmationEmail({
     });
   } catch (error) {
     logStructured({
-      level: "error",
-      event: "waitlist.email.error",
+      level: 'error',
+      event: 'waitlist.email.error',
       message:
-        error instanceof Error ? error.message : "Unknown error sending email",
+        error instanceof Error ? error.message : 'Unknown error sending email',
       data: {
         email,
       },

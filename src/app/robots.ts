@@ -1,12 +1,12 @@
-import type { MetadataRoute } from "next";
+import type { MetadataRoute } from 'next';
 
-const siteUrl = "https://societyofrenewal.org";
+const siteUrl = 'https://societyofrenewal.org';
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
-      userAgent: "*",
-      allow: "/",
+      userAgent: '*',
+      allow: '/',
     },
     sitemap: `${siteUrl}/sitemap.xml`,
   };

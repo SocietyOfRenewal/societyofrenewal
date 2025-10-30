@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import dynamic from "next/dynamic";
-import { useCallback, useMemo, useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import dynamic from 'next/dynamic';
+import { useCallback, useMemo, useState } from 'react';
 
-import dropletAnimation from "@/data/droplet.json";
-import { cn } from "@/lib/utils";
+import dropletAnimation from '@/data/droplet.json';
+import { cn } from '@/lib/utils';
 
-const Lottie = dynamic(() => import("lottie-react"), {
+const Lottie = dynamic(() => import('lottie-react'), {
   ssr: false,
   loading: () => null,
 });
@@ -38,7 +38,7 @@ export default function DropletIntro({ children }: DropletIntroProps) {
         animationData={dropletAnimation}
         autoplay
         loop={false}
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: '100%', height: '100%' }}
         onComplete={handleComplete}
       />
     ),
@@ -50,7 +50,7 @@ export default function DropletIntro({ children }: DropletIntroProps) {
       <motion.div
         initial={{ opacity: prefersReducedMotion ? 1 : 0 }}
         animate={{ opacity: contentVisible ? 1 : 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.6, ease: 'easeOut' }}
         className="relative z-10"
       >
         {children}
@@ -64,12 +64,12 @@ export default function DropletIntro({ children }: DropletIntroProps) {
             initial={{ opacity: 1 }}
             animate={{ opacity: contentVisible ? 0 : 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div
               className={cn(
-                "aspect-square w-[min(440px,75vw)]",
-                "rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08)_0%,rgba(0,0,0,0.85)_70%)]",
+                'aspect-square w-[min(440px,75vw)]',
+                'rounded-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.08)_0%,rgba(0,0,0,0.85)_70%)]',
               )}
               aria-hidden
             >

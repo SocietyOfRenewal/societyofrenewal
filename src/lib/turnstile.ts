@@ -1,4 +1,4 @@
-import { env } from "@/lib/env";
+import { env } from '@/lib/env';
 
 export interface TurnstileValidationResult {
   success: boolean;
@@ -15,15 +15,15 @@ export async function validateTurnstileToken(
   }
 
   if (!token) {
-    return { success: false, message: "missing_token" };
+    return { success: false, message: 'missing_token' };
   }
 
   try {
     const response = await fetch(
-      "https://challenges.cloudflare.com/turnstile/v0/siteverify",
+      'https://challenges.cloudflare.com/turnstile/v0/siteverify',
       {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           secret: env.TURNSTILE_SECRET,
           response: token,
@@ -33,24 +33,24 @@ export async function validateTurnstileToken(
     );
 
     if (!response.ok) {
-      return { success: false, message: "turnstile_unreachable" };
+      return { success: false, message: 'turnstile_unreachable' };
     }
 
     const payload = (await response.json()) as {
       success: boolean;
-      "error-codes"?: string[];
+      'error-codes'?: string[];
     };
 
     if (!payload.success) {
       return {
         success: false,
-        message: payload["error-codes"]?.[0] ?? "turnstile_failed",
+        message: payload['error-codes']?.[0] ?? 'turnstile_failed',
       };
     }
 
     return { success: true };
   } catch (error) {
-    console.error("[turnstile] validation error", error);
-    return { success: false, message: "turnstile_error" };
+    console.error('[turnstile] validation error', error);
+    return { success: false, message: 'turnstile_error' };
   }
 }

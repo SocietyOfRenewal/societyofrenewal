@@ -127,10 +127,10 @@ This specification is written for the Society of Renewal product, design, and en
 ### 7.1 RippleButton Reference
 
 ```tsx
-"use client";
-import { motion, useAnimation } from "framer-motion";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+'use client';
+import { motion, useAnimation } from 'framer-motion';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
 
 export function RippleButton({ onClick }: { onClick?: () => void }) {
   const controls = useAnimation();
@@ -142,7 +142,7 @@ export function RippleButton({ onClick }: { onClick?: () => void }) {
     await controls.start({
       scale: [0.6, 1.3, 1.6],
       opacity: [0, 0.18, 0.12],
-      transition: { duration: 0.9, ease: "easeOut" },
+      transition: { duration: 0.9, ease: 'easeOut' },
     });
   }
 
@@ -155,7 +155,7 @@ export function RippleButton({ onClick }: { onClick?: () => void }) {
         className="pointer-events-none absolute inset-0 rounded-2xl"
         style={{
           background:
-            "radial-gradient(circle, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 65%)",
+            'radial-gradient(circle, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 65%)',
         }}
       />
       <Button
@@ -173,24 +173,24 @@ export function RippleButton({ onClick }: { onClick?: () => void }) {
 ### 7.2 DropletIntro Reference
 
 ```tsx
-"use client";
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import Lottie from "lottie-react";
-import droplet from "@/public/droplet.json";
+'use client';
+import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import Lottie from 'lottie-react';
+import droplet from '@/public/droplet.json';
 
 export function DropletIntro({ children }: { children: React.ReactNode }) {
   const [showOverlay, setShowOverlay] = useState(true);
   const [prefersReduced, setPrefersReduced] = useState(false);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (typeof window === 'undefined') return;
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
     const listener = (event: MediaQueryListEvent) =>
       setPrefersReduced(event.matches);
     setPrefersReduced(mq.matches);
-    mq.addEventListener("change", listener);
-    return () => mq.removeEventListener("change", listener);
+    mq.addEventListener('change', listener);
+    return () => mq.removeEventListener('change', listener);
   }, []);
 
   useEffect(() => {
@@ -229,26 +229,26 @@ export function DropletIntro({ children }: { children: React.ReactNode }) {
 ### 7.3 WaitlistForm Reference
 
 ```tsx
-"use client";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { RippleButton } from "./RippleButton";
+'use client';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Label } from '@/components/ui/label';
+import { RippleButton } from './RippleButton';
 
 const schema = z.object({
   email: z.string().email(),
-  path: z.enum(["lottery", "need"]).default("lottery"),
+  path: z.enum(['lottery', 'need']).default('lottery'),
   reason: z.string().max(800).optional(),
 });
 
 type FormValues = z.infer<typeof schema>;
 
 export function WaitlistForm() {
-  const [status, setStatus] = useState<"idle" | "ok" | "error">("idle");
+  const [status, setStatus] = useState<'idle' | 'ok' | 'error'>('idle');
   const {
     register,
     handleSubmit,
@@ -256,13 +256,13 @@ export function WaitlistForm() {
   } = useForm<FormValues>({ resolver: zodResolver(schema) });
 
   async function onSubmit(values: FormValues) {
-    setStatus("idle");
-    const res = await fetch("/api/waitlist", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
+    setStatus('idle');
+    const res = await fetch('/api/waitlist', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(values),
     });
-    setStatus(res.ok ? "ok" : "error");
+    setStatus(res.ok ? 'ok' : 'error');
   }
 
   return (
@@ -274,7 +274,7 @@ export function WaitlistForm() {
           type="email"
           placeholder="you@domain.com"
           aria-invalid={!!errors.email}
-          {...register("email")}
+          {...register('email')}
         />
       </div>
 
@@ -288,12 +288,12 @@ export function WaitlistForm() {
               type="radio"
               value="lottery"
               defaultChecked
-              {...register("path")}
+              {...register('path')}
             />
             <span>Lottery</span>
           </label>
           <label className="inline-flex items-center gap-2">
-            <input type="radio" value="need" {...register("path")} />
+            <input type="radio" value="need" {...register('path')} />
             <span>Need-based</span>
           </label>
         </div>
@@ -307,7 +307,7 @@ export function WaitlistForm() {
           id="reason"
           rows={4}
           placeholder="Share brief context…"
-          {...register("reason")}
+          {...register('reason')}
         />
       </div>
 
@@ -316,12 +316,12 @@ export function WaitlistForm() {
         Submit
       </button>
 
-      {status === "ok" && (
+      {status === 'ok' && (
         <p role="status" className="text-emerald-400">
           Check your email to confirm. Welcome aboard. ✨
         </p>
       )}
-      {status === "error" && (
+      {status === 'error' && (
         <p role="alert" className="text-red-400">
           Something went wrong. Please try again.
         </p>
@@ -337,9 +337,9 @@ export function WaitlistForm() {
 
 ```tsx
 // app/page.tsx
-import Link from "next/link";
-import { DropletIntro } from "@/components/DropletIntro";
-import { WaitlistForm } from "@/components/WaitlistForm";
+import Link from 'next/link';
+import { DropletIntro } from '@/components/DropletIntro';
+import { WaitlistForm } from '@/components/WaitlistForm';
 
 export default function Page() {
   return (
@@ -444,44 +444,44 @@ Indexes: `waitlist_email_hash_idx` (unique) and `waitlist_token_idx` (for confir
 ### 9.3 Migration Reference
 
 ```ts
-import type { Kysely } from "kysely";
-import { sql } from "kysely";
+import type { Kysely } from 'kysely';
+import { sql } from 'kysely';
 
 export async function up(db: Kysely<any>): Promise<void> {
   await db.schema
-    .createTable("waitlist")
-    .addColumn("id", "serial", (col) => col.primaryKey())
-    .addColumn("email", "varchar(320)", (col) => col.notNull())
-    .addColumn("email_hash", "char(64)", (col) => col.notNull().unique())
-    .addColumn("path", "varchar(16)", (col) => col.notNull())
-    .addColumn("reason", "text")
-    .addColumn("status", "varchar(16)", (col) =>
-      col.notNull().defaultTo("pending"),
+    .createTable('waitlist')
+    .addColumn('id', 'serial', (col) => col.primaryKey())
+    .addColumn('email', 'varchar(320)', (col) => col.notNull())
+    .addColumn('email_hash', 'char(64)', (col) => col.notNull().unique())
+    .addColumn('path', 'varchar(16)', (col) => col.notNull())
+    .addColumn('reason', 'text')
+    .addColumn('status', 'varchar(16)', (col) =>
+      col.notNull().defaultTo('pending'),
     )
-    .addColumn("token", "varchar(128)", (col) => col.notNull())
-    .addColumn("ip", "varchar(64)")
-    .addColumn("user_agent", "varchar(512)")
-    .addColumn("created_at", "timestamptz", (col) =>
+    .addColumn('token', 'varchar(128)', (col) => col.notNull())
+    .addColumn('ip', 'varchar(64)')
+    .addColumn('user_agent', 'varchar(512)')
+    .addColumn('created_at', 'timestamptz', (col) =>
       col.notNull().defaultTo(sql`now()`),
     )
-    .addColumn("confirmed_at", "timestamptz")
+    .addColumn('confirmed_at', 'timestamptz')
     .execute();
 
   await db.schema
-    .createIndex("waitlist_email_hash_idx")
-    .on("waitlist")
-    .column("email_hash")
+    .createIndex('waitlist_email_hash_idx')
+    .on('waitlist')
+    .column('email_hash')
     .execute();
 
   await db.schema
-    .createIndex("waitlist_token_idx")
-    .on("waitlist")
-    .column("token")
+    .createIndex('waitlist_token_idx')
+    .on('waitlist')
+    .column('token')
     .execute();
 }
 
 export async function down(db: Kysely<any>): Promise<void> {
-  await db.schema.dropTable("waitlist").execute();
+  await db.schema.dropTable('waitlist').execute();
 }
 ```
 

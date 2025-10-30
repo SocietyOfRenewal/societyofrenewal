@@ -1,16 +1,16 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @font-face {
-  font-family: "Geist";
-  src: url("/fonts/Geist-Variable.woff2") format("woff2");
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Variable.woff2') format('woff2');
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Geist Mono";
-  src: url("/fonts/GeistMono-Variable.woff2") format("woff2");
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-Variable.woff2') format('woff2');
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
@@ -60,11 +60,11 @@
 
 :root {
   --font-geist-sans:
-    "Geist", "Inter", "Inter var", "Segoe UI", system-ui, -apple-system,
+    'Geist', 'Inter', 'Inter var', 'Segoe UI', system-ui, -apple-system,
     sans-serif;
   --font-geist-mono:
-    "Geist Mono", "SFMono-Regular", ui-monospace, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+    'Geist Mono', 'SFMono-Regular', ui-monospace, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
   --radius: 0.625rem;
   --background: #f8fafc;
   --foreground: #0f172a;
@@ -140,9 +140,9 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-feature-settings:
-      "liga" 1,
-      "kern" 1,
-      "ss03" 1;
+      'liga' 1,
+      'kern' 1,
+      'ss03' 1;
   }
 }
 

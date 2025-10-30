@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { motion, useReducedMotion } from "framer-motion";
-import Link from "next/link";
+import { motion, useReducedMotion } from 'framer-motion';
+import Link from 'next/link';
 
-import DropletIntro from "@/components/DropletIntro";
-import LinkRow from "@/components/LinkRow";
-import WaitlistForm from "@/components/WaitlistForm";
+import DropletIntro from '@/components/DropletIntro';
+import LinkRow from '@/components/LinkRow';
+import WaitlistForm from '@/components/WaitlistForm';
 
 const heroVariants = {
   hidden: { opacity: 0, y: 24 },
@@ -27,28 +27,28 @@ export default function Page() {
 
   const miniFaq = [
     {
-      question: "Is this a political movement?",
+      question: 'Is this a political movement?',
       answer:
-        "Yes—post-national and borderless. It’s governance you opt into, grounded in evidence and compassion.",
+        'Yes—post-national and borderless. It’s governance you opt into, grounded in evidence and compassion.',
     },
     {
-      question: "Do I have to move?",
-      answer: "No. Join from anywhere.",
+      question: 'Do I have to move?',
+      answer: 'No. Join from anywhere.',
     },
     {
-      question: "Do I have to pay?",
+      question: 'Do I have to pay?',
       answer:
-        "No fees to be recognized or to vote. Contributions are optional and rewarded when they produce verifiable public good.",
+        'No fees to be recognized or to vote. Contributions are optional and rewarded when they produce verifiable public good.',
     },
     {
-      question: "What if I don’t get UBI right away?",
+      question: 'What if I don’t get UBI right away?',
       answer:
-        "You still get your civic identity, voice, and access to learning. UBI waves expand as capacity grows.",
+        'You still get your civic identity, voice, and access to learning. UBI waves expand as capacity grows.',
     },
     {
-      question: "What keeps this honest?",
+      question: 'What keeps this honest?',
       answer:
-        "Public rules, auditable funding, private ballots with verifiable outcomes, and a living Charter you can amend.",
+        'Public rules, auditable funding, private ballots with verifiable outcomes, and a living Charter you can amend.',
     },
   ];
 
@@ -64,8 +64,8 @@ export default function Page() {
         <section className="mx-auto flex min-h-screen max-w-3xl flex-col justify-center gap-16 px-6 pt-32 pb-24 sm:pt-40">
           <motion.div
             variants={staggerChildren}
-            initial={shouldReduceMotion ? undefined : "hidden"}
-            animate={shouldReduceMotion ? undefined : "show"}
+            initial={shouldReduceMotion ? undefined : 'hidden'}
+            animate={shouldReduceMotion ? undefined : 'show'}
             className="space-y-8"
           >
             <motion.div variants={heroVariants} className="space-y-6">
@@ -100,13 +100,13 @@ export default function Page() {
                 keeps that promise verifiable.
               </p>
               <p className="text-sm text-slate-400">
-                Explore the{" "}
+                Explore the{' '}
                 <Link
                   href="/faq"
                   className="text-slate-200 underline decoration-slate-500 underline-offset-4 hover:text-slate-100"
                 >
                   detailed FAQ
-                </Link>{" "}
+                </Link>{' '}
                 to see how membership, the Freedom Floor, and Essent work
                 together.
               </p>
@@ -119,8 +119,8 @@ export default function Page() {
 
           <motion.div
             variants={heroVariants}
-            initial={shouldReduceMotion ? undefined : "hidden"}
-            animate={shouldReduceMotion ? undefined : "show"}
+            initial={shouldReduceMotion ? undefined : 'hidden'}
+            animate={shouldReduceMotion ? undefined : 'show'}
             transition={{ delay: shouldReduceMotion ? 0 : 0.6, duration: 0.6 }}
             className="rounded-3xl border border-white/10 bg-white/5 shadow-[0_32px_120px_rgba(2,6,23,0.55)] backdrop-blur-2xl"
           >
@@ -157,7 +157,7 @@ export default function Page() {
                 <li>
                   <strong className="text-slate-100">
                     Essential Units (𝒰):
-                  </strong>{" "}
+                  </strong>{' '}
                   a non-transferable, expiring basic-needs instrument used to
                   deliver UBI and keep purchasing power stable for essentials.
                 </li>

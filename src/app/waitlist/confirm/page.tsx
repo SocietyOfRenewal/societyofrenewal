@@ -1,20 +1,20 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { env } from "@/lib/env";
+import { env } from '@/lib/env';
 
 type ConfirmResponse = {
-  status?: "confirmed" | "already_confirmed";
+  status?: 'confirmed' | 'already_confirmed';
   message?: string;
 };
 
 type ConfirmState =
   | {
-      kind: "missing" | "invalid" | "error";
+      kind: 'missing' | 'invalid' | 'error';
       title: string;
       body: string;
     }
   | {
-      kind: "confirmed" | "already";
+      kind: 'confirmed' | 'already';
       title: string;
       body: string;
     };
@@ -24,57 +24,57 @@ async function resolveConfirmation(
 ): Promise<ConfirmState> {
   if (!token) {
     return {
-      kind: "missing",
-      title: "Confirmation link incomplete",
-      body: "Follow the link from your email to confirm your invitation.",
+      kind: 'missing',
+      title: 'Confirmation link incomplete',
+      body: 'Follow the link from your email to confirm your invitation.',
     } satisfies ConfirmState;
   }
 
-  const confirmationUrl = new URL("/api/waitlist/confirm", env.APP_URL);
-  confirmationUrl.searchParams.set("token", token);
+  const confirmationUrl = new URL('/api/waitlist/confirm', env.APP_URL);
+  confirmationUrl.searchParams.set('token', token);
 
   try {
     const response = await fetch(confirmationUrl.toString(), {
-      cache: "no-store",
-      headers: { "Content-Type": "application/json" },
+      cache: 'no-store',
+      headers: { 'Content-Type': 'application/json' },
     });
     const data = (await response.json().catch(() => ({}))) as ConfirmResponse;
 
-    if (response.ok && data.status === "confirmed") {
+    if (response.ok && data.status === 'confirmed') {
       return {
-        kind: "confirmed",
+        kind: 'confirmed',
         title: "You're in",
         body: "Thank you for confirming. We'll reach out when the next invitations are released.",
       } satisfies ConfirmState;
     }
 
-    if (response.ok && data.status === "already_confirmed") {
+    if (response.ok && data.status === 'already_confirmed') {
       return {
-        kind: "already",
-        title: "Already confirmed",
+        kind: 'already',
+        title: 'Already confirmed',
         body: "You're all set. Watch your inbox for Society of Renewal updates.",
       } satisfies ConfirmState;
     }
 
     if (response.status === 404) {
       return {
-        kind: "invalid",
-        title: "Link expired or invalid",
-        body: "Request a new confirmation email from the waitlist form and try again.",
+        kind: 'invalid',
+        title: 'Link expired or invalid',
+        body: 'Request a new confirmation email from the waitlist form and try again.',
       } satisfies ConfirmState;
     }
 
     return {
-      kind: "error",
+      kind: 'error',
       title: "We couldn't confirm your spot",
-      body: data.message ?? "Please try again in a moment.",
+      body: data.message ?? 'Please try again in a moment.',
     } satisfies ConfirmState;
   } catch (error) {
-    console.error("[waitlist-confirm-page] error", error);
+    console.error('[waitlist-confirm-page] error', error);
     return {
-      kind: "error",
+      kind: 'error',
       title: "We couldn't reach the waitlist",
-      body: "Check your connection and try again a little later.",
+      body: 'Check your connection and try again a little later.',
     } satisfies ConfirmState;
   }
 }

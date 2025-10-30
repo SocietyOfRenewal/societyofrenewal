@@ -1,7 +1,7 @@
-import type { Generated, Insertable, Selectable, Updateable } from "kysely";
+import type { Generated, Insertable, Selectable, Updateable } from 'kysely';
 
-export type WaitlistPath = "lottery" | "need";
-export type WaitlistStatus = "pending" | "confirmed";
+export type WaitlistPath = 'lottery' | 'need';
+export type WaitlistStatus = 'pending' | 'confirmed';
 
 export interface WaitlistTable {
   id: Generated<number>;

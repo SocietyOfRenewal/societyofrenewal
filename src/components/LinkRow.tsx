@@ -1,26 +1,26 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 
 const resources = [
   {
-    href: "/faq",
-    label: "Frequently Asked Questions →",
+    href: '/faq',
+    label: 'Frequently Asked Questions →',
     external: false,
   },
   {
-    href: "https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md",
-    label: "Charter →",
+    href: 'https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md',
+    label: 'Charter →',
     external: true,
   },
   {
-    href: "https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md",
-    label: "Founding Document →",
+    href: 'https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md',
+    label: 'Founding Document →',
     external: true,
   },
   {
-    href: "https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md",
-    label: "Essentia Whitepaper v0.6.0 →",
+    href: 'https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md',
+    label: 'Essentia Whitepaper v0.6.0 →',
     external: true,
   },
 ];
@@ -32,11 +32,11 @@ export default function LinkRow() {
         <Link
           key={resource.href}
           href={resource.href}
-          target={resource.external ? "_blank" : undefined}
-          rel={resource.external ? "noopener" : undefined}
+          target={resource.external ? '_blank' : undefined}
+          rel={resource.external ? 'noopener' : undefined}
           className={cn(
-            "group relative inline-flex items-center gap-2 font-medium transition-colors duration-200",
-            "text-slate-400 hover:text-slate-100 focus-visible:text-slate-100",
+            'group relative inline-flex items-center gap-2 font-medium transition-colors duration-200',
+            'text-slate-400 hover:text-slate-100 focus-visible:text-slate-100',
           )}
         >
           <span className="relative">

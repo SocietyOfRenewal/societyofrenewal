@@ -1,4 +1,4 @@
-type LogLevel = "debug" | "info" | "warn" | "error";
+type LogLevel = 'debug' | 'info' | 'warn' | 'error';
 
 interface LogPayload {
   level: LogLevel;
@@ -20,13 +20,13 @@ export function logStructured(payload: LogPayload) {
   const serialized = JSON.stringify(entry);
 
   switch (level) {
-    case "error":
+    case 'error':
       console.error(serialized);
       break;
-    case "warn":
+    case 'warn':
       console.warn(serialized);
       break;
-    case "debug":
+    case 'debug':
       console.debug(serialized);
       break;
     default:
