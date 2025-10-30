@@ -46,19 +46,25 @@ const faqs = [
   {
     question: "5) How does the UBI (“Freedom Floor”) work?",
     answer: [
-      "The Freedom Floor is a baseline income for essentials. It starts with pilots in waves and scales as capacity grows. Where pilots are live, members activated in that wave receive Essential Units (𝒰)—a purpose-built, non-transferable, expiring instrument designed to purchase essentials (food, shelter, energy, connectivity) through participating vendors and mutual-aid networks.",
-      "Members can also earn a transferable token called Essent (ℰ) by contributing verifiable public good—teaching, care work, local infrastructure, open-source, research, translation, mediation, and more.",
+      "The Freedom Floor is a baseline income for essentials. It launches in waves and scales by region as capacity grows.",
+      "Inside the Society there are two monetary instruments:",
+      [
+        "Essent (ℰ): the Society’s global currency—a transferable unit used for pricing, payments, savings, payroll, and settlement across borders.",
+        "Essential Units (𝒰): a basic-needs instrument used to deliver UBI. 𝒰 is non-transferable and expiring, calibrated to baskets of essential goods/services (food, shelter, energy, connectivity). Vendors redeem 𝒰 for ℰ at a published, auditable clearing rate.",
+      ],
+      "Vendor clarification: “Vendors” are merchants and service providers in the essentials network—grocers, pharmacies, landlords/housing providers, utilities (power, water, internet), clinics/telehealth, transit/fuel, childcare/eldercare co-ops, community kitchens/food co-ops, and approved mutual-aid nodes. Vendors can accept 𝒰 for essentials and/or price directly in ℰ for general goods/services.",
+      "As pilots expand, members activated for UBI in that wave receive 𝒰 each period to reliably cover essentials. Anyone can earn ℰ by contributing verifiable public good—teaching, care work, local infrastructure, open-source, research, translation, mediation, and more.",
     ],
   },
   {
     question: "6) Where does the money come from? Is this taxes?",
     answer: [
-      "No new taxes. Funding flows through Essentia, our public civic ledger:",
+      "No new taxes. The Society runs on Essentia, our public civic ledger and monetary system.",
       [
-        "Essent (ℰ) is minted for verified contributions to the commons. It’s transferable and earned by doing useful work that the community can audit.",
-        "Essential Units (𝒰) deliver UBI. They’re non-transferable, expire, and are restricted to essential baskets to stabilize purchasing power for basic needs.",
+        "Essent (ℰ) is money. ℰ issuance is rules-based: new currency is minted when verified public-good work is delivered (and through narrowly scoped monetary operations approved in public). Think of it as issuing money against audited impact, not unchecked debt.",
+        "Essential Units (𝒰) fund the Freedom Floor. 𝒰 is created per policy to meet basic-needs targets and is redeemable by vendors for ℰ at indexed rates. Because 𝒰 expires and is limited to essentials, it stabilizes baseline access without fueling broad speculation.",
       ],
-      "Budgets, issuance rules, and flows are public and auditable. The Freedom Floor expands as we onboard vendors, mutual-aid nodes, and regional partners.",
+      "All issuance rules, budgets, and flows are public and auditable. Capacity grows as vendors onboard and as impact-minted ℰ strengthens the real economy that accepts it.",
     ],
   },
   {
@@ -95,25 +101,25 @@ const faqs = [
   {
     question: "10) Is this “crypto” or a speculative coin?",
     answer: [
-      "We use a ledger, but the goals are civic (identity, voting, UBI), not speculation. Key points:",
+      "We use a modern public ledger, but the aim is civic, not casino.",
       [
-        "No proof-of-work mining; energy use is low.",
-        "UBI uses 𝒰, a non-transferable instrument for essentials—not a tradable coin.",
-        "ℰ (Essent) is transferable but minted for verified public good, not out of thin air.",
-        "Public rules, open code, and audits are the guardrails.",
+        "Essent (ℰ) is money—a global, programmable currency with transparent, rules-based issuance tied to verifiable public good. It is transferable and used for everyday payments and savings.",
+        "Essential Units (𝒰) power UBI and are non-transferable; they’re for essentials only and expire.",
+        "No proof-of-work mining; energy use is low. Protocols, monetary rules, and audits are public.",
       ],
+      "Exchanges may list ℰ over time; that doesn’t change our design goal: money that serves people and the real economy first.",
     ],
   },
   {
     question: "11) How do you keep prices stable and avoid inflation?",
     answer: [
-      "We separate earnable value (ℰ) from basic-needs access (𝒰):",
+      "We separate universal access from general-purpose money, and we make both policies explicit and auditable.",
       [
-        "𝒰 is calibrated to baskets of essentials and expires, which prevents hoarding and dampens inflationary spirals.",
-        "Vendor reimbursements are indexed to actual costs for essential categories.",
-        "Issuance is rules-based and published. We monitor real-world prices and adjust basket definitions via public governance.",
+        "𝒰 (UBI instrument): Indexed to baskets of essentials and expires, preventing hoarding and dampening price spirals in basic goods. Vendors redeem 𝒰 for ℰ at a published clearing rate tied to those baskets.",
+        "ℰ (global currency): Issued for verified public-good output and via limited, publicly approved operations. Sinks (fees, staking, and optional burns) offset issuance. Policy targets are published, and parameters (issuance caps per epoch, redemption bands, reserves) are adjusted by public vote with sunset reviews.",
+        "Market discipline: Open vendor reimbursement data and on-chain audits deter abuse; deviations in basket costs trigger automatic policy reviews.",
       ],
-      "This is not magic—it’s monetary policy with narrow scope: keep essentials reliably affordable.",
+      "This is not a promise of zero volatility; it’s a transparent monetary constitution designed to keep essentials stable and the broader currency disciplined.",
     ],
   },
   {
@@ -245,13 +251,41 @@ const faqs = [
     answer:
       "We don’t give tax advice. If your jurisdiction treats benefits as taxable, you are responsible for compliance. We publish receipts and documentation to make compliance easier.",
   },
+  {
+    question: "26) Is Essent (ℰ) money?",
+    answer: [
+      "Yes. Essent is money. Inside the Society it is legal tender; outside, it functions as a contractual medium of exchange wherever accepted. It serves as unit of account, medium of exchange, and store of value for Society activity.",
+      "Why it’s credible: issuance is tied to audited public-good output and governed by public, amendable rules; budgets and reserves are visible; and redemption flows from 𝒰 → ℰ create baseline demand from essentials.",
+    ],
+  },
+  {
+    question: "27) How does Essent relate to my local currency?",
+    answer:
+      "ℰ coexists with national currencies. We provide on/off-ramps through compliant partners; local taxes and reporting still apply. Pricing can be in ℰ, local currency, or both. Nothing forces you to abandon your existing financial life.",
+  },
+  {
+    question: "28) Can vendors price directly in Essent?",
+    answer:
+      "Yes. Vendors can accept 𝒰 for essential baskets (redeemed for ℰ) and/or price directly in ℰ for general goods/services. Tooling includes invoicing, POS integrations, and reporting to simplify compliance.",
+  },
+  {
+    question: "29) What backs Essent?",
+    answer:
+      "Essent is backed by the productive capacity and verified public-good output of the Society, plus transparent reserves and policy. It isn’t pegged to a single asset; it is governed by a published monetary rule-set with audits, caps, and automatic reviews.",
+  },
+  {
+    question: "30) What counts as a “vendor”?",
+    answer:
+      "A vendor is any merchant or service provider in the essentials network—grocers, pharmacies, landlords/housing providers, utilities (power, water, internet), clinics/telehealth, transit/fuel, childcare/eldercare co-ops, community kitchens/food co-ops, and approved mutual-aid nodes. Vendors may accept 𝒰 for essentials (redeemed for ℰ) and/or price directly in ℰ.",
+  },
 ];
 
 const definitions = [
-  "Freedom Floor (UBI): Baseline income for essentials, delivered via 𝒰 as capacity grows.",
-  "Essentia: The public civic ledger that powers identity, voting, audits, and value rails.",
-  "Essent (ℰ): Transferable token earned for verified contributions to the commons.",
-  "Essential Units (𝒰): Non-transferable, expiring instrument for essential goods/services.",
+  "Essentia: The public civic ledger that powers identity, voting, audits, and the monetary rails of the Society.",
+  "Essent (ℰ): The Society’s global currency—transferable, used for pricing, payments, payroll, settlement, and savings. Issued by rules for verified public good and approved monetary operations.",
+  "Essential Units (𝒰): Non-transferable, expiring instrument used to deliver UBI for essentials; redeemable by vendors for ℰ at indexed rates.",
+  "Vendor: Merchants and service providers (grocers, pharmacies, landlords/housing providers, utilities, internet, clinics/telehealth, transit/fuel, childcare/eldercare co-ops, community kitchens/food co-ops, and approved mutual-aid nodes) that accept 𝒰 for essentials and/or price in ℰ.",
+  "Freedom Floor (UBI): Baseline, reliable access to essentials, delivered via 𝒰 as capacity grows.",
   "Need Path: Priority activation for urgent hardship.",
   "Lottery Path: Provably random activation when capacity is limited.",
 ];
@@ -276,9 +310,9 @@ export default function FaqPage() {
           <blockquote className="border-l-2 border-white/20 pl-5 text-base leading-relaxed text-slate-300">
             <strong className="text-slate-100">Short version:</strong> You can
             join from anywhere. We provide a portable civic identity, verifiable
-            democracy, education-first safety, and a Universal Basic Income
-            (UBI) we call the Freedom Floor as pilots scale. Membership is
-            voluntary and coexists with your current citizenship.
+            democracy, education-first safety, and a new global currency called
+            Essent (ℰ). UBI (the Freedom Floor) rolls out as pilots scale.
+            Membership is voluntary and coexists with your current citizenship.
           </blockquote>
         </header>
 
