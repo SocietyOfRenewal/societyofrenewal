@@ -3,9 +3,9 @@
 ## Navigation
 
 - **[Landing Page Copy](landing-page.md)** — Finalized hero narrative, CTA, and link slate
-- **[Charter of Renewal](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md)** — Constitutional framework (temporary location)
-- **[Founding Book](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md)** — Philosophical and scientific foundation (temporary location)
-- **[Landing Build Spec](../spec/landing-build-spec.md)** — Implementation requirements for the waitlist app
+- **[Charter of Renewal](../charter/README.md)** — Constitutional framework
+- **[Founding Book](../founding-book/README.md)** — Philosophical and scientific foundation
+- **[Agent Build Spec](../spec/agent-build-spec.md)** — Implementation requirements for the waitlist app
 - **[Contributing Guide](../../CONTRIBUTING.md)** — Workflow, linting, and commit standards
 
 ---
@@ -49,3 +49,7 @@ The experiment enshrines three truths:
 3. **Harmony measures progress.** Economics, ecology, and ethics must move in resonance.
 
 This is not a government but an ecosystem of understanding. Citizens do not obey—they participate.
+
+---
+
+> Continue to read → [Agent Build Spec](../spec/agent-build-spec.md)

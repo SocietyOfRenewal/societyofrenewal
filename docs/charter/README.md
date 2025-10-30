@@ -63,9 +63,13 @@ When harm occurs, the focus is on understanding root causes, making victims whol
 
 ## Related Documents
 
-- [Founding Book](../founding-book/) - The philosophical and scientific foundation
-- [Main Project Outline](../../outline.md) - Overall project structure
-- [Landing Page](../../landing-page.md) - Public-facing introduction
+- [Founding Book](../founding-book/README.md) - The philosophical and scientific foundation
+- [Main Project Outline](../content/README.md) - Overall project structure
+- [Landing Page](../content/landing-page.md) - Public-facing introduction
+
+### Continue Reading
+
+> Continue to read → [Part I: The Scientific Basis of Renewal](Part%20I.md)
 
 ---
 

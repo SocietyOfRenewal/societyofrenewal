@@ -5,8 +5,8 @@
 - [Part I: The Scientific Basis of Renewal](Part%20I.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
 - [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
-- [Founding Book](../founding-book/) - Philosophical foundation
-- [Main Project Outline](../../outline.md) - Overall project structure
+- [Founding Book](../founding-book/README.md) - Philosophical foundation
+- [Main Project Outline](../content/README.md) - Overall project structure
 
 ---
 
@@ -256,3 +256,7 @@ Part II defines how we function. These Articles become active **law-of-operation
 Because perfection is not assumed and authority is dangerous when left unexamined, Part II is subject to the Refactoring Cycle defined in **Article 3.8**. Any implementation that drifts toward domination, humiliation, corruption, secrecy, exclusion, coercion, or abandonment of those in need is a violation of the Charter’s core ethic and must be corrected.
 
 The Society of Renewal exists to prove that intelligence and compassion, joined and iterated, are enough to govern.
+
+---
+
+> Continue to read → [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)

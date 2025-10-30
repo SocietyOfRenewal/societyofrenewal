@@ -5,8 +5,8 @@
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
 - [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
-- [Founding Book](../founding-book/) - Philosophical foundation
-- [Main Project Outline](../../outline.md) - Overall project structure
+- [Founding Book](../founding-book/README.md) - Philosophical foundation
+- [Main Project Outline](../content/README.md) - Overall project structure
 
 ---
 
@@ -266,3 +266,7 @@ Part I establishes that the Society of Renewal is not mysticism, branding, or wi
 - Continuously refactor.
 
 If these mechanisms hold, coercive law becomes unnecessary in most cases. Where it does not hold, the failure is treated as a design flaw to be addressed, not a reason to abandon the premise.
+
+---
+
+> Continue to read → [Part II: Operational Articles](Part%20II.md)

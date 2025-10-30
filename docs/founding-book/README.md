@@ -67,9 +67,13 @@ This is a **work in progress**. The current version includes:
 
 ## Related Documents
 
-- [Charter of Renewal](../charter/) - The constitutional document
-- [Main Project Outline](../../outline.md) - Overall project structure
-- [Landing Page](../../landing-page.md) - Public-facing introduction
+- [Charter of Renewal](../charter/README.md) - The constitutional document
+- [Main Project Outline](../content/README.md) - Overall project structure
+- [Landing Page](../content/landing-page.md) - Public-facing introduction
+
+### Continue Reading
+
+> Continue to read → [Part A: Declaration of Interdependence](Part%20A.md)
 
 ---
 

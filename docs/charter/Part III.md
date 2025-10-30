@@ -5,8 +5,8 @@
 - [Part I: The Scientific Basis of Renewal](Part%20I.md)
 - [Part II: Operational Articles](Part%20II.md)
 - [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
-- [Founding Book](../founding-book/) - Philosophical foundation
-- [Main Project Outline](../../outline.md) - Overall project structure
+- [Founding Book](../founding-book/README.md) - Philosophical foundation
+- [Main Project Outline](../content/README.md) - Overall project structure
 
 ---
 
@@ -486,3 +486,7 @@ Annual strategy reviews must demonstrate that the _largest_ budget growth, perso
 We keep the fire extinguisher charged, but we design a world that almost never lights the match.
 
 If you want, I can now insert these Articles into your consolidated **Part III** draft and generate a tidy **diff** against the previous version so your Essentia wiki shows exactly what changed.
+
+---
+
+> Continue to read → [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)

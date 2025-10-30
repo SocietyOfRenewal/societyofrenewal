@@ -5,8 +5,8 @@
 - [Part I: The Scientific Basis of Renewal](Part%20I.md)
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
-- [Founding Book](../founding-book/) - Philosophical foundation
-- [Main Project Outline](../../outline.md) - Overall project structure
+- [Founding Book](../founding-book/README.md) - Philosophical foundation
+- [Main Project Outline](../content/README.md) - Overall project structure
 
 ---
 
@@ -169,3 +169,7 @@ If you want, I can now:
 1. merge Part IV into your Charter manuscript (with consistent numbering),
 2. add a one-page **“Join Today”** appendix (plain-language flow + QR for DID creation), and
 3. produce the public-facing **Membership & Invitation** page copy that mirrors these Articles without the legalese.
+
+---
+
+> Continue to read → [Founding Book Overview](../founding-book/README.md)
