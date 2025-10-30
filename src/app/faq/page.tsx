@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: 'Society of Renewal — Detailed FAQ',
@@ -8,7 +9,22 @@ export const metadata: Metadata = {
     'Get answers about the Society of Renewal: membership, Freedom Floor UBI, governance, safety model, funding, and how to get involved.',
 };
 
-const faqs = [
+type AnswerSegment = string | ReactNode | Array<string | ReactNode>;
+
+interface FaqItem {
+  question: string;
+  answer: AnswerSegment[] | string | ReactNode;
+  id?: string;
+}
+
+const anchorize = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .trim()
+    .replace(/\s+/g, '-');
+
+const faqs: FaqItem[] = [
   {
     question: '1) What is the Society of Renewal?',
     answer: [
@@ -278,6 +294,89 @@ const faqs = [
     answer:
       'A vendor is any merchant or service provider in the essentials network—grocers, pharmacies, landlords/housing providers, utilities (power, water, internet), clinics/telehealth, transit/fuel, childcare/eldercare co-ops, community kitchens/food co-ops, and approved mutual-aid nodes. Vendors may accept 𝒰 for essentials (redeemed for ℰ) and/or price directly in ℰ.',
   },
+  {
+    id: 'money-creation',
+    question: '31) “You can’t just create money out of thin air!”',
+    answer: [
+      'Short answer: all money is created. The questions are who creates it, how, and with what guardrails.',
+      'Isn’t money supposed to be “backed” by something? Modern national currencies (dollars, euros, etc.) are fiat money—their value comes from law, trust, and the issuing government’s monetary framework, not from gold. Central banks manage the monetary base, and most of the spendable money people use is created by commercial banks when they make loans (loans create deposits).',
+      'Wait—banks create most of the money? Yes. When a bank approves a loan, it credits your account with a new deposit, expanding broad money. This isn’t “multiplying reserves” in the old textbook sense; the modern view is “loans create deposits,” constrained by capital, profitability, regulation, and central-bank policy.',
+      'What about the central bank “printing money”? Central banks can add money to the system—for example, by buying assets. When the Fed buys a bond from a non-bank, new bank deposits are created for the seller; that’s one channel for money creation.',
+      'Fiat vs. Cryptocurrency (quick compare)',
+      [
+        'Fiat currency: Issued within a political/legal system; supply is influenced by central-bank policy and banking activity. Accountability comes from laws, audits, and democratic oversight (ideally).',
+        'Cryptocurrency: Issued by protocol rules on a public ledger (blockchain). For example, Bitcoin’s supply schedule is coded (rewards halve roughly every four years until ~21M BTC). Verification comes from open networks and cryptography.',
+      ],
+      'TL;DR: Fiat = policy-managed money in a nation. Crypto = rule-managed money in software.',
+      'How cryptocurrencies work (30-second sketch)',
+      [
+        'A blockchain is a shared ledger; nodes agree on the same history of transactions using cryptography and consensus.',
+        'Bitcoin adds new blocks via proof-of-work; its code defines issuance and halving.',
+        'Platforms like Ethereum let developers build apps and organizations on-chain (beyond payments).',
+      ],
+      'Want approachable, reputable guides?',
+      [
+        <span key="boe-guide">
+          <Link
+            href="https://www.bankofengland.co.uk/quarterly-bulletin/2014/q1/money-creation-in-the-modern-economy"
+            className="text-slate-100 underline decoration-slate-500 underline-offset-4 hover:text-slate-50"
+          >
+            How banks create money (modern view)
+          </Link>{' '}
+          — Bank of England explainer.
+        </span>,
+        <span key="fed-note">
+          <Link
+            href="https://www.federalreserve.gov/econres/notes/feds-notes/how-does-the-fed-adjust-its-balance-sheet-20210908.htm"
+            className="text-slate-100 underline decoration-slate-500 underline-offset-4 hover:text-slate-50"
+          >
+            What happens when the Fed buys assets
+          </Link>{' '}
+          — short Fed Note on deposits and QE mechanics.
+        </span>,
+        <span key="khan-academy">
+          <Link
+            href="https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/bitcoin/v/bitcoin-overview"
+            className="text-slate-100 underline decoration-slate-500 underline-offset-4 hover:text-slate-50"
+          >
+            Bitcoin: beginner videos
+          </Link>{' '}
+          — Khan Academy’s clear series (what it is, supply, blockchain).
+        </span>,
+        <span key="bitcoin-org">
+          <Link
+            href="https://bitcoin.org/en/how-it-works"
+            className="text-slate-100 underline decoration-slate-500 underline-offset-4 hover:text-slate-50"
+          >
+            Bitcoin: how it works
+          </Link>{' '}
+          — succinct overview.
+        </span>,
+        <span key="ethereum-hub">
+          <Link
+            href="https://ethereum.org/en/learn/"
+            className="text-slate-100 underline decoration-slate-500 underline-offset-4 hover:text-slate-50"
+          >
+            Ethereum learning hub
+          </Link>{' '}
+          — non-technical and technical guides.
+        </span>,
+        <span key="wef-crypto-primer">
+          <Link
+            href="https://www.weforum.org/stories/2021/06/what-is-cryptocurrency/"
+            className="text-slate-100 underline decoration-slate-500 underline-offset-4 hover:text-slate-50"
+          >
+            Cryptocurrency primer (World Economic Forum)
+          </Link>{' '}
+          — clear, non-technical overview of cryptocurrencies as currency,
+          widely cited.
+        </span>,
+      ],
+      'Where the Society fits',
+      'We’re not hand-waving money into existence. We’re designing transparent rails: a contribution-earned token (Essent ℰ) and a needs-indexed instrument (Essential Unit 𝒰) with public proofs, plus governance that any citizen can audit. (Think: protocol-visible creation with human-visible accountability.)',
+      'If someone asks “who’s creating it and how do we know it’s fair?”—the answer is: the rules, the math, and the public record.',
+    ],
+  },
 ];
 
 const definitions = [
@@ -317,36 +416,45 @@ export default function FaqPage() {
         </header>
 
         <div className="space-y-12">
-          {faqs.map((faq) => (
-            <article
-              key={faq.question}
-              className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur"
-            >
-              <h2 className="text-xl font-semibold text-slate-100">
-                {faq.question}
-              </h2>
-              <div className="mt-4 space-y-4 text-base leading-relaxed text-slate-300">
-                {Array.isArray(faq.answer) ? (
-                  faq.answer.map((block, index) =>
-                    Array.isArray(block) ? (
-                      <ul
-                        key={`${faq.question}-list-${index}`}
-                        className="list-disc space-y-2 pl-6 text-slate-300"
-                      >
-                        {block.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p key={`${faq.question}-para-${index}`}>{block}</p>
-                    ),
-                  )
-                ) : (
-                  <p>{faq.answer}</p>
-                )}
-              </div>
-            </article>
-          ))}
+          {faqs.map((faq) => {
+            const articleId = faq.id ?? anchorize(faq.question);
+
+            return (
+              <article
+                id={articleId}
+                key={faq.question}
+                className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur"
+              >
+                <h2 className="text-xl font-semibold text-slate-100">
+                  {faq.question}
+                </h2>
+                <div className="mt-4 space-y-4 text-base leading-relaxed text-slate-300">
+                  {Array.isArray(faq.answer) ? (
+                    faq.answer.map((block, index) =>
+                      Array.isArray(block) ? (
+                        <ul
+                          key={`${faq.question}-list-${index}`}
+                          className="list-disc space-y-2 pl-6 text-slate-300"
+                        >
+                          {block.map((item, itemIndex) => (
+                            <li
+                              key={`${faq.question}-list-${index}-${itemIndex}`}
+                            >
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p key={`${faq.question}-para-${index}`}>{block}</p>
+                      ),
+                    )
+                  ) : (
+                    <p>{faq.answer}</p>
+                  )}
+                </div>
+              </article>
+            );
+          })}
         </div>
 
         <section className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
