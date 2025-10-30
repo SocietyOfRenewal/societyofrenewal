@@ -1,28 +1,28 @@
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from '@vercel/analytics/react';
 
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from '@/components/ui/sonner';
 
-import type { Metadata, Viewport } from "next";
-import "./globals.css";
+import type { Metadata, Viewport } from 'next';
+import './globals.css';
 
-const title = "Join the Society of Renewal";
+const title = 'Join the Society of Renewal';
 const description =
-  "An invitation to a society built on universal basic income, shared learning, and compassion as infrastructure.";
-const absoluteUrl = "https://societyofrenewal.org";
+  'An invitation to a society built on universal basic income, shared learning, and compassion as infrastructure.';
+const absoluteUrl = 'https://societyofrenewal.org';
 
 export const metadata: Metadata = {
   metadataBase: new URL(absoluteUrl),
   title,
   description,
   keywords: [
-    "Society of Renewal",
-    "Universal Basic Income",
-    "Mutual Aid",
-    "Post-scarcity",
-    "Compassion Economy",
+    'Society of Renewal',
+    'Universal Basic Income',
+    'Mutual Aid',
+    'Post-scarcity',
+    'Compassion Economy',
   ],
-  authors: [{ name: "Society of Renewal" }],
-  creator: "Society of Renewal",
+  authors: [{ name: 'Society of Renewal' }],
+  creator: 'Society of Renewal',
   alternates: {
     canonical: absoluteUrl,
   },
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     title,
     description,
     url: absoluteUrl,
-    siteName: "Society of Renewal",
-    locale: "en_US",
-    type: "website",
+    siteName: 'Society of Renewal',
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
-    card: "summary_large_image",
+    card: 'summary_large_image',
     title,
     description,
   },
@@ -46,8 +46,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#030711",
-  colorScheme: "dark",
+  themeColor: '#030711',
+  colorScheme: 'dark',
 };
 
 export default function RootLayout({

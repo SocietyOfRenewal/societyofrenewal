@@ -1,6 +1,6 @@
-import { kv } from "@vercel/kv";
+import { kv } from '@vercel/kv';
 
-import { env } from "@/lib/env";
+import { env } from '@/lib/env';
 
 interface RateLimitOptions {
   limit?: number;

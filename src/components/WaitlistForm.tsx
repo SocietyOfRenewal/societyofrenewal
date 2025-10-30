@@ -1,29 +1,29 @@
-"use client";
+'use client';
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import { track } from "@vercel/analytics";
-import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { useCallback, useEffect, useMemo, useState } from "react";
-import { useForm, useWatch } from "react-hook-form";
-import { toast } from "sonner";
+import { zodResolver } from '@hookform/resolvers/zod';
+import { track } from '@vercel/analytics';
+import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useForm, useWatch } from 'react-hook-form';
+import { toast } from 'sonner';
 
-import RippleButton from "@/components/RippleButton";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
-import { Textarea } from "@/components/ui/textarea";
-import { cn } from "@/lib/utils";
-import { waitlistFormSchema } from "@/lib/validation";
+import RippleButton from '@/components/RippleButton';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { Switch } from '@/components/ui/switch';
+import { Textarea } from '@/components/ui/textarea';
+import { cn } from '@/lib/utils';
+import { waitlistFormSchema } from '@/lib/validation';
 
-import type { z } from "zod";
+import type { z } from 'zod';
 
-type SubmissionStatus = "idle" | "success" | "exists" | "error";
+type SubmissionStatus = 'idle' | 'success' | 'exists' | 'error';
 
 const lotteryCopy =
-  "Lottery invitations ensure transparent, random entry for the waitlist.";
+  'Lottery invitations ensure transparent, random entry for the waitlist.';
 const needCopy =
-  "Need-based invitations reserve space for those facing urgent hardship. Share enough detail for us to understand.";
+  'Need-based invitations reserve space for those facing urgent hardship. Share enough detail for us to understand.';
 
 type WaitlistFormValues = z.input<typeof waitlistFormSchema>;
 
@@ -31,70 +31,70 @@ export default function WaitlistForm() {
   const form = useForm<WaitlistFormValues>({
     resolver: zodResolver(waitlistFormSchema),
     defaultValues: {
-      email: "",
-      path: "lottery",
-      reason: "",
+      email: '',
+      path: 'lottery',
+      reason: '',
       turnstileToken: undefined,
     },
   });
 
-  const [status, setStatus] = useState<SubmissionStatus>("idle");
+  const [status, setStatus] = useState<SubmissionStatus>('idle');
   const shouldReduceMotion = useReducedMotion();
-  const path = useWatch({ control: form.control, name: "path" }) ?? "lottery";
-  const reasonValue = useWatch({ control: form.control, name: "reason" }) ?? "";
+  const path = useWatch({ control: form.control, name: 'path' }) ?? 'lottery';
+  const reasonValue = useWatch({ control: form.control, name: 'reason' }) ?? '';
 
   useEffect(() => {
-    if (path === "lottery" && reasonValue) {
-      form.setValue("reason", "");
+    if (path === 'lottery' && reasonValue) {
+      form.setValue('reason', '');
     }
   }, [form, path, reasonValue]);
 
   const handlePathChange = useCallback(
     (checked: boolean) => {
-      form.setValue("path", checked ? "need" : "lottery", {
+      form.setValue('path', checked ? 'need' : 'lottery', {
         shouldValidate: true,
       });
       if (!checked) {
-        form.setValue("reason", "");
+        form.setValue('reason', '');
       }
     },
     [form],
   );
 
   const copy = useMemo(
-    () => (path === "need" ? needCopy : lotteryCopy),
+    () => (path === 'need' ? needCopy : lotteryCopy),
     [path],
   );
 
   const onSubmit = async (values: WaitlistFormValues) => {
     const parsed = waitlistFormSchema.parse(values);
-    const trimmedReason = parsed.reason?.trim() ?? "";
+    const trimmedReason = parsed.reason?.trim() ?? '';
     const payload = {
       ...parsed,
       reason: trimmedReason.length > 0 ? trimmedReason : undefined,
     };
 
-    setStatus("idle");
+    setStatus('idle');
 
     try {
-      track("waitlist_submit_attempt", { path: parsed.path });
+      track('waitlist_submit_attempt', { path: parsed.path });
     } catch {
       /* ignore analytics failures */
     }
 
     let response: Response;
     try {
-      response = await fetch("/api/waitlist", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      response = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
     } catch (error) {
-      console.error("[waitlist] network error", error);
-      setStatus("error");
-      toast.error("We could not reach the waitlist. Check your connection.");
+      console.error('[waitlist] network error', error);
+      setStatus('error');
+      toast.error('We could not reach the waitlist. Check your connection.');
       try {
-        track("waitlist_submit_error", { reason: "network" });
+        track('waitlist_submit_error', { reason: 'network' });
       } catch {
         /* noop */
       }
@@ -102,16 +102,16 @@ export default function WaitlistForm() {
     }
 
     if (response.ok) {
-      setStatus("success");
+      setStatus('success');
       form.reset({
-        email: "",
+        email: '',
         path: parsed.path,
-        reason: parsed.path === "need" ? parsed.reason : "",
+        reason: parsed.path === 'need' ? parsed.reason : '',
         turnstileToken: undefined,
       });
-      toast.success("Check your inbox to confirm your place.");
+      toast.success('Check your inbox to confirm your place.');
       try {
-        track("waitlist_submit_success", { path: parsed.path });
+        track('waitlist_submit_success', { path: parsed.path });
       } catch {
         /* noop */
       }
@@ -119,17 +119,17 @@ export default function WaitlistForm() {
     }
 
     if (response.status === 409) {
-      setStatus("exists");
+      setStatus('exists');
       const data = await response.json().catch(() => null);
-      form.setError("email", {
-        type: "manual",
+      form.setError('email', {
+        type: 'manual',
         message:
           (data as { message?: string } | null)?.message ??
-          "You are already on the waitlist.",
+          'You are already on the waitlist.',
       });
-      toast.info("You are already confirmed. Watch your inbox for updates.");
+      toast.info('You are already confirmed. Watch your inbox for updates.');
       try {
-        track("waitlist_submit_error", { reason: "exists" });
+        track('waitlist_submit_error', { reason: 'exists' });
       } catch {
         /* noop */
       }
@@ -137,7 +137,7 @@ export default function WaitlistForm() {
     }
 
     if (response.status === 422) {
-      setStatus("error");
+      setStatus('error');
       const data = (await response.json().catch(() => null)) as {
         message?: string;
         issues?: {
@@ -150,7 +150,7 @@ export default function WaitlistForm() {
       Object.entries(fieldErrors).forEach(([field, messages]) => {
         if (!messages || messages.length === 0) return;
         form.setError(field as keyof WaitlistFormValues, {
-          type: "manual",
+          type: 'manual',
           message: messages[0],
         });
       });
@@ -158,24 +158,24 @@ export default function WaitlistForm() {
       const toastMessage =
         data?.message ??
         data?.issues?.formErrors?.[0] ??
-        "Please review the highlighted fields.";
+        'Please review the highlighted fields.';
       toast.error(toastMessage);
       try {
-        track("waitlist_submit_error", { reason: "validation" });
+        track('waitlist_submit_error', { reason: 'validation' });
       } catch {
         /* noop */
       }
       return;
     }
 
-    setStatus("error");
+    setStatus('error');
     const data = await response.json().catch(() => null);
     const message =
       (data as { message?: string } | null)?.message ??
-      "Something unexpected happened. Please try again.";
+      'Something unexpected happened. Please try again.';
     toast.error(message);
     try {
-      track("waitlist_submit_error", { reason: "server" });
+      track('waitlist_submit_error', { reason: 'server' });
     } catch {
       /* noop */
     }
@@ -203,7 +203,7 @@ export default function WaitlistForm() {
           autoComplete="email"
           placeholder="you@example.com"
           aria-invalid={Boolean(errors.email)}
-          {...register("email")}
+          {...register('email')}
           className="h-12 rounded-xl border-white/10 bg-white/5 text-base text-slate-100 placeholder:text-slate-500"
         />
         {errors.email ? (
@@ -222,7 +222,7 @@ export default function WaitlistForm() {
           <label className="flex items-center gap-3 text-sm text-slate-300">
             <span className="font-medium text-slate-200">Need-based</span>
             <Switch
-              checked={path === "need"}
+              checked={path === 'need'}
               onCheckedChange={handlePathChange}
               aria-label="Toggle to request need-based consideration"
             />
@@ -239,13 +239,13 @@ export default function WaitlistForm() {
             exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -6 }}
             transition={{
               duration: shouldReduceMotion ? 0 : 0.3,
-              ease: "easeOut",
+              ease: 'easeOut',
             }}
             className={cn(
-              "rounded-xl border border-white/5 bg-white/10 px-4 py-3 text-sm leading-relaxed",
-              path === "need"
-                ? "border-cyan-300/20 bg-cyan-400/5 text-cyan-200"
-                : "text-slate-300",
+              'rounded-xl border border-white/5 bg-white/10 px-4 py-3 text-sm leading-relaxed',
+              path === 'need'
+                ? 'border-cyan-300/20 bg-cyan-400/5 text-cyan-200'
+                : 'text-slate-300',
             )}
           >
             {copy}
@@ -254,7 +254,7 @@ export default function WaitlistForm() {
       </div>
 
       <AnimatePresence initial={!shouldReduceMotion}>
-        {path === "need" ? (
+        {path === 'need' ? (
           <motion.div
             key="need-field"
             initial={
@@ -264,7 +264,7 @@ export default function WaitlistForm() {
             exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -8 }}
             transition={{
               duration: shouldReduceMotion ? 0 : 0.28,
-              ease: "easeOut",
+              ease: 'easeOut',
             }}
             className="space-y-2"
           >
@@ -284,7 +284,7 @@ export default function WaitlistForm() {
               rows={4}
               aria-invalid={Boolean(errors.reason)}
               placeholder="Share how joining now would support your well-being..."
-              {...register("reason")}
+              {...register('reason')}
               className="rounded-xl border-white/10 bg-white/5 text-slate-100 placeholder:text-slate-500"
             />
             {errors.reason ? (
@@ -304,7 +304,7 @@ export default function WaitlistForm() {
           disabled={isSubmitting}
           className="w-full justify-center"
         >
-          {isSubmitting ? "Submitting…" : "Join the Waitlist"}
+          {isSubmitting ? 'Submitting…' : 'Join the Waitlist'}
         </RippleButton>
         <p className="text-center text-sm text-slate-400">
           Lottery or need-based invitations. Always transparent.
@@ -312,7 +312,7 @@ export default function WaitlistForm() {
       </div>
 
       <AnimatePresence initial={!shouldReduceMotion}>
-        {status !== "idle" || isSubmitSuccessful ? (
+        {status !== 'idle' || isSubmitSuccessful ? (
           <motion.div
             key={status}
             initial={
@@ -322,33 +322,33 @@ export default function WaitlistForm() {
             exit={shouldReduceMotion ? { opacity: 0 } : { opacity: 0, y: -12 }}
             transition={{
               duration: shouldReduceMotion ? 0 : 0.3,
-              ease: "easeOut",
+              ease: 'easeOut',
             }}
           >
             <Alert
-              variant={status === "error" ? "destructive" : "default"}
+              variant={status === 'error' ? 'destructive' : 'default'}
               className={cn(
-                "border-white/10 bg-white/5 text-slate-200",
-                status === "error" ? "border-rose-400/30 bg-rose-500/10" : "",
+                'border-white/10 bg-white/5 text-slate-200',
+                status === 'error' ? 'border-rose-400/30 bg-rose-500/10' : '',
               )}
               role="status"
             >
               <AlertTitle className="text-sm font-semibold text-white">
-                {status === "success"
-                  ? "Confirmation sent"
-                  : status === "exists"
-                    ? "Already confirmed"
-                    : status === "error"
-                      ? "We hit a snag"
-                      : "Status"}
+                {status === 'success'
+                  ? 'Confirmation sent'
+                  : status === 'exists'
+                    ? 'Already confirmed'
+                    : status === 'error'
+                      ? 'We hit a snag'
+                      : 'Status'}
               </AlertTitle>
               <AlertDescription className="text-sm text-slate-300">
-                {status === "success" &&
-                  "We emailed a confirmation link. You’ll be fully enrolled once you confirm."}
-                {status === "exists" &&
-                  "This email is already confirmed. Thank you for being part of the society."}
-                {status === "error" &&
-                  "Our systems are busy right now. Try again in a moment or contact support."}
+                {status === 'success' &&
+                  'We emailed a confirmation link. You’ll be fully enrolled once you confirm.'}
+                {status === 'exists' &&
+                  'This email is already confirmed. Thank you for being part of the society.'}
+                {status === 'error' &&
+                  'Our systems are busy right now. Try again in a moment or contact support.'}
               </AlertDescription>
             </Alert>
           </motion.div>

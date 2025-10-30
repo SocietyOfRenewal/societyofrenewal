@@ -1,12 +1,12 @@
-import crypto from "node:crypto";
+import crypto from 'node:crypto';
 
 export function hashEmail(email: string): string {
   return crypto
-    .createHash("sha256")
+    .createHash('sha256')
     .update(email.trim().toLowerCase())
-    .digest("hex");
+    .digest('hex');
 }
 
 export function createConfirmationToken(): string {
-  return crypto.randomBytes(32).toString("hex");
+  return crypto.randomBytes(32).toString('hex');
 }
