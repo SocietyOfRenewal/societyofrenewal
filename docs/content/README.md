@@ -5,7 +5,7 @@
 - **[Landing Page Copy](landing-page.md)** — Finalized hero narrative, CTA, and link slate
 - **[Charter of Renewal](../charter/README.md)** — Constitutional framework
 - **[Founding Book](../founding-book/README.md)** — Philosophical and scientific foundation
-- **[Agent Build Spec](../spec/agent-build-spec.md)** — Implementation requirements for the waitlist app
+- **[Landing Build Spec](../spec/landing-build-spec.md)** — Implementation requirements for the waitlist app
 - **[Contributing Guide](../../CONTRIBUTING.md)** — Workflow, linting, and commit standards
 
 ---
@@ -52,4 +52,4 @@ This is not a government but an ecosystem of understanding. Citizens do not obey
 
 ---
 
-> Continue to read → [Agent Build Spec](../spec/agent-build-spec.md)
+> Continue to read → [Landing Build Spec](../spec/landing-build-spec.md)

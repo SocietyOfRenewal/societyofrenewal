@@ -11,7 +11,7 @@ Quick links into the Society of Renewal knowledge base.
 
 ## Build & Environment
 
-- [Agent Build Spec](spec/agent-build-spec.md)
+- [Landing Build Spec](spec/landing-build-spec.md)
 - [Environment Setup](environment/setup.md)
 - [Contributing Guide](../CONTRIBUTING.md)
 - [Committing Standards](../COMMITTING.md)
