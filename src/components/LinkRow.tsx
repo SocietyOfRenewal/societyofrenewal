@@ -10,17 +10,17 @@ const resources = [
   },
   {
     href: "https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md",
-    label: "Read the Charter →",
+    label: "Charter →",
     external: true,
   },
   {
     href: "https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md",
-    label: "Explore the Founding Document →",
+    label: "Founding Document →",
     external: true,
   },
   {
     href: "https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md",
-    label: "Whitepaper v0.6.0 →",
+    label: "Essentia Whitepaper v0.6.0 →",
     external: true,
   },
 ];
