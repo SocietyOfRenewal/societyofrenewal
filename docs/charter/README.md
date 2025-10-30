@@ -1,5 +1,15 @@
 # Charter of Renewal
 
+## Navigation
+
+- [Outline](outline.md) - Development status and roadmap
+- [Part I: The Scientific Basis of Renewal](Part%20I.md)
+- [Part II: Operational Articles](Part%20II.md)
+- [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
+- [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
+
+---
+
 The Charter of Renewal is the foundational constitutional document for the Society of Renewal. It establishes the principles, operational systems, and safeguards that govern a society built on dignity, education, and restorative justice rather than punishment and coercion.
 
 ## Overview
@@ -50,14 +60,6 @@ UBI provides a "Freedom Floor" - guaranteed access to basic needs that removes t
 ### Restorative Justice
 
 When harm occurs, the focus is on understanding root causes, making victims whole, and reintegrating those who caused harm through education and support.
-
-## Navigation
-
-- [Outline](outline.md) - Development status and roadmap
-- [Part I: The Scientific Basis of Renewal](Part%20I.md)
-- [Part II: Operational Articles](Part%20II.md)
-- [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
-- [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
 
 ## Related Documents
 
