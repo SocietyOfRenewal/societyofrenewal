@@ -7,6 +7,7 @@
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
 - [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
+- [Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)
 
 ---
 
@@ -14,16 +15,17 @@ The Charter of Renewal is the foundational constitutional document for the Socie
 
 ## Overview
 
-The Charter is organized into four main parts:
+The Charter is organized into core parts:
 
 - **[Part I: The Scientific Basis of Renewal](Part%20I.md)** - Core principles including the Dignity Constraint, education as governance, and Universal Basic Income as cognitive infrastructure
 - **[Part II: Operational Articles](Part%20II.md)** - Identity, platform, governance, UBI, and education systems
 - **[Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)** - Safety protocols, restorative justice, and defense mechanisms
 - **[Part IV: Open Membership, Federation & Invitation](Part%20IV.md)** - Membership, federation, and global expansion
+- **[Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)** - Information freedom, privacy-as-agency, transparency of power, and anti-domination doctrine
 
 ## Current Status
 
-This is a **draft version** of the Charter. The current implementation includes Parts I-IV, with additional sections (Parts V-XI) planned for future development.
+This is a **draft version** of the Charter. The current implementation includes Parts I-IV and Part VI, with additional sections (Parts V and VII-XI) planned for future development.
 
 ### What's Complete
 
@@ -31,11 +33,11 @@ This is a **draft version** of the Charter. The current implementation includes 
 - **Part II** – Operational Articles (Identity, Platform, Governance, UBI, Education)
 - **Part III** – Safeguards, Restoration & Peacekeeping
 - **Part IV** – Open Membership, Federation & Invitation
+- **Part VI** – Data, Privacy & Tech Ethics
 
 ### What's Still Needed
 
 - **Part V** – Economy & Treasury
-- **Part VI** – Data, Privacy & Tech Ethics
 - **Part VII** – Health, Care & Accessibility
 - **Part VIII** – Environment & Commons
 - **Part IX** – Institutions & Roles

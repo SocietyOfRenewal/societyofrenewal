@@ -221,8 +221,6 @@ Part III operationalizes safety without police, justice without courts, and defe
 
 ---
 
-If you want, I can also draft the **Design Notes** that pair with this (the human-readable “why this works” companion) and a **playbooks index** (de-escalation scripts, TPS checklists, evidence capsule formats) to live in Essentia.
-
 # PART III · ADDENDA
 
 IMMEDIATE HARM INTERDICTION & DEFENSE
@@ -379,14 +377,6 @@ Every interdiction event must yield a public “What We Changed” note in Essen
 
 ---
 
-### Plain-language note (for our Rationale/Design Notes, not the Charter text)
-
-- **Active shooters / mass attacks:** we prioritize **shielding civilians and disabling the attacker’s capacity** with non-lethals (foam, nets, obscurants, jammers) and **permit lethal force only when nothing else will stop ongoing killing**—and only for as long as that risk exists.
-- **Crimes of passion:** after stopping harm, we treat the _state_ (shock, rage, loss) as the target of intervention—cooling-off separation, trauma-literate mediation, and long-term guidance.
-- **Serial harm:** we commit to long-arc transformation plans with real boundaries that keep others safe, audited frequently so “temporary separation” never becomes a quiet prison.
-- **Defense/military:** yes, we have one—built to **protect and de-escalate**, never to rule or conquer. Everything is logged, overseen, and expires unless renewed.
-- **Planetary defense/aliens:** we lead with science and diplomacy; if forced to fight, we fight to **disable**, not to dominate; prisoners remain persons.
-
 # PART III · ADDENDA (CONT.)
 
 ## ARTICLE 25. UNIVERSAL PREVENTION EDUCATION (UPE)
@@ -480,12 +470,6 @@ Threat monitoring (asteroids, debris, biohazards) and countermeasures are treate
 Annual strategy reviews must demonstrate that the _largest_ budget growth, personnel growth, and R&D growth are in UPE and restorative capacity—not in force projection.
 
 ---
-
-### One-sentence ethos (for the Rationale/Design Notes, not the Charter text)
-
-We keep the fire extinguisher charged, but we design a world that almost never lights the match.
-
-If you want, I can now insert these Articles into your consolidated **Part III** draft and generate a tidy **diff** against the previous version so your Essentia wiki shows exactly what changed.
 
 ---
 
