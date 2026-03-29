@@ -76,7 +76,7 @@ The migrator uses `src/db/migrations` and targets the configured `DATABASE_URL`/
 
 - **App Router** with TypeScript, Tailwind v4, shadcn/ui primitives, and Vercel Turbo mode
 - **Animations:** Framer Motion (`DropletIntro`, `RippleButton`, form reveals) honoring reduced-motion
-- **Data layer:** `@vercel/postgres-kysely` + typed schema, confirmation tokens hashed via Node crypto
+- **Data layer:** Kysely + `pg` Postgres dialect with typed schema, confirmation tokens hashed via Node crypto
 - **API routes:**
   - `POST /api/waitlist` – stores/updates entries, rate-limits, sends confirmation email
   - `GET /api/waitlist/confirm` – activates pending entries

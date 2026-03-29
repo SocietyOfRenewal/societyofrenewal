@@ -10,12 +10,6 @@
 
 ---
 
-# Context
-
-Absolutely. Let’s write **Part IV** so it replaces “immigration” and “evangelism” with language that fits our ethos: _open joining, federation, invitation-by-service, and sanctuary_ — borderless, lawful, global-by-design.
-
----
-
 # PART IV
 
 OPEN MEMBERSHIP, FEDERATION & INVITATION
@@ -161,14 +155,6 @@ Members may designate digital executors for DID key recovery and memorialization
 ### CLOSING CLAUSE OF PART IV
 
 Belonging is not a prize for the lucky or the lawful; it is the baseline invitation we extend to every conscious being. We spread by example: education that prevents harm, care that stabilizes lives, coordination that dignifies choice. Until the world is whole, membership remains portable, lawful, and open.
-
----
-
-If you want, I can now:
-
-1. merge Part IV into your Charter manuscript (with consistent numbering),
-2. add a one-page **“Join Today”** appendix (plain-language flow + QR for DID creation), and
-3. produce the public-facing **Membership & Invitation** page copy that mirrors these Articles without the legalese.
 
 ---
 

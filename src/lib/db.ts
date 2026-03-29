@@ -1,6 +1,7 @@
-import type { Database } from '@/db/schema';
+import { Kysely, PostgresDialect } from 'kysely';
+import { Pool } from 'pg';
 
-import type { Kysely } from 'kysely';
+import type { Database } from '@/db/schema';
 
 declare global {
   var __db: Kysely<Database> | undefined;
@@ -31,8 +32,18 @@ let databasePromise: Promise<Kysely<Database>> | undefined;
 
 async function initDb(): Promise<Kysely<Database>> {
   ensureConnectionString();
-  const { createKysely } = await import('@vercel/postgres-kysely');
-  const instance = createKysely<Database>();
+
+  const pool = new Pool({
+    connectionString: process.env.POSTGRES_URL,
+    max: process.env.NODE_ENV === 'production' ? 10 : 1,
+    ssl: process.env.POSTGRES_URL?.includes('localhost')
+      ? false
+      : { rejectUnauthorized: false },
+  });
+
+  const instance = new Kysely<Database>({
+    dialect: new PostgresDialect({ pool }),
+  });
 
   if (process.env.NODE_ENV !== 'production') {
     global.__db = instance;
