@@ -73,8 +73,8 @@ export default function Page() {
                 A manifesto for what we can build together
               </p>
               <h1 className="mt-6 max-w-[17ch] text-[clamp(3rem,6.2vw,7rem)] leading-[0.9] font-semibold tracking-[-0.06em] text-balance text-white">
-                Your anger is not the threat.
-                <br /> Your coordination is.
+                Anger can wake us up.
+                <br /> Coordination is how we move forward.
               </h1>
               <p className="mt-8 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-xl">
                 The Society of Renewal begins with a simple commitment: to meet

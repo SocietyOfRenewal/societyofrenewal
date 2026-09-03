@@ -98,7 +98,7 @@ This specification is written for the Society of Renewal product, design, and en
 ## 5. Content Requirements
 
 - **Hero eyebrow:** `A manifesto for what we can build together`
-- **Hero title:** `Your anger is not the threat. Your coordination is.`
+- **Hero title:** `Anger can wake us up. Coordination is how we move forward.`
 - **Hero introduction:** `The Society of Renewal begins with a simple commitment: to meet suffering with care, understanding, and shared responsibility—and to build systems that help people remain connected, capable, and free.`
 - **Primary CTA:** `Read the manifesto →`
 - **Secondary CTA:** `Listen · 23 min`

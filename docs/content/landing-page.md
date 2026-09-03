@@ -19,7 +19,7 @@
 
 **Title:**
 
-> **Your anger is not the threat. Your coordination is.**
+> **Anger can wake us up. Coordination is how we move forward.**
 
 **Introduction:**
 
