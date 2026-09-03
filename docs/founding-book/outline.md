@@ -3,13 +3,15 @@
 - [Founding Book Home](README.md) - Overview and navigation
 - [Part A: Declaration of Interdependence](Part%20A.md) - Core principles and Dignity Constraint
 - [Charter of Renewal](../charter/) - The constitutional document
-- [Main Project Outline](../../outline.md) - Overall project structure
+- [Content Hub & Roadmap](../content/README.md) - Overall project structure
 
 ---
 
-Short answer: the preamble is solid and can stand as-is. If you want it perfect-perfect, I'd add 2–3 sentences (optional) to lock in ecology, children/future persons, and scientific humility. Then the very next section after the preamble should be your **Declaration of Interdependence**—the "why now" and "what we refuse/affirm," written in clear, quotable language. After that, the book fans out into the science, the operating architecture, and the playbooks.
-
-Here’s a clean path forward.
+This outline records the planned structure of the Founding Book. Part A opens
+with the Declaration of Interdependence; the standalone
+[Society of Renewal Manifesto](../manifesto.md) is the primary public diagnosis
+and call to coordination. The remaining parts expand into evidence, operating
+architecture, safeguards, and implementation playbooks.
 
 ---
 
@@ -32,7 +34,9 @@ If you weave those three in, the preamble reads like a finished keystone.
 
 ## I. Declaration of Interdependence (opening pages)
 
-This is the manifesto-ish section—plain language, quotable. It diagnoses the old order, names first principles, and states commitments. Here’s draft prose you can drop in:
+This is the earlier declaration: plain-language principles that diagnose the old
+order, name first principles, and state commitments. It complements but does not
+replace the complete [Manifesto](../manifesto.md).
 
 **We hold these to be workable truths.**
 That dignity is the only stable constraint on power.
@@ -106,8 +110,6 @@ _(Sign with your DID. Then begin.)_
 
 ---
 
-If you want, I can:
-
-- weave the three optional sentences into your preamble cleanly,
-- finish the **Declaration of Interdependence** section (full page), and
-- generate a skeleton manuscript (Markdown with folders) so you can drop it straight into Essentia.
+Future manuscript work should convert the planned parts above into sourced,
+versioned chapters and keep the Charter, Manifesto, and Essentia implementation
+status clearly distinguished.

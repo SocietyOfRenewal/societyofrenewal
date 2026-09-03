@@ -16,7 +16,7 @@ Thanks for helping build the Society of Renewal experience. This document outlin
 
 ## Project Setup
 
-1. **Clone** the repository and install dependencies (Node 18+ recommended):
+1. **Clone** the repository and install dependencies (Node 20.9+ required):
    ```bash
    npm install
    ```
@@ -79,7 +79,7 @@ Run all three before committing or opening a PR. Add additional unit/integration
 
 ## Committing & Reviews
 
-- Use **Angular-style commit messages**, e.g. `feat: add ripple button animation` or `fix: debounce waitlist endpoint`. See [COMMITTING.md](../COMMITTING.md) for full guidance and examples.
+- Use **Angular-style commit messages**, e.g. `feat: add ripple button animation` or `fix: debounce waitlist endpoint`. See [COMMITTING.md](COMMITTING.md) for full guidance and examples.
 - Keep commits scoped and descriptive. Squash merge if multiple WIP commits accumulate.
 - Each PR should include:
   - Summary of changes and the spec section it addresses.

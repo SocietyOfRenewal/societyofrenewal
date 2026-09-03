@@ -1,34 +1,58 @@
+# Landing Page Copy
+
 ## Navigation
 
-- [Charter of Renewal](../charter/README.md) - The foundational constitutional document
+- [Manifesto](../manifesto.md) - The public argument and call to coordination
+- [Charter of Renewal](../charter/README.md) - Draft constitutional framework
 - [Founding Book](../founding-book/README.md) - Philosophical and scientific foundation
 - [Content Hub](README.md) - Program roadmap and navigation
 - [Landing Build Spec](../spec/landing-build-spec.md) - Implementation requirements
-- [Contributing Guide](../../CONTRIBUTING.md) - Workflow and coding standards
-- [Whitepaper v0.6.0](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) - Protocol deep dive
+- [Essentia Whitepaper v0.7.0](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) - Proposed protocol design
 
 ---
 
+## Hero
+
+**Eyebrow:**
+
+> A manifesto for the work after outrage
+
 **Title:**
 
-> **Join the Society of Renewal**
+> **Your anger is not the threat. Your coordination is.**
 
-**Paragraph 1:**
+**Introduction:**
 
-> The next world begins with those who choose compassion as infrastructure.
-> Each month, new citizens are invited—some by chance, some by need—to receive a universal basic income and help build a society without laws, only learning.
-> Entry is open to all. The selection is fair, transparent, and human.
+> The Society of Renewal begins with a simple refusal: no one should disappear alone inside systems built to classify suffering instead of answering it.
 
-**Paragraph 2 (the vision):**
+**Primary actions:**
 
-> The Society is an experiment in harmony — proving that education, empathy, and shared purpose can guide humanity better than enforcement ever did.
-> Here, _Universal Basic Income_ is not charity, but foundation: the space to grow, contribute, and become.
-> Every citizen learns and teaches in turn, building the Charter of Renewal — a living document that evolves through open collaboration and reason.
-> Together, we’re designing the framework of a world where guidance replaces punishment, and understanding replaces control.
+- [Read the manifesto →](../manifesto.md)
+- Join the waitlist
 
-_(beneath it, in faint smaller text)_
+**Status line:**
 
-> [Read the Charter →](../charter/README.md) [Explore the Founding Document →](../founding-book/README.md) [Whitepaper v0.6.0 →](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md)
+> Early-stage and public. No UBI program, currency, civic identity, or voting system is live today.
+
+## Project Position
+
+> The next world begins with those who choose compassion as infrastructure. The proposal is to make dignity, learning, material security, and accountable participation structural—not charitable afterthoughts.
+
+The site must distinguish present capability from intended design:
+
+- The Manifesto is published.
+- The Charter of Renewal is a draft and is not ratified law.
+- Essentia v0.1.0 is runnable prototype software; whitepaper v0.7.0 is a proposed design.
+- The Academy is an early beta with guardian authentication and learner-profile foundations.
+- The Freedom Floor, Essent, Essential Units, civic identity, private voting, and benefit-selection processes are not live services.
+
+## Resource Links
+
+- [Read the Manifesto →](../manifesto.md)
+- [Read the Draft Charter →](../charter/README.md)
+- [Explore the Founding Book →](../founding-book/README.md)
+- [Essentia Whitepaper v0.7.0 →](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md)
+- [Society of Renewal Academy beta →](https://academy.societyofrenewal.org/)
 
 ---
 

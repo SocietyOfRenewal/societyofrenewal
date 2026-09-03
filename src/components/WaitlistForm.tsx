@@ -21,9 +21,9 @@ import type { z } from 'zod';
 type SubmissionStatus = 'idle' | 'success' | 'exists' | 'error';
 
 const lotteryCopy =
-  'Lottery invitations ensure transparent, random entry for the waitlist.';
+  'Records interest in a future random-selection path. No draw is active.';
 const needCopy =
-  'Need-based invitations reserve space for those facing urgent hardship. Share enough detail for us to understand.';
+  'Records interest in future need-based consideration. This does not guarantee priority or benefits.';
 
 type WaitlistFormValues = z.input<typeof waitlistFormSchema>;
 
@@ -214,9 +214,11 @@ export default function WaitlistForm() {
       <div className="space-y-4 rounded-2xl border border-white/10 bg-white/5 p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="text-sm font-medium text-slate-100">Selection path</p>
+            <p className="text-sm font-medium text-slate-100">
+              Future pilot path
+            </p>
             <p className="text-sm text-slate-400">
-              Choose lottery entry or share why you need priority.
+              Tell us which path would be relevant if a pilot opens.
             </p>
           </div>
           <label className="flex items-center gap-3 text-sm text-slate-300">
@@ -273,7 +275,7 @@ export default function WaitlistForm() {
                 htmlFor="reason"
                 className="text-sm font-semibold tracking-wide text-slate-100"
               >
-                Tell us about your need
+                Optional context
               </Label>
               <span className="text-xs text-slate-500">
                 Minimum 40 characters
@@ -283,7 +285,7 @@ export default function WaitlistForm() {
               id="reason"
               rows={4}
               aria-invalid={Boolean(errors.reason)}
-              placeholder="Share how joining now would support your well-being..."
+              placeholder="Share why need-based consideration would matter to you..."
               {...register('reason')}
               className="rounded-xl border-white/10 bg-white/5 text-slate-100 placeholder:text-slate-500"
             />
@@ -291,7 +293,8 @@ export default function WaitlistForm() {
               <p className="text-sm text-rose-300">{errors.reason.message}</p>
             ) : (
               <p className="text-xs text-slate-500">
-                We read every request. Keep it concise but specific.
+                Keep this concise. Do not include medical records, account
+                numbers, or other sensitive documents.
               </p>
             )}
           </motion.div>
@@ -307,7 +310,7 @@ export default function WaitlistForm() {
           {isSubmitting ? 'Submitting…' : 'Join the Waitlist'}
         </RippleButton>
         <p className="text-center text-sm text-slate-400">
-          Lottery or need-based invitations. Always transparent.
+          Paths record future pilot interest. No selection is active.
         </p>
       </div>
 
@@ -337,18 +340,18 @@ export default function WaitlistForm() {
                 {status === 'success'
                   ? 'Confirmation sent'
                   : status === 'exists'
-                    ? 'Already confirmed'
+                    ? 'Already on the waitlist'
                     : status === 'error'
                       ? 'We hit a snag'
                       : 'Status'}
               </AlertTitle>
               <AlertDescription className="text-sm text-slate-300">
                 {status === 'success' &&
-                  'We emailed a confirmation link. You’ll be fully enrolled once you confirm.'}
+                  'We emailed a confirmation link. Confirm it to join the waitlist.'}
                 {status === 'exists' &&
-                  'This email is already confirmed. Thank you for being part of the society.'}
+                  'This email is already confirmed for project updates.'}
                 {status === 'error' &&
-                  'Our systems are busy right now. Try again in a moment or contact support.'}
+                  'Our systems are busy right now. Please try again in a moment.'}
               </AlertDescription>
             </Alert>
           </motion.div>

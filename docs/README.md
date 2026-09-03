@@ -4,10 +4,13 @@ Quick links into the Society of Renewal knowledge base.
 
 ## Core Materials
 
+- [Manifesto](manifesto.md)
 - [Landing Page Copy](content/landing-page.md)
 - [Content Hub & Roadmap](content/README.md)
 - [Charter of Renewal](charter/README.md)
 - [Founding Book](founding-book/README.md)
+- [Essentia Whitepaper v0.7.0](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md)
+- [Academy beta](https://academy.societyofrenewal.org/)
 
 ## Build & Environment
 

@@ -2,6 +2,7 @@
 
 ## Navigation
 
+- [Society of Renewal Manifesto](../manifesto.md) - The public argument and call to coordination
 - [Outline](outline.md) - Complete structure and development status
 - [Part A: Declaration of Interdependence](Part%20A.md) - Core principles and the Dignity Constraint
 
@@ -39,7 +40,7 @@ The fundamental principle that no policy, process, tool, or tactic may demean, d
 
 ### Declaration of Interdependence
 
-A manifesto that diagnoses the problems with current systems and states the core commitments of the Society of Renewal, including:
+Part A contains the earlier Declaration of Interdependence. The standalone [Society of Renewal Manifesto](../manifesto.md) is now the primary public diagnosis of current systems and call to coordinated action. Together they state commitments including:
 
 - Dignity as the only stable constraint on power
 - Education as the primary tool for preventing harm
@@ -68,6 +69,7 @@ This is a **work in progress**. The current version includes:
 ## Related Documents
 
 - [Charter of Renewal](../charter/README.md) - The constitutional document
+- [Society of Renewal Manifesto](../manifesto.md) - The public argument and call to coordination
 - [Main Project Outline](../content/README.md) - Overall project structure
 - [Landing Page](../content/landing-page.md) - Public-facing introduction
 

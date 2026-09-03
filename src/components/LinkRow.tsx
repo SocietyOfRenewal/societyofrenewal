@@ -4,6 +4,11 @@ import { cn } from '@/lib/utils';
 
 const resources = [
   {
+    href: '/manifesto',
+    label: 'Manifesto →',
+    external: false,
+  },
+  {
     href: '/faq',
     label: 'Frequently Asked Questions →',
     external: false,
@@ -20,7 +25,7 @@ const resources = [
   },
   {
     href: 'https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md',
-    label: 'Essentia Whitepaper v0.6.0 →',
+    label: 'Essentia Whitepaper v0.7.0 →',
     external: true,
   },
 ];

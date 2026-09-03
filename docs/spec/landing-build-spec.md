@@ -6,7 +6,7 @@ This specification is written for the Society of Renewal product, design, and en
 
 ## 0. Overview
 
-- **Deliverable:** One-page landing experience at `/` with a waitlist form, deep links to key documents, and a double opt-in confirmation flow backed by Postgres.
+- **Deliverable:** Public landing experience at `/`, long-form manifesto at `/manifesto`, honest project FAQ at `/faq`, deep links to the Charter, Essentia, and Academy, plus a double opt-in waitlist backed by Postgres.
 - **Team Roles:**
   - **Frontend Engineering:** UI, animation, accessibility.
   - **Platform Engineering:** API route, database schema, email integration, rate limiting.
@@ -21,17 +21,19 @@ This specification is written for the Society of Renewal product, design, and en
 
 ### 1.1 Goals
 
-- Dark, cinematic hero with an on-load water droplet sequence that transitions into the page.
+- Dark, cinematic, full-bleed hero with project-owned water imagery and an on-load droplet sequence that transitions into the page.
+- Make the manifesto the primary public argument and distinguish every current artifact from future or proposed capability.
 - Persistent ripple CTA that glows after the very first hover/focus and remains active thereafter.
 - Waitlist form capturing email, invitation path (`lottery` or `need`), and optional context while maintaining full keyboard/screen-reader accessibility.
 - Postgres-backed double opt-in with hashed email dedupe, per-IP rate limiting, and optional Cloudflare Turnstile verification.
 - Above-the-fold payload ≤200 KB (excluding the Lottie JSON), with graceful handling of `prefers-reduced-motion`.
-- Deep links to Charter, Founding Document, and Whitepaper v0.6.0 that open in new tabs.
+- Deep links to the Manifesto, draft Charter, Founding Book, Academy beta, and Essentia Whitepaper v0.7.0.
 
 ### 1.2 Non-Goals
 
 - No authenticated dashboards, payment flows, or personalized states.
-- No CMS editing layer; copy lives in version-controlled Markdown.
+- No CMS editing layer; manifesto and approved copy live in version-controlled Markdown.
+- No claim that UBI, Essent, Essential Units, civic identity, private ballots, lottery selection, or Society membership benefits are live.
 - No additional segmentation beyond lottery/need paths and optional free-text rationale.
 
 ---
@@ -52,8 +54,9 @@ This specification is written for the Society of Renewal product, design, and en
    - Reduced-motion users bypass the overlay completely.
 
 2. **Hero & Narrative**
-   - Hero block centered at 720 px max width, pulling approved copy from `docs/content/landing-page.md`.
-   - Inline links to Charter, Founding Document, and Whitepaper appear as muted, spaced anchors beneath the narrative.
+   - Full-bleed poster composition with the brand, manifesto-led headline, primary manifesto CTA, secondary waitlist CTA, and a concise live-status line.
+   - The hero image runs edge to edge; only its text column is width-constrained.
+   - A ruled project-status section links to the published Manifesto, draft Charter, Essentia prototype, and Academy beta.
 
 3. **Waitlist Interaction**
    - CTA shows ripple effect on first hover/focus, glow persists for all subsequent interactions.
@@ -61,7 +64,7 @@ This specification is written for the Society of Renewal product, design, and en
    - Submit triggers `/api/waitlist`. Success → “Check your email” status. Error → alert with retry guidance.
 
 4. **Footer**
-   - Small ©, contact email (if desired), and optional social icons (muted). Not in scope to expand into full navigation.
+   - Repeat the project-status distinction and link to the Manifesto, FAQ, and public GitHub organization.
 
 5. **Failure & Edge States**
    - Duplicate email returns polite “already confirmed” messaging.
@@ -74,7 +77,7 @@ This specification is written for the Society of Renewal product, design, and en
 
 - **Palette:** Black background (#000/#030711 gradients), glass panels using white/5 % alpha, text in zinc-100/300.
 - **Typography:** Self-hosted Geist variable fonts (sans & mono). Base line-height 1.25. Tight heading tracking.
-- **Layout:** Hero content padded with `px-6 py-20`; waitlist card uses rounded 2xl corners, translucent background, and subtle border.
+- **Layout:** The hero runs edge to edge and fills the initial viewport with its header overlaid. Later sections use a restrained max-width grid, ruled lists instead of generic card mosaics, and one bordered form surface for the waitlist interaction.
 
 ### 4.1 Droplet Animation
 
@@ -94,12 +97,15 @@ This specification is written for the Society of Renewal product, design, and en
 
 ## 5. Content Requirements
 
-- **Title:** `Join the Society of Renewal`
-- **Paragraph 1:** Use exact copy from `docs/content/landing-page.md` (compassion as infrastructure).
-- **Paragraph 2:** Approved vision paragraph with italicised “Universal Basic Income”.
-- **Inline Links:** `[Read the Charter →](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md) [Explore the Founding Document →](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md) [Whitepaper v0.6.0 →](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md)` — open in new tabs with `rel="noopener"`.
-- **CTA Text:** `Join the Waitlist`
-- **CTA Subtext (metadata/tooltips where useful):** `Lottery or need-based invitations. Always transparent.`
+- **Hero eyebrow:** `A manifesto for the work after outrage`
+- **Hero title:** `Your anger is not the threat. Your coordination is.`
+- **Hero introduction:** `The Society of Renewal begins with a simple refusal: no one should disappear alone inside systems built to classify suffering instead of answering it.`
+- **Primary CTA:** `Read the manifesto →`
+- **Secondary CTA:** `Join the waitlist`
+- **Status disclosure:** `Early-stage and public. No UBI program, currency, civic identity, or voting system is live today.`
+- **Project status:** Manifesto = published; Charter = draft; Essentia = v0.1.0 prototype with proposed v0.7.0 whitepaper; Academy = early beta.
+- **Waitlist disclosure:** Joining records interest and enables email updates. It does not create membership, civic identity, voting rights, selection, or a promise of benefits.
+- **Canonical source:** `docs/content/landing-page.md`.
 
 ---
 
@@ -107,7 +113,10 @@ This specification is written for the Society of Renewal product, design, and en
 
 | Component          | Responsibility                                                             | Notes                                                                           |
 | ------------------ | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| `SiteHeader`       | Provides consistent primary navigation across public routes.               | Labels Academy as beta and distinguishes internal from external links.          |
+| `SiteFooter`       | Repeats public-status context and key links.                               | Keep the status concise and current.                                            |
 | `DropletIntro`     | Wraps page content, manages overlay animation and reduced-motion fallback. | Accepts `children`. Should guard `window` references for SSR.                   |
+| `ManifestoPage`    | Renders `docs/manifesto.md` as a static long-form reading experience.      | Preserve the canonical copy and readable measure.                               |
 | `RippleButton`     | Encapsulates CTA ripple behaviour and analytics emission.                  | Exposes optional `onClick`; first activation triggers `ripple_activated` event. |
 | `WaitlistForm`     | Handles form inputs via React Hook Form + Zod.                             | Provides inline validation, accessible alerts, and hidden submit button.        |
 | `LinkRow`          | Renders muted inline links.                                                | Ensure focus states and `rel="noopener"`.                                       |
@@ -118,7 +127,7 @@ This specification is written for the Society of Renewal product, design, and en
 
 ## 7. Frontend Implementation Guidance
 
-- **Framework:** Next.js App Router (Node 18+ runtime). Use client components only where interaction/motion is required.
+- **Framework:** Next.js App Router (Node 20.9+ runtime). Use client components only where interaction/motion is required.
 - **Styling:** Tailwind CSS v4 with shadcn/ui primitives for input controls. Prettier handles class ordering.
 - **Validation:** Zod schema with `react-hook-form` resolver. Enforce max 800 characters on `reason`.
 - **Motion:** Framer Motion for ripple and droplet transitions. Guard against SSR issues by feature-detecting `window`.
@@ -333,73 +342,16 @@ export function WaitlistForm() {
 
 ---
 
-## 8. Page Composition Example
+## 8. Page Composition
 
-```tsx
-// app/page.tsx
-import Link from 'next/link';
-import { DropletIntro } from '@/components/DropletIntro';
-import { WaitlistForm } from '@/components/WaitlistForm';
+1. Full-bleed manifesto hero with original water imagery, overlaid navigation, two actions, and a plain current-status disclosure.
+2. Ruled “What exists now” inventory: Manifesto, draft Charter, Essentia prototype, and Academy beta.
+3. Large manifesto excerpt linking into the complete reading route.
+4. Three concise commitments drawn from the manifesto.
+5. Waitlist form with explicit limits on what joining means.
+6. Resource links and a status-aware footer.
 
-export default function Page() {
-  return (
-    <DropletIntro>
-      <section className="mx-auto max-w-3xl px-6 py-20 text-zinc-200">
-        <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-          Join the Society of Renewal
-        </h1>
-        <p className="mt-6 text-zinc-300">
-          The next world begins with those who choose compassion as
-          infrastructure. Each month, new citizens are invited—some by chance,
-          some by need—to receive a universal basic income and help build a
-          society without laws, only learning. Entry is open to all. The
-          selection is fair, transparent, and human.
-        </p>
-        <p className="mt-4 text-zinc-300">
-          The Society is an experiment in harmony—proving that education,
-          empathy, and shared purpose can guide humanity better than enforcement
-          ever did. Here, <em>Universal Basic Income</em> is not charity, but
-          foundation: the space to grow, contribute, and become. Every citizen
-          learns and teaches in turn, evolving the Charter of Renewal—a living
-          document shaped by open collaboration and reason. Guidance replaces
-          punishment. Understanding replaces control.
-        </p>
-
-        <div className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6">
-          <WaitlistForm />
-        </div>
-
-        <div className="mt-8 flex flex-wrap gap-6 text-sm text-zinc-400">
-          <Link
-            href="https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md"
-            target="_blank"
-            rel="noopener"
-            className="hover:text-zinc-200"
-          >
-            Read the Charter →
-          </Link>
-          <Link
-            href="https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md"
-            target="_blank"
-            rel="noopener"
-            className="hover:text-zinc-200"
-          >
-            Explore the Founding Document →
-          </Link>
-          <Link
-            href="https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md"
-            target="_blank"
-            rel="noopener"
-            className="hover:text-zinc-200"
-          >
-            Whitepaper v0.6.0 →
-          </Link>
-        </div>
-      </section>
-    </DropletIntro>
-  );
-}
-```
+The implemented composition in `src/app/page.tsx` and the approved copy in `docs/content/landing-page.md` are authoritative. Examples from the original waitlist-only design have been removed because they implied that benefits and civic infrastructure were already operating.
 
 ---
 
@@ -542,6 +494,8 @@ KV_REST_API_TOKEN=optional
 - [ ] Rate limiting enforces 5 requests/min/IP (configurable) and surfaces an accessible cooldown notice.
 - [ ] Confirmation emails send (prod) or log (dev) with valid tokens and expiry handling.
 - [ ] External links open in new tabs with `rel="noopener"` and retain accessible focus states.
+- [ ] `/manifesto` renders the complete canonical Markdown and is included in the sitemap.
+- [ ] Landing and FAQ copy clearly distinguishes live, beta, prototype, draft, and proposed states.
 - [ ] Analytics events fire for `page_view`, `ripple_activated`, `waitlist_submit_attempt`, `waitlist_submit_success`, `waitlist_submit_error`.
 - [ ] Page passes automated (axe, Lighthouse) and manual keyboard accessibility checks.
 
@@ -566,7 +520,7 @@ KV_REST_API_TOKEN=optional
 
 ## 16. Deployment Checklist
 
-- Deploy to Vercel (Node 18+).
+- Deploy to Vercel (Node 20.9+).
 - Run `npm run db:migrate` during build/deploy to ensure schema alignment.
 - Configure environment variables (`APP_URL`, database, email keys, Turnstile, KV) for production and preview environments.
 - Register Cloudflare Turnstile for production domain when enabling verification.

@@ -1,242 +1,276 @@
-'use client';
-
-import { motion, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import DropletIntro from '@/components/DropletIntro';
-import LinkRow from '@/components/LinkRow';
+import Reveal from '@/components/Reveal';
+import SiteFooter from '@/components/SiteFooter';
+import SiteHeader from '@/components/SiteHeader';
 import WaitlistForm from '@/components/WaitlistForm';
 
-import type { ReactNode } from 'react';
-
-const heroVariants = {
-  hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0 },
-};
-
-const staggerChildren = {
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.2,
-      delayChildren: 0.3,
-    },
+const currentWork = [
+  {
+    name: 'Manifesto',
+    state: 'Published here',
+    detail: 'The diagnosis, the refusal, and the case for coordination.',
+    href: '/manifesto',
   },
-};
+  {
+    name: 'Charter of Renewal',
+    state: 'Draft',
+    detail:
+      'A constitutional framework under active revision—not ratified law.',
+    href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/charter',
+    external: true,
+  },
+  {
+    name: 'Essentia',
+    state: 'v0.1.0 prototype',
+    detail:
+      'Runnable civic-ledger research. The v0.7.0 whitepaper is still a proposed design.',
+    href: 'https://github.com/SocietyOfRenewal/essentia',
+    external: true,
+  },
+  {
+    name: 'Academy',
+    state: 'Early beta',
+    detail:
+      'Guardian accounts and learner profiles are live; the broader learning platform is still being built.',
+    href: 'https://academy.societyofrenewal.org/',
+    external: true,
+  },
+];
 
-type MiniFaqItem = {
-  question: string;
-  answer: string | ReactNode;
-};
+const commitments = [
+  'Food, shelter, healthcare, and meaningful control over one’s own life.',
+  'Democratic institutions ordinary people can understand, challenge, and change.',
+  'Coordination grounded in mutual aid, public goods, and accountable power.',
+];
 
 export default function Page() {
-  const shouldReduceMotion = useReducedMotion();
-
-  const miniFaq: MiniFaqItem[] = [
-    {
-      question: 'Is this a political movement?',
-      answer:
-        'Yes—post-national and borderless. It’s governance you opt into, grounded in evidence and compassion.',
-    },
-    {
-      question: 'Do I have to move?',
-      answer: 'No. Join from anywhere.',
-    },
-    {
-      question: 'Do I have to pay?',
-      answer:
-        'No fees to be recognized or to vote. Contributions are optional and rewarded when they produce verifiable public good.',
-    },
-    {
-      question: 'What if I don’t get UBI right away?',
-      answer:
-        'You still get your civic identity, voice, and access to learning. UBI waves expand as capacity grows.',
-    },
-    {
-      question: 'What keeps this honest?',
-      answer:
-        'Public rules, auditable funding, private ballots with verifiable outcomes, and a living Charter you can amend.',
-    },
-    {
-      question: '“You can’t just create money out of thin air!”',
-      answer: (
-        <span>
-          Short answer: all money is created. The real questions are who creates
-          it, how, and with what guardrails. Read the{' '}
-          <Link
-            href="/faq#money-creation"
-            className="text-slate-200 underline decoration-slate-500 underline-offset-4 hover:text-slate-100"
-          >
-            money creation explainer
-          </Link>{' '}
-          for the full breakdown.
-        </span>
-      ),
-    },
-  ];
-
   return (
     <DropletIntro>
-      <main className="relative overflow-hidden">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(94,234,212,0.12)_0%,_rgba(2,6,23,0)_100vh)]"
-        />
-        <div className="absolute inset-x-0 top-0 -z-10 h-24 bg-gradient-to-b from-black via-black/70 to-transparent" />
+      <main className="relative overflow-hidden bg-[#030711] text-slate-100">
+        <section className="relative isolate flex min-h-svh flex-col overflow-hidden border-b border-white/10">
+          <Image
+            src="/images/coordination-ripples.webp"
+            alt="Concentric ripples meeting across dark water"
+            fill
+            priority
+            sizes="100vw"
+            className="-z-30 object-cover object-[68%_center]"
+          />
+          <div className="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(1,5,12,0.97)_0%,rgba(1,5,12,0.86)_42%,rgba(1,5,12,0.2)_100%)]" />
+          <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(0,0,0,0.26),rgba(0,0,0,0.02)_55%,rgba(0,0,0,0.82))]" />
 
-        <section className="mx-auto flex min-h-screen max-w-3xl flex-col justify-center gap-16 px-6 pt-32 pb-24 sm:pt-40">
-          <motion.div
-            variants={staggerChildren}
-            initial={shouldReduceMotion ? undefined : 'hidden'}
-            animate={shouldReduceMotion ? undefined : 'show'}
-            className="space-y-8"
+          <SiteHeader overlay />
+
+          <Reveal
+            immediate
+            className="mx-auto flex w-full max-w-7xl flex-1 items-center px-5 pt-28 pb-12 sm:px-8 sm:pt-32 lg:px-12"
           >
-            <motion.div variants={heroVariants} className="space-y-6">
-              <p className="text-sm tracking-[0.4em] text-slate-400 uppercase">
-                Society of Renewal
+            <div className="max-w-5xl">
+              <p className="font-mono text-xs tracking-[0.28em] text-cyan-100/80 uppercase sm:text-sm">
+                A manifesto for the work after outrage
               </p>
-              <h1 className="text-4xl leading-tight font-semibold text-slate-50 sm:text-5xl">
-                The Society of Renewal
+              <h1 className="mt-6 max-w-[17ch] text-[clamp(3rem,6.2vw,7rem)] leading-[0.9] font-semibold tracking-[-0.06em] text-balance text-white">
+                Your anger is not the threat.
+                <br /> Your coordination is.
               </h1>
-            </motion.div>
-
-            <motion.div
-              variants={heroVariants}
-              className="space-y-5 text-lg leading-relaxed text-slate-300"
-            >
-              <p>
-                The next world begins with those who choose compassion as
-                infrastructure. Each month, new citizens are invited—some by
-                chance, some by need—to receive a universal basic income and
-                help build a society without laws, only learning. Entry is open
-                to all. The selection is fair, transparent, and human.
+              <p className="mt-8 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-xl">
+                The Society of Renewal begins with a simple refusal: no one
+                should disappear alone inside systems built to classify
+                suffering instead of answering it.
               </p>
-              <p>
-                The Society is an experiment in harmony—proving that education,
-                empathy, and shared purpose can guide humanity better than
-                enforcement ever did. Here, <em>Universal Basic Income</em> is
-                not charity, but foundation: the space to grow, contribute, and
-                become. Every citizen learns and teaches in turn, evolving the
-                Charter of Renewal—a living document shaped by open
-                collaboration and reason. Guidance replaces punishment.
-                Understanding replaces control. Our new currency, Essent (ℰ),
-                keeps that promise verifiable.
-              </p>
-              <p className="text-sm text-slate-400">
-                Explore the{' '}
+              <div className="mt-9 flex flex-wrap gap-3">
                 <Link
-                  href="/faq"
-                  className="text-slate-200 underline decoration-slate-500 underline-offset-4 hover:text-slate-100"
+                  href="/manifesto"
+                  className="inline-flex min-h-12 items-center justify-center bg-cyan-100 px-5 text-sm font-semibold text-slate-950 transition hover:bg-white focus-visible:bg-white"
                 >
-                  detailed FAQ
-                </Link>{' '}
-                to see how membership, the Freedom Floor, and Essent work
-                together.
+                  Read the manifesto&nbsp;→
+                </Link>
+                <Link
+                  href="#join"
+                  className="inline-flex min-h-12 items-center justify-center border border-white/30 bg-black/20 px-5 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-white/60 hover:bg-white/10 focus-visible:border-white/60 focus-visible:bg-white/10"
+                >
+                  Join the waitlist
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+
+          <div className="mx-auto grid w-full max-w-7xl gap-3 border-t border-white/10 px-5 py-5 text-xs text-slate-300 sm:grid-cols-[auto_1fr] sm:items-center sm:px-8 lg:px-12">
+            <span className="font-mono tracking-[0.2em] text-cyan-100/80 uppercase">
+              Status
+            </span>
+            <span>
+              Early-stage and public. No UBI program, currency, civic identity,
+              or voting system is live today.
+            </span>
+          </div>
+        </section>
+
+        <section className="border-b border-white/10">
+          <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.72fr_1.28fr] lg:px-12 lg:py-28">
+            <Reveal>
+              <p className="font-mono text-xs tracking-[0.24em] text-cyan-200/75 uppercase">
+                What exists now
               </p>
-            </motion.div>
-
-            <motion.div variants={heroVariants}>
-              <LinkRow />
-            </motion.div>
-          </motion.div>
-
-          <motion.div
-            variants={heroVariants}
-            initial={shouldReduceMotion ? undefined : 'hidden'}
-            animate={shouldReduceMotion ? undefined : 'show'}
-            transition={{ delay: shouldReduceMotion ? 0 : 0.6, duration: 0.6 }}
-            className="rounded-3xl border border-white/10 bg-white/5 shadow-[0_32px_120px_rgba(2,6,23,0.55)] backdrop-blur-2xl"
-          >
-            <div className="border-b border-white/10 px-6 pt-6 pb-6 sm:px-8">
-              <h2 className="text-xl font-semibold text-slate-100">
-                Be first in line
+              <h2 className="mt-4 max-w-lg text-4xl leading-tight font-semibold tracking-[-0.04em] text-white sm:text-5xl">
+                Ambition without false claims.
               </h2>
-              <p className="mt-2 text-sm text-slate-400">
-                Confirmed members receive a double opt-in email before
-                activation.
+              <p className="mt-6 max-w-lg leading-relaxed text-slate-300">
+                The vision is large. The implementation is not there yet. These
+                are the public artifacts you can inspect today and the state
+                each one is actually in.
+              </p>
+            </Reveal>
+
+            <div className="border-t border-white/15">
+              {currentWork.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  target={item.external ? '_blank' : undefined}
+                  rel={item.external ? 'noopener' : undefined}
+                  className="group grid gap-2 border-b border-white/15 py-6 transition-colors hover:bg-white/[0.025] sm:grid-cols-[10rem_10rem_1fr_auto] sm:items-baseline sm:gap-5"
+                >
+                  <span className="font-semibold text-white">{item.name}</span>
+                  <span className="font-mono text-xs tracking-wide text-cyan-200/75 uppercase">
+                    {item.state}
+                  </span>
+                  <span className="text-sm leading-relaxed text-slate-400">
+                    {item.detail}
+                  </span>
+                  <span
+                    aria-hidden
+                    className="text-slate-500 transition-transform group-hover:translate-x-1 group-hover:text-white"
+                  >
+                    →
+                  </span>
+                  {item.external ? (
+                    <span className="sr-only">Opens in a new tab</span>
+                  ) : null}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="relative overflow-hidden border-b border-white/10 bg-cyan-950/20">
+          <div
+            aria-hidden
+            className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,_rgba(34,211,238,0.12),_transparent_65%)]"
+          />
+          <Reveal className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-32">
+            <p className="font-mono text-xs tracking-[0.24em] text-cyan-200/75 uppercase">
+              From the manifesto
+            </p>
+            <blockquote className="mt-8 max-w-5xl text-4xl leading-[1.08] font-semibold tracking-[-0.045em] text-balance text-white sm:text-6xl lg:text-7xl">
+              “One person can tell the truth. Another can confirm it. Ten can
+              refuse. A hundred can protect the ten.”
+            </blockquote>
+            <Link
+              href="/manifesto"
+              className="mt-10 inline-flex border-b border-cyan-200/50 pb-1 text-sm font-semibold text-cyan-100 transition hover:border-white hover:text-white"
+            >
+              Continue reading&nbsp;→
+            </Link>
+          </Reveal>
+        </section>
+
+        <section className="border-b border-white/10">
+          <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:px-12 lg:py-28">
+            <div>
+              <p className="font-mono text-xs tracking-[0.24em] text-cyan-200/75 uppercase">
+                What we are trying to build
+              </p>
+              <h2 className="mt-4 max-w-xl text-4xl leading-tight font-semibold tracking-[-0.04em] text-white sm:text-5xl">
+                Compassion as infrastructure. Coordination as practice.
+              </h2>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
+                The next world begins with those who choose compassion as
+                infrastructure. The proposal is to make dignity, learning,
+                material security, and accountable participation structural—not
+                charitable afterthoughts.
               </p>
             </div>
-            <div className="px-6 py-8 sm:px-8">
+            <ol className="border-t border-white/15">
+              {commitments.map((commitment, index) => (
+                <li
+                  key={commitment}
+                  className="grid grid-cols-[2.5rem_1fr] gap-5 border-b border-white/15 py-7"
+                >
+                  <span className="font-mono text-sm text-cyan-200/70">
+                    0{index + 1}
+                  </span>
+                  <span className="text-lg leading-relaxed text-slate-200">
+                    {commitment}
+                  </span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        <section id="join" className="scroll-mt-8 border-b border-white/10">
+          <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-12 lg:py-28">
+            <div>
+              <p className="font-mono text-xs tracking-[0.24em] text-cyan-200/75 uppercase">
+                Stay close to the work
+              </p>
+              <h2 className="mt-4 text-4xl leading-tight font-semibold tracking-[-0.04em] text-white sm:text-5xl">
+                Join the waitlist.
+              </h2>
+              <p className="mt-6 max-w-lg leading-relaxed text-slate-300">
+                Confirm your email to receive future project updates and pilot
+                invitations. Joining the waitlist does not create membership,
+                civic identity, voting rights, or a promise of benefits.
+              </p>
+              <p className="mt-6 text-sm leading-relaxed text-slate-400">
+                Need-based and lottery paths record interest for future limited
+                pilots; no selection process is currently running.
+              </p>
+            </div>
+            <div className="border border-white/15 bg-white/[0.035] p-6 shadow-[0_28px_100px_rgba(0,0,0,0.35)] sm:p-8">
               <WaitlistForm />
             </div>
-          </motion.div>
-
-          <div className="space-y-12 text-slate-300">
-            <section className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-              <h2 className="text-2xl font-semibold text-slate-100">
-                Where the money comes from
-              </h2>
-              <p className="text-base leading-relaxed text-slate-300">
-                Not from your paycheck and not from taxes. The Society runs on
-                Essentia, our public civic ledger and value rails:
-              </p>
-              <ul className="list-disc space-y-2 pl-6 text-base leading-relaxed text-slate-300">
-                <li>
-                  <strong className="text-slate-100">Essent (ℰ):</strong> a
-                  normal, transferable token minted for validated contributions
-                  to the commons (open code, research, teaching, care work,
-                  verified impact).
-                </li>
-                <li>
-                  <strong className="text-slate-100">
-                    Essential Units (𝒰):
-                  </strong>{' '}
-                  a non-transferable, expiring basic-needs instrument used to
-                  deliver UBI and keep purchasing power stable for essentials.
-                </li>
-              </ul>
-              <p className="text-base leading-relaxed text-slate-300">
-                In short: we mint new funds for real work that helps people, and
-                we deliver the Freedom Floor using a purpose-built instrument
-                that tracks the real cost of essentials. Budgets and rules are
-                published; flows are traceable. You don’t “contribute your
-                money” to join. You contribute ideas, effort, and care if you
-                want to earn Essent—and you receive UBI as a right when your
-                wave is active.
-              </p>
-            </section>
-
-            <section className="space-y-4">
-              <h2 className="text-2xl font-semibold text-slate-100">
-                Straight answers (mini-FAQ)
-              </h2>
-              <div className="space-y-4">
-                {miniFaq.map((item) => (
-                  <div
-                    key={item.question}
-                    className="rounded-2xl border border-white/10 bg-white/5 p-4"
-                  >
-                    <h3 className="text-base font-semibold text-slate-100">
-                      {item.question}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-slate-300">
-                      {item.answer}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section className="space-y-3 rounded-3xl border border-cyan-400/20 bg-cyan-500/10 p-6 text-slate-100">
-              <h2 className="text-2xl font-semibold">The promise</h2>
-              <p className="text-base leading-relaxed text-slate-100/90">
-                Votes you can verify. Budgets you can trace. Learning you can
-                access. Safety that calms, not conquers. A Freedom Floor you can
-                count on. This is a government built from dignity outward—and
-                you can help shape it.
-              </p>
-            </section>
           </div>
+        </section>
 
-          <footer className="pb-6 text-xs text-slate-500">
-            <p>
-              Crafted for those who believe empathy can be governance. We honor
-              privacy, accessibility, and your pace—animations adapt to
-              reduced-motion preferences.
-            </p>
-          </footer>
+        <section>
+          <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 md:grid-cols-[0.7fr_1.3fr] lg:px-12">
+            <h2 className="text-xl font-semibold text-white">Read the work</h2>
+            <div className="grid gap-x-8 gap-y-5 text-sm sm:grid-cols-2">
+              <Link
+                href="/manifesto"
+                className="text-slate-300 hover:text-white"
+              >
+                The manifesto →
+              </Link>
+              <Link href="/faq" className="text-slate-300 hover:text-white">
+                Honest project FAQ →
+              </Link>
+              <Link
+                href="https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/charter"
+                target="_blank"
+                rel="noopener"
+                className="text-slate-300 hover:text-white"
+              >
+                Draft Charter →
+              </Link>
+              <Link
+                href="https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md"
+                target="_blank"
+                rel="noopener"
+                className="text-slate-300 hover:text-white"
+              >
+                Essentia whitepaper v0.7.0 →
+              </Link>
+            </div>
+          </div>
         </section>
       </main>
+      <SiteFooter />
     </DropletIntro>
   );
 }

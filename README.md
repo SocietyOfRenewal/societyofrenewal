@@ -1,17 +1,22 @@
-# Society of Renewal – Landing Experience
+# Society of Renewal – Public Website
 
-Production-ready Next.js application for the Society of Renewal waitlist. The page delivers a cinematic droplet intro, persistent ripple CTA, and a fully accessible form that feeds a Postgres-backed queue with double opt-in email confirmation.
+Next.js application for the Society of Renewal manifesto, public project status,
+documentation pathways, FAQ, and email-confirmed waitlist. It distinguishes
+working software from draft policy and proposed infrastructure.
 
 ## Features
 
-- 🌓 Dark-first visuals with `prefers-reduced-motion` safeguards and Framer Motion micro-interactions
+- 📖 Long-form manifesto at `/manifesto`, sourced from `docs/manifesto.md`
+- 🌊 Full-bleed editorial hero with a project-owned, optimized ripple image
+- 🧭 Honest status map for the draft Charter, Essentia prototype, Academy beta, and proposed Freedom Floor
+- 🌓 Dark-first visuals with `prefers-reduced-motion` safeguards and restrained Framer Motion interactions
 - 💧 Lottie droplet overlay that gracefully skips when motion is reduced
 - 🌊 First-hover ripple CTA that persists its final glow and records analytics events
 - 📬 Waitlist form (React Hook Form + Zod) with lottery/need paths, rate-limiting, and Turnstile verification hooks
 - 🗄️ Kysely schema + migration targeting Vercel Postgres; Vercel KV-based IP throttling fallback to in-memory for local dev
 - 📈 Vercel Analytics wired for page and custom event tracking
-- 📮 Resend (or compatible provider) double opt-in emails with confirm endpoint
-- 🔐 SEO + social primitives (`metadata`, `opengraph-image`, `robots`, `sitemap`)
+- 📮 Resend double opt-in emails with a confirmation endpoint
+- 🔐 SEO + social primitives (`metadata`, `opengraph-image`, `robots`, and multi-route `sitemap`)
 
 ## Getting Started
 
@@ -20,7 +25,10 @@ npm install
 npm run dev
 ```
 
-Visit [`http://localhost:3000`](http://localhost:3000) to see the site. Animations react to your OS motion preferences automatically.
+Visit [`http://localhost:3000`](http://localhost:3000) to see the site.
+Animations react to your OS motion preferences automatically.
+
+Use Node.js 20.9 or newer, as required by Next.js 16.
 
 ### Environment Variables
 
@@ -43,8 +51,8 @@ KV_REST_API_TOKEN=optional
 #### How to obtain each value
 
 - **Postgres (`POSTGRES_URL`)** – In Vercel, add the Postgres integration and copy the `POSTGRES_URL` from **Settings → Environment Variables**. Locally you can point to your own Postgres instance and place the URI here (or in `DATABASE_URL`).
-- **Email (`EMAIL_PROVIDER_API_KEY` / `RESEND_API_KEY`)** – Create an API key in [Resend](https://resend.com/dashboard/api-keys) or Postmark. Paste the secret here; without it the app logs confirmation links instead of sending email.
-- **Turnstile (`TURNSTILE_SECRET`)** – Visit [Cloudflare Turnstile](https://dash.cloudflare.com/?to=/:account/turnstile), create a site for your domain, choose Managed or Invisible mode, and copy the secret key. Leaving it unset simply disables verification.
+- **Email (`EMAIL_PROVIDER_API_KEY` / `RESEND_API_KEY`)** – Follow [Resend’s API key guide](https://resend.com/docs/dashboard/api-keys/introduction). Paste the secret here; without it the app logs confirmation links instead of sending email.
+- **Turnstile (`TURNSTILE_SECRET`)** – Follow [Cloudflare’s widget-management guide](https://developers.cloudflare.com/turnstile/get-started/widget-management/dashboard/), create a widget for your domain, choose the appropriate mode, and copy the secret key. Leaving it unset simply disables verification.
 - **Vercel KV (`KV_REST_API_URL`, `KV_REST_API_TOKEN`)** – Vercel KV is a managed, Redis-compatible key-value store. Create one in the Vercel dashboard, then copy the REST URL and token. When absent, the rate limiter automatically falls back to an in-memory Map for development.
 
 ### Database Migrations
@@ -86,10 +94,12 @@ The migrator uses `src/db/migrations` and targets the configured `DATABASE_URL`/
 
 ## Documentation
 
+- [`docs/manifesto.md`](docs/manifesto.md) – canonical manifesto copy rendered at `/manifesto`
 - [`docs/spec/landing-build-spec.md`](docs/spec/landing-build-spec.md) – detailed implementation requirements
 - [`docs/content/landing-page.md`](docs/content/landing-page.md) – finalized copy deck for the hero experience
 - [`docs/content/README.md`](docs/content/README.md) – consolidated navigation and roadmap
 - [Essentia Whitepaper repository](https://github.com/SocietyOfRenewal/essentia) – protocol research archive
+- [Society of Renewal Academy beta](https://academy.societyofrenewal.org/) – guardian-led learning platform in active development
 - [Charter of Renewal (temporary location)](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/charter/README.md)
 - [Founding Book (temporary location)](https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/README.md)
 
@@ -99,6 +109,6 @@ The migrator uses `src/db/migrations` and targets the configured `DATABASE_URL`/
 - Waitlist form validates, announces status, and submits via keyboard
 - Duplicate emails return a friendly confirmation state
 - Links open in new tabs with `rel="noopener"`
-- OpenGraph image renders the dark hero card
+- OpenGraph image renders the project’s social preview
 
 If you extend the project (e.g., add LMS tooling, build member dashboards), keep the landing light—≤200 KB above the fold without the Lottie asset.

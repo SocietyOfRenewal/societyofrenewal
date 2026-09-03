@@ -5,10 +5,10 @@ import { Toaster } from '@/components/ui/sonner';
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
-const title = 'Join the Society of Renewal';
+const title = 'Society of Renewal — Coordination in Public';
 const description =
-  'An invitation to a society built on universal basic income, shared learning, and compassion as infrastructure.';
-const absoluteUrl = 'https://societyofrenewal.org';
+  'Read the Society of Renewal manifesto and inspect the public Charter, Academy beta, and Essentia prototype.';
+const absoluteUrl = 'https://www.societyofrenewal.org';
 
 export const metadata: Metadata = {
   metadataBase: new URL(absoluteUrl),
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   description,
   keywords: [
     'Society of Renewal',
-    'Universal Basic Income',
+    'Civic Coordination',
     'Mutual Aid',
-    'Post-scarcity',
-    'Compassion Economy',
+    'Democratic Institutions',
+    'Public Infrastructure',
   ],
   authors: [{ name: 'Society of Renewal' }],
   creator: 'Society of Renewal',

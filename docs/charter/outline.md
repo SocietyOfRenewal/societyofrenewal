@@ -7,7 +7,7 @@
 - [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
 - [Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)
 - [Founding Book](../founding-book/) - Philosophical foundation
-- [Main Project Outline](../../outline.md) - Overall project structure
+- [Content Hub & Roadmap](../content/README.md) - Overall project structure
 
 ---
 
