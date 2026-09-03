@@ -12,7 +12,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'The Manifesto — Society of Renewal',
   description:
-    'The machine does not fear your anger. It fears your coordination. Read the Society of Renewal manifesto.',
+    'The machine does not fear your anger. It fears your coordination. Read or listen to the Society of Renewal manifesto.',
   alternates: { canonical: '/manifesto' },
   openGraph: {
     title: 'The Machine Does Not Fear Your Anger. It Fears Your Coordination.',
@@ -45,6 +45,51 @@ export default async function ManifestoPage() {
               A diagnosis of the systems that isolate us—and an argument for the
               patient, material work of becoming dangerous together.
             </p>
+
+            <section
+              id="listen"
+              aria-labelledby="listen-heading"
+              className="mt-10 scroll-mt-6 border border-white/15 bg-black/30 p-5 backdrop-blur-sm sm:p-6"
+            >
+              <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p className="font-mono text-xs tracking-[0.2em] text-cyan-200/75 uppercase">
+                    Audio edition · 23 minutes
+                  </p>
+                  <h2
+                    id="listen-heading"
+                    className="mt-2 text-2xl font-semibold tracking-[-0.025em] text-white"
+                  >
+                    Listen to the manifesto
+                  </h2>
+                  <p
+                    id="audio-description"
+                    className="mt-2 text-sm text-slate-400"
+                  >
+                    Play it here or save the MP3 for later. The complete text
+                    follows below.
+                  </p>
+                </div>
+                <a
+                  href="/audio/manifesto.mp3"
+                  download
+                  className="w-fit border-b border-cyan-200/50 pb-1 text-sm font-semibold text-cyan-100 transition hover:border-white hover:text-white focus-visible:border-white focus-visible:text-white"
+                >
+                  Download MP3 · 16 MB
+                </a>
+              </div>
+              <audio
+                controls
+                preload="metadata"
+                aria-label="Audio recording of the Society of Renewal manifesto"
+                aria-describedby="audio-description"
+                className="mt-5 w-full [color-scheme:dark]"
+              >
+                <source src="/audio/manifesto.mp3" type="audio/mpeg" />
+                Your browser does not support embedded audio. You can{' '}
+                <a href="/audio/manifesto.mp3">download the MP3 instead</a>.
+              </audio>
+            </section>
           </div>
         </section>
 

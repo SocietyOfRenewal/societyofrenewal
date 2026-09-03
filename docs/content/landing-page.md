@@ -28,6 +28,7 @@
 **Primary actions:**
 
 - [Read the manifesto →](../manifesto.md)
+- Listen · 23 min — links directly to the audio player on `/manifesto#listen`
 - Join the waitlist
 
 **Status line:**

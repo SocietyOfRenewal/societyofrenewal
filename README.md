@@ -7,6 +7,7 @@ working software from draft policy and proposed infrastructure.
 ## Features
 
 - 📖 Long-form manifesto at `/manifesto`, sourced from `docs/manifesto.md`
+- 🎧 Web-compatible, loudness-normalized audio edition with the complete text transcript
 - 🌊 Full-bleed editorial hero with a project-owned, optimized ripple image
 - 🧭 Honest status map for the draft Charter, Essentia prototype, Academy beta, and proposed Freedom Floor
 - 🌓 Dark-first visuals with `prefers-reduced-motion` safeguards and restrained Framer Motion interactions

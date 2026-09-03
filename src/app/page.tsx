@@ -89,6 +89,12 @@ export default function Page() {
                   Read the manifesto&nbsp;→
                 </Link>
                 <Link
+                  href="/manifesto#listen"
+                  className="inline-flex min-h-12 items-center justify-center border border-cyan-100/40 bg-cyan-950/30 px-5 text-sm font-semibold text-cyan-50 backdrop-blur-sm transition hover:border-cyan-50/70 hover:bg-cyan-900/40 focus-visible:border-cyan-50/70 focus-visible:bg-cyan-900/40"
+                >
+                  Listen · 23 min
+                </Link>
+                <Link
                   href="#join"
                   className="inline-flex min-h-12 items-center justify-center border border-white/30 bg-black/20 px-5 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-white/60 hover:bg-white/10 focus-visible:border-white/60 focus-visible:bg-white/10"
                 >

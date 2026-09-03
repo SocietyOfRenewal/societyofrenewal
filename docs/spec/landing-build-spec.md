@@ -6,7 +6,7 @@ This specification is written for the Society of Renewal product, design, and en
 
 ## 0. Overview
 
-- **Deliverable:** Public landing experience at `/`, long-form manifesto at `/manifesto`, honest project FAQ at `/faq`, deep links to the Charter, Essentia, and Academy, plus a double opt-in waitlist backed by Postgres.
+- **Deliverable:** Public landing experience at `/`, long-form manifesto with an accessible audio edition at `/manifesto`, honest project FAQ at `/faq`, deep links to the Charter, Essentia, and Academy, plus a double opt-in waitlist backed by Postgres.
 - **Team Roles:**
   - **Frontend Engineering:** UI, animation, accessibility.
   - **Platform Engineering:** API route, database schema, email integration, rate limiting.
@@ -116,7 +116,7 @@ This specification is written for the Society of Renewal product, design, and en
 | `SiteHeader`       | Provides consistent primary navigation across public routes.               | Labels Academy as beta and distinguishes internal from external links.          |
 | `SiteFooter`       | Repeats public-status context and key links.                               | Keep the status concise and current.                                            |
 | `DropletIntro`     | Wraps page content, manages overlay animation and reduced-motion fallback. | Accepts `children`. Should guard `window` references for SSR.                   |
-| `ManifestoPage`    | Renders `docs/manifesto.md` as a static long-form reading experience.      | Preserve the canonical copy and readable measure.                               |
+| `ManifestoPage`    | Renders `docs/manifesto.md` with a native audio player and MP3 download.   | Preserve the canonical copy, readable measure, and non-autoplay accessibility.  |
 | `RippleButton`     | Encapsulates CTA ripple behaviour and analytics emission.                  | Exposes optional `onClick`; first activation triggers `ripple_activated` event. |
 | `WaitlistForm`     | Handles form inputs via React Hook Form + Zod.                             | Provides inline validation, accessible alerts, and hidden submit button.        |
 | `LinkRow`          | Renders muted inline links.                                                | Ensure focus states and `rel="noopener"`.                                       |
@@ -495,6 +495,7 @@ KV_REST_API_TOKEN=optional
 - [ ] Confirmation emails send (prod) or log (dev) with valid tokens and expiry handling.
 - [ ] External links open in new tabs with `rel="noopener"` and retain accessible focus states.
 - [ ] `/manifesto` renders the complete canonical Markdown and is included in the sitemap.
+- [ ] `/manifesto#listen` exposes a keyboard-accessible, non-autoplay audio player with a direct MP3 download and the full text transcript on the same page.
 - [ ] Landing and FAQ copy clearly distinguishes live, beta, prototype, draft, and proposed states.
 - [ ] Analytics events fire for `page_view`, `ripple_activated`, `waitlist_submit_attempt`, `waitlist_submit_success`, `waitlist_submit_error`.
 - [ ] Page passes automated (axe, Lighthouse) and manual keyboard accessibility checks.
