@@ -18,7 +18,7 @@ const currentWork = [
     name: 'Charter of Renewal',
     state: 'Draft',
     detail:
-      'A constitutional framework under active revision—not ratified law.',
+      'A constitutional framework under active revision, not ratified law.',
     href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/charter',
     external: true,
   },
@@ -77,10 +77,10 @@ export default function Page() {
                 <br /> Coordination is how we move forward.
               </h1>
               <p className="mt-8 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-xl">
-                The Society of Renewal begins with a simple commitment: to meet
-                suffering with care, understanding, and shared
-                responsibility—and to build systems that help people remain
-                connected, capable, and free.
+                The Society of Renewal begins with a simple commitment: meet
+                suffering with care, understanding, and shared responsibility,
+                and build systems that help people remain connected, capable,
+                and free.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Link
@@ -110,8 +110,9 @@ export default function Page() {
               Status
             </span>
             <span>
-              Early-stage and public. No UBI program, currency, civic identity,
-              or voting system is live today.
+              Early-stage and public. The manifesto is published; the Charter,
+              Freedom Floor, civic identity, currencies, and governance systems
+              are still proposals or prototypes.
             </span>
           </div>
         </section>
@@ -231,13 +232,14 @@ export default function Page() {
                 Join the waitlist.
               </h2>
               <p className="mt-6 max-w-lg leading-relaxed text-slate-300">
-                Confirm your email to receive future project updates and pilot
-                invitations. Joining the waitlist does not create membership,
-                civic identity, voting rights, or a promise of benefits.
+                Confirm your email to receive project updates and future pilot
+                invitations. Formal membership, civic identity, voting, and
+                benefits are not live yet.
               </p>
               <p className="mt-6 text-sm leading-relaxed text-slate-400">
-                Need-based and lottery paths record interest for future limited
-                pilots; no selection process is currently running.
+                You can also tell us whether a future need-based or lottery pilot
+                would be relevant to you. Those paths are still proposals, and
+                no selection process is running today.
               </p>
             </div>
             <div className="border border-white/15 bg-white/[0.035] p-6 shadow-[0_28px_100px_rgba(0,0,0,0.35)] sm:p-8">
