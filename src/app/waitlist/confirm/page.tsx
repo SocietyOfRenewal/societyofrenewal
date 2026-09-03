@@ -43,8 +43,8 @@ async function resolveConfirmation(
     if (response.ok && data.status === 'confirmed') {
       return {
         kind: 'confirmed',
-        title: "You're in",
-        body: "Thank you for confirming. We'll reach out when the next invitations are released.",
+        title: "You're confirmed",
+        body: "Thank you for confirming. We'll send project updates and future pilot invitations as the work develops.",
       } satisfies ConfirmState;
     }
 
@@ -52,7 +52,7 @@ async function resolveConfirmation(
       return {
         kind: 'already',
         title: 'Already confirmed',
-        body: "You're all set. Watch your inbox for Society of Renewal updates.",
+        body: "Your email is already confirmed. Watch your inbox for Society of Renewal updates.",
       } satisfies ConfirmState;
     }
 
@@ -66,7 +66,7 @@ async function resolveConfirmation(
 
     return {
       kind: 'error',
-      title: "We couldn't confirm your spot",
+      title: "We couldn't confirm your email",
       body: data.message ?? 'Please try again in a moment.',
     } satisfies ConfirmState;
   } catch (error) {
@@ -105,7 +105,7 @@ export default async function ConfirmPage({
             href="/"
             className="rounded-full border border-white/10 bg-white/5 px-4 py-2 font-medium text-slate-100 transition hover:bg-white/10"
           >
-            Return to the waitlist
+            Return home
           </Link>
           <Link
             href="mailto:care@societyofrenewal.org"
