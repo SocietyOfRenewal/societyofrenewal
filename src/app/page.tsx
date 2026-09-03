@@ -10,23 +10,32 @@ import WaitlistForm from '@/components/WaitlistForm';
 const currentWork = [
   {
     name: 'Manifesto',
-    state: 'Published here',
-    detail: 'The shared concern, the values, and the case for coordination.',
+    state: 'Published',
+    detail:
+      'The public diagnosis of systems that isolate us, and a call to coordinated action.',
     href: '/manifesto',
   },
   {
     name: 'Charter of Renewal',
     state: 'Draft',
     detail:
-      'A constitutional framework under active revision, not ratified law.',
+      'A proposed constitutional framework grounded in dignity, education, restorative justice, and public correction.',
     href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/charter',
+    external: true,
+  },
+  {
+    name: 'Founding Book',
+    state: 'In progress',
+    detail:
+      'The philosophical and scientific foundation. Part A is drafted; the broader evidence base is still being developed.',
+    href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/founding-book',
     external: true,
   },
   {
     name: 'Essentia',
     state: 'v0.1.0 prototype',
     detail:
-      'Runnable civic-ledger research. The v0.7.0 whitepaper is still a proposed design.',
+      'Runnable civic-ledger research. The v0.7.0 whitepaper describes a proposed future protocol.',
     href: 'https://github.com/SocietyOfRenewal/essentia',
     external: true,
   },
@@ -34,16 +43,17 @@ const currentWork = [
     name: 'Academy',
     state: 'Early beta',
     detail:
-      'Guardian accounts and learner profiles are live; the broader learning platform is still being built.',
+      'Guardian accounts and learner profiles are live. The broader learning environment remains in development.',
     href: 'https://academy.societyofrenewal.org/',
     external: true,
   },
 ];
 
 const commitments = [
-  'Reliable access to food, shelter, healthcare, and meaningful control over one’s own life.',
-  'Institutions ordinary people can understand, question, shape, and improve.',
-  'Coordination grounded in mutual aid, public goods, compassion, and accountable power.',
+  'Dignity is inherent. It does not depend on wealth, health, status, conformity, or usefulness.',
+  'Interdependence should be organized through reciprocity and care, not domination.',
+  'Education, material security, and compassionate guidance should function as infrastructure for freedom.',
+  'Power should be understandable, contestable, reversible, and accountable to the people it affects.',
 ];
 
 export default function Page() {
@@ -70,36 +80,36 @@ export default function Page() {
           >
             <div className="max-w-5xl">
               <p className="font-mono text-xs tracking-[0.28em] text-cyan-100/80 uppercase sm:text-sm">
-                A manifesto for what we can build together
+                An open civic project
               </p>
-              <h1 className="mt-6 max-w-[17ch] text-[clamp(3rem,6.2vw,7rem)] leading-[0.9] font-semibold tracking-[-0.06em] text-balance text-white">
-                Anger can wake us up.
-                <br /> Coordination is how we move forward.
+              <h1 className="mt-6 max-w-[21ch] text-[clamp(3rem,6.2vw,7rem)] leading-[0.9] font-semibold tracking-[-0.06em] text-balance text-white">
+                Building a society
+                <br /> on dignity, not fear.
               </h1>
               <p className="mt-8 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-xl">
-                The Society of Renewal begins with a simple commitment: meet
-                suffering with care, understanding, and shared responsibility,
-                and build systems that help people remain connected, capable,
-                and free.
+                The Society of Renewal is testing a simple claim in public:
+                care, knowledge, and material security can scale better than
+                fear. We are developing its principles, tools, and institutions
+                in the open so they can be inspected, questioned, and improved.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Link
-                  href="/manifesto"
+                  href="#work"
                   className="inline-flex min-h-12 items-center justify-center bg-cyan-100 px-5 text-sm font-semibold text-slate-950 transition hover:bg-white focus-visible:bg-white"
                 >
-                  Read the manifesto&nbsp;→
+                  Explore the work&nbsp;→
                 </Link>
                 <Link
-                  href="/manifesto#listen"
+                  href="/manifesto"
                   className="inline-flex min-h-12 items-center justify-center border border-cyan-100/40 bg-cyan-950/30 px-5 text-sm font-semibold text-cyan-50 backdrop-blur-sm transition hover:border-cyan-50/70 hover:bg-cyan-900/40 focus-visible:border-cyan-50/70 focus-visible:bg-cyan-900/40"
                 >
-                  Listen · 23 min
+                  Read the manifesto
                 </Link>
                 <Link
                   href="#join"
                   className="inline-flex min-h-12 items-center justify-center border border-white/30 bg-black/20 px-5 text-sm font-semibold text-white backdrop-blur-sm transition hover:border-white/60 hover:bg-white/10 focus-visible:border-white/60 focus-visible:bg-white/10"
                 >
-                  Join the waitlist
+                  Follow the work
                 </Link>
               </div>
             </div>
@@ -107,29 +117,29 @@ export default function Page() {
 
           <div className="mx-auto grid w-full max-w-7xl gap-3 border-t border-white/10 px-5 py-5 text-xs text-slate-300 sm:grid-cols-[auto_1fr] sm:items-center sm:px-8 lg:px-12">
             <span className="font-mono tracking-[0.2em] text-cyan-100/80 uppercase">
-              Status
+              Current state
             </span>
             <span>
-              Early-stage and public. The manifesto is published; the Charter,
-              Freedom Floor, civic identity, currencies, and governance systems
-              are still proposals or prototypes.
+              The Society is still in formation. Its public documents and
+              prototypes are real; formal membership, civic identity, voting,
+              currency, and the Freedom Floor are not live yet.
             </span>
           </div>
         </section>
 
-        <section className="border-b border-white/10">
+        <section id="work" className="scroll-mt-8 border-b border-white/10">
           <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.72fr_1.28fr] lg:px-12 lg:py-28">
             <Reveal>
               <p className="font-mono text-xs tracking-[0.24em] text-cyan-200/75 uppercase">
-                What exists now
+                Current work
               </p>
               <h2 className="mt-4 max-w-lg text-4xl leading-tight font-semibold tracking-[-0.04em] text-white sm:text-5xl">
-                A large vision, honestly begun.
+                We will be judged by practice, not poetry.
               </h2>
               <p className="mt-6 max-w-lg leading-relaxed text-slate-300">
-                We are starting with public work you can inspect, question, and
-                help improve. Here is what exists today, what remains a
-                proposal, and where we still have more to learn.
+                Large claims deserve public scrutiny. We publish the Society's
+                principles, prototypes, and open questions so people can inspect
+                the work, challenge its assumptions, and help improve it.
               </p>
             </Reveal>
 
@@ -174,9 +184,9 @@ export default function Page() {
               From the manifesto
             </p>
             <blockquote className="mt-8 max-w-5xl text-4xl leading-[1.08] font-semibold tracking-[-0.045em] text-balance text-white sm:text-6xl lg:text-7xl">
-              “The individual still has to make the choice. But other people can
+              The individual still has to make the choice. But other people can
               keep the door visible long enough for the choice to become
-              possible.”
+              possible.
             </blockquote>
             <Link
               href="/manifesto"
@@ -191,17 +201,17 @@ export default function Page() {
           <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-2 lg:px-12 lg:py-28">
             <div>
               <p className="font-mono text-xs tracking-[0.24em] text-cyan-200/75 uppercase">
-                What we are trying to build
+                The common ground
               </p>
               <h2 className="mt-4 max-w-xl text-4xl leading-tight font-semibold tracking-[-0.04em] text-white sm:text-5xl">
-                Compassion as a foundation. Coordination as a practice.
+                Dignity is the boundary. Interdependence is the beginning.
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
-                We want to turn compassion into dependable practice: places to
-                learn, ways to meet essential needs, and institutions people can
-                understand, shape, and improve together. The work begins by
-                listening, testing ideas, and remaining accountable to the
-                people they affect.
+                We are interdependent with one another, our tools, and the
+                living world. The Society is being built to make that
+                interdependence safe, honest, and generative: care reliable,
+                power accountable, knowledge usable, and basic security a
+                condition of freedom rather than a reward for compliance.
               </p>
             </div>
             <ol className="border-t border-white/15">
@@ -226,20 +236,21 @@ export default function Page() {
           <div className="mx-auto grid max-w-7xl gap-12 px-5 py-20 sm:px-8 lg:grid-cols-[0.8fr_1.2fr] lg:px-12 lg:py-28">
             <div>
               <p className="font-mono text-xs tracking-[0.24em] text-cyan-200/75 uppercase">
-                Stay close to the work
+                Follow the work
               </p>
               <h2 className="mt-4 text-4xl leading-tight font-semibold tracking-[-0.04em] text-white sm:text-5xl">
-                Join the waitlist.
+                Stay close as the Society takes shape.
               </h2>
               <p className="mt-6 max-w-lg leading-relaxed text-slate-300">
-                Confirm your email to receive project updates and future pilot
-                invitations. Formal membership, civic identity, voting, and
-                benefits are not live yet.
+                Confirm your email for project updates, new public drafts, and
+                future opportunities to participate. The waitlist is not formal
+                membership and does not create a civic identity, voting rights,
+                or a promise of benefits.
               </p>
               <p className="mt-6 text-sm leading-relaxed text-slate-400">
-                You can also tell us whether a future need-based or lottery pilot
-                would be relevant to you. Those paths are still proposals, and
-                no selection process is running today.
+                You can also share whether a future need-based or
+                random-selection pilot would be relevant to you. That helps us
+                understand possible demand; no pilot selection is active today.
               </p>
             </div>
             <div className="border border-white/15 bg-white/[0.035] p-6 shadow-[0_28px_100px_rgba(0,0,0,0.35)] sm:p-8">
@@ -272,12 +283,28 @@ export default function Page() {
                 Draft Charter →
               </Link>
               <Link
-                href="https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md"
+                href="https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/founding-book"
                 target="_blank"
                 rel="noopener"
                 className="text-slate-300 hover:text-white"
               >
-                Essentia whitepaper v0.7.0 →
+                Founding Book →
+              </Link>
+              <Link
+                href="https://github.com/SocietyOfRenewal/essentia"
+                target="_blank"
+                rel="noopener"
+                className="text-slate-300 hover:text-white"
+              >
+                Essentia prototype →
+              </Link>
+              <Link
+                href="https://academy.societyofrenewal.org/"
+                target="_blank"
+                rel="noopener"
+                className="text-slate-300 hover:text-white"
+              >
+                Academy beta →
               </Link>
             </div>
           </div>

@@ -43,22 +43,22 @@ export default function OgImage() {
             fontSize: '68px',
             fontWeight: 600,
             lineHeight: 1.05,
-            maxWidth: '860px',
+            maxWidth: '900px',
           }}
         >
-          Join the Society of Renewal
+          Building a society on dignity, not fear
         </h1>
         <p
           style={{
             marginTop: '24px',
             fontSize: '28px',
-            maxWidth: '760px',
+            maxWidth: '830px',
             color: 'rgba(226,232,240,0.8)',
             lineHeight: 1.4,
           }}
         >
-          Compassion as infrastructure. Transparent lotteries, need-based
-          invitations, and universal basic income for every confirmed citizen.
+          An open civic project testing whether care, knowledge, and material
+          security can scale better than fear.
         </p>
       </div>
     ),

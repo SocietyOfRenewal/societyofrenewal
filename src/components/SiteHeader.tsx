@@ -4,8 +4,13 @@ const primaryLinks = [
   { href: '/manifesto', label: 'Manifesto' },
   { href: '/faq', label: 'FAQ' },
   {
+    href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/founding-book',
+    label: 'Founding Book',
+    external: true,
+  },
+  {
     href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/charter',
-    label: 'Charter',
+    label: 'Draft Charter',
     external: true,
   },
   {

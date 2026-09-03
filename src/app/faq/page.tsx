@@ -7,9 +7,9 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Project FAQ — Society of Renewal',
+  title: 'Project FAQ | Society of Renewal',
   description:
-    'A clear account of what the Society of Renewal is exploring, what exists today, and how people can take part.',
+    'Principles, current work, future design, and practical ways to take part in the Society of Renewal.',
   alternates: { canonical: '/faq' },
 };
 
@@ -23,14 +23,15 @@ const faqs: FaqItem[] = [
   {
     question: 'What is the Society of Renewal?',
     answer: [
-      'The Society of Renewal is an early-stage civic project exploring how care, learning, material security, and democratic participation could be supported by durable public institutions. It is not a government or public authority; it is a public effort to develop, test, and improve these ideas together.',
+      'The Society of Renewal is an open civic project exploring how to build institutions around dignity, interdependence, education, material security, and democratic participation. It begins from a testable claim: sustained security, knowledge, and compassionate guidance can reduce the need for coercion by addressing harm closer to its roots.',
       <span key="artifacts">
-        The work is public so people can understand it, question it, and help
-        improve it. The starting points are the{' '}
+        Today it is a public body of work rather than a government or operating
+        benefit system. Its starting points are the{' '}
         <Link href="/manifesto" className="underline hover:text-white">
           manifesto
         </Link>
-        , the draft Charter, the Academy beta, and the Essentia prototype.
+        , the draft Charter, the Founding Book, the Academy beta, and the
+        Essentia prototype.
       </span>,
     ],
   },
@@ -39,7 +40,7 @@ const faqs: FaqItem[] = [
     answer: [
       [
         'This public website and an email-confirmed waitlist.',
-        'A complete manifesto and a draft, unratified Charter of Renewal.',
+        'A published manifesto, a draft Charter of Renewal, and Part A of the Founding Book.',
         'A live Academy beta with guardian authentication and learner-profile foundations.',
         'Essentia v0.1.0: runnable research software for a narrow civic-ledger prototype.',
         'Essentia whitepaper v0.7.0: a proposed protocol design, not a deployed mainnet.',
@@ -47,12 +48,29 @@ const faqs: FaqItem[] = [
     ],
   },
   {
-    question: 'What does the manifesto mean by “the machine”?',
+    question: 'How do the manifesto, Founding Book, and Charter differ?',
     answer: [
-      'The manifesto uses “the machine” as shorthand for a pattern, not a secret organization or a single villain. Some suffering is inherent to life; its concern is the suffering that human systems create, deepen, or leave unanswered when people could reduce it together. It does not argue that institutions are inherently evil or that any means are justified in changing them. It asks how we can respond through compassion, understanding, personal responsibility, democratic cooperation, and the patient work of building better choices.',
+      [
+        'The manifesto is the public diagnosis of systems that isolate us and the call to coordinated action. It is published in full.',
+        'The Founding Book develops the philosophical and scientific reasoning behind the Society. Part A is drafted; most of the evidence, architecture, safeguards, and case studies remain in development.',
+        'The Charter is the proposed constitutional framework: principles, rights, institutions, safeguards, and operating rules. It is a draft and has not been ratified.',
+      ],
+    ],
+  },
+  {
+    question: 'What is the Dignity Constraint?',
+    answer: [
+      "It is the Society's first boundary on power: no policy, process, tool, or tactic may demean, dehumanize, or erase any conscious being.",
+      'In practice, proposals should be necessary, proportionate, reversible, and accountable. People affected by a system should be able to understand it, contest it, and trigger review.',
+    ],
+  },
+  {
+    question: 'What does the manifesto mean by "the machine"?',
+    answer: [
+      'The manifesto uses "the machine" as shorthand for a pattern, not a secret organization or a single villain. Some suffering is inherent to life; its concern is the suffering that human systems create, deepen, or leave unanswered when people could reduce it together. It does not argue that institutions are inherently evil or that any means are justified in changing them. It asks how we can respond through compassion, understanding, personal responsibility, democratic cooperation, and the patient work of building better institutions and real alternatives.',
       <span key="summary">
         <strong className="font-semibold text-white">In short:</strong> The
-        “machine” is the web of economic, political, bureaucratic, and cultural
+        "machine" is the web of economic, political, bureaucratic, and cultural
         systems that turn human beings into workers, consumers, patients,
         tenants, statistics, and problems to be managed. It survives by
         isolating us, convincing us that structural failures are personal
@@ -71,22 +89,22 @@ const faqs: FaqItem[] = [
   {
     question: 'Is this a political movement or a government?',
     answer: [
-      'The Society engages political questions in the broad sense: power, institutions, rights, public goods, and how people make decisions together. It is not affiliated with a political party.',
-      'The Society is not presently a government and has no legal authority. “Civic society” describes the kind of participatory institutions we hope to build, not a current jurisdiction or recognized status.',
+      'Its aims are political in the broad sense: it concerns power, institutions, rights, public goods, and how people make binding decisions together. It is not affiliated with a political party.',
+      'The Society has no governmental or legal authority today. The Charter describes a possible civic society, not a jurisdiction or government that already exists.',
     ],
   },
   {
     question: 'Can I join? Do I have to relocate or give up citizenship?',
     answer: [
-      'You can join the waitlist from anywhere. Formal Society membership, civic identity, voting, and benefits are not live yet.',
-      'Future participation is intended to be voluntary and additive, not a replacement for anyone’s existing citizenship or obligations under local law.',
+      'You can follow the work, join the email waitlist, test public software, and contribute through the public repositories from anywhere. Formal Society membership, civic identity, voting rights, and benefits are not live yet.',
+      'Any future membership is intended to be voluntary, additive, and compatible with existing citizenship and local law.',
     ],
   },
   {
     question: 'Is the Freedom Floor or UBI available now?',
     answer: [
-      'Not yet. The Freedom Floor and UBI remain proposals, and there is no active Society of Renewal benefit program today.',
-      'The Freedom Floor is a policy proposal for reliable access to essentials. The Charter and Essentia whitepaper describe possible mechanisms, but funding, legal structure, identity safeguards, vendors, pilot regions, and public rules would all need to exist before a real pilot could begin.',
+      'No. The Freedom Floor is the proposed guarantee of reliable access to food, shelter, basic healthcare, communication, and safety. UBI is one proposed mechanism for sustaining it.',
+      'There is no active Society UBI program or announced launch date. Funding, legal structure, identity safeguards, vendors, public rules, and accountable pilot design would all need to exist first.',
     ],
   },
   {
@@ -129,10 +147,10 @@ const faqs: FaqItem[] = [
     ],
   },
   {
-    question: 'How do the Need and Lottery paths work?',
+    question: 'How are the Need and Lottery paths intended to work?',
     answer: [
       'The draft Charter proposes a Need Path for urgent hardship and a provably random Lottery Path when future pilot capacity is limited.',
-      'No draw or benefit selection is running today. The waitlist simply lets people indicate whether a future Need or Lottery pilot would be relevant to them while those processes are still being designed.',
+      'No draw is currently running, no randomness procedure has been published for production use, and joining the waitlist is not an application for a current benefit. The form only records whether either path may be relevant in the future.',
     ],
   },
   {
@@ -157,15 +175,15 @@ const faqs: FaqItem[] = [
   {
     question: 'What is the privacy position?',
     answer: [
-      'The principle is data minimization: personal privacy should increase with vulnerability, while institutional transparency should increase with power.',
+      'The guiding rule is simple: institutions should become more transparent as their power increases, while personal privacy should become stronger as vulnerability increases. Public rules should be inspectable; private lives should not be.',
       'The Academy specification limits learner data to a nickname, age or grade band, and settings. The Essentia design keeps raw biometrics, government-ID images, home addresses, health data, and recovery secrets off-chain. These are design constraints; they still require implementation review and independent security testing.',
     ],
   },
   {
     question: 'How does safety work without defaulting to punishment?',
     answer: [
-      'The Charter prioritizes prevention, material stability, education, de-escalation, restorative repair, and minimum necessary force. It does not claim that every active threat can be handled without intervention.',
-      'No Society-operated safety network exists today, so emergencies still depend on the services and community resources available where you live.',
+      'The Charter starts with dignity, immediate safety, and the least restrictive effective response. It prioritizes prevention, material stability, education, de-escalation, review, and repair. It does not pretend every active threat can be handled without intervention or minimum necessary force.',
+      'No Society-operated safety network exists today. In an emergency, use the legitimate services and resources available where you live.',
     ],
   },
   {
@@ -198,13 +216,13 @@ const faqs: FaqItem[] = [
         </Link>
         .
       </span>,
-      'That observation is only a starting point for Essentia’s monetary proposal. Any credible pilot would still need legal analysis, public parameters, fraud controls, reserve and redemption design, economic modeling, audits, and evidence from real use.',
+      "That observation does not prove that Essentia's monetary proposal will work. A credible pilot would still need legal analysis, public parameters, fraud controls, reserve and redemption design, economic modeling, audits, and evidence from real use.",
     ],
   },
   {
     question: 'Is Essent money or legal tender?',
     answer: [
-      'Essent is a proposed medium of exchange within a future network; no public Essent currency exists today. Legal-tender status is defined by applicable law, not by the Society or by what an instrument is called.',
+      'Not today. No public Essent currency exists, and the Society cannot declare legal tender. "Legal tender" is a status defined by applicable law, not by a project calling an instrument money.',
       'The whitepaper proposes Essent as a transferable medium of exchange within a future network. Whether it could legally operate, be accepted, convert to national currency, or create tax obligations would depend on jurisdiction, implementation, and regulated partners.',
     ],
   },
@@ -212,18 +230,19 @@ const faqs: FaqItem[] = [
     question: 'How can I contribute right now?',
     answer: [
       [
-        'Read the manifesto and share what resonates, what is unclear, and what needs more care.',
-        'Review the draft Charter and Essentia whitepaper in GitHub.',
-        'Test the public Academy beta without entering information you do not want stored.',
-        'Join the waitlist for project updates and future pilot invitations.',
+        'Read the manifesto and say what resonates, what is unclear, or where the argument needs more care.',
+        'Review the draft Charter, Founding Book, and Essentia whitepaper in GitHub.',
+        'Test the Academy beta or Essentia prototype and report what you find.',
+        'Share relevant research, lived experience, translation, design, or technical work.',
+        'Join the waitlist for project updates and future opportunities to participate.',
       ],
-      'Formal contribution rewards, vendor onboarding, and governance are still future work. For now, the most useful contributions are thoughtful critique, testing, discussion, and helping the public work improve.',
+      'There is no public contribution-reward program, vendor-onboarding program, or formal governance process yet.',
     ],
   },
   {
     question: 'What is the timeline?',
     answer: [
-      'There is no responsible date to promise yet. The next meaningful milestones are smaller: keep the public documents internally consistent, complete the Academy product path, publish independent verification and stress tests for Essentia, and design any pilot through legal, security, economic, and community review.',
+      'There is no responsible date to promise yet. The next meaningful milestones are smaller: keep the public documents internally consistent, develop the Academy learning path, publish independent verification and stress tests for Essentia, and design any pilot through legal, security, economic, and community review.',
       'Progress will be shared through inspectable artifacts, tested systems, lessons learned, and honest revision.',
     ],
   },
@@ -244,9 +263,9 @@ export default function FaqPage() {
               part.
             </h1>
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-slate-300">
-              Clear distinctions between public ideas, working software, and
-              live civic services help people understand the project, question
-              its assumptions, and participate without having to guess.
+              The Society is being built in public. These answers separate
+              current work from future design, explain the principles behind it,
+              and show where participation is possible now.
             </p>
           </div>
         </header>
@@ -294,10 +313,10 @@ export default function FaqPage() {
           <div className="mt-14 flex flex-col gap-6 border border-cyan-200/20 bg-cyan-950/25 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
             <div>
               <p className="font-mono text-xs tracking-[0.2em] text-cyan-200/70 uppercase">
-                Begin with shared purpose
+                Begin with the common ground
               </p>
               <p className="mt-2 text-xl font-semibold text-white">
-                Read or listen to the manifesto, then explore the design.
+                Read the manifesto, then examine the drafts and prototypes.
               </p>
             </div>
             <Link

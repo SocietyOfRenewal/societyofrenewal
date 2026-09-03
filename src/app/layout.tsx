@@ -5,9 +5,9 @@ import { Toaster } from '@/components/ui/sonner';
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
-const title = 'Society of Renewal — Coordination in Public';
+const title = 'Society of Renewal | Building on dignity, not fear';
 const description =
-  'Read the Society of Renewal manifesto and inspect the public Charter, Academy beta, and Essentia prototype.';
+  'An open civic project testing whether care, knowledge, and material security can scale better than fear.';
 const absoluteUrl = 'https://www.societyofrenewal.org';
 
 export const metadata: Metadata = {
@@ -16,10 +16,12 @@ export const metadata: Metadata = {
   description,
   keywords: [
     'Society of Renewal',
-    'Civic Coordination',
-    'Mutual Aid',
+    'Dignity Constraint',
+    'Interdependence',
+    'Civic Education',
+    'Material Security',
+    'Restorative Justice',
     'Democratic Institutions',
-    'Public Infrastructure',
   ],
   authors: [{ name: 'Society of Renewal' }],
   creator: 'Society of Renewal',

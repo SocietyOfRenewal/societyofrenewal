@@ -26,7 +26,7 @@ async function resolveConfirmation(
     return {
       kind: 'missing',
       title: 'Confirmation link incomplete',
-      body: 'Follow the link from your email to confirm your invitation.',
+      body: 'Follow the link from your email to confirm it.',
     } satisfies ConfirmState;
   }
 
@@ -43,8 +43,8 @@ async function resolveConfirmation(
     if (response.ok && data.status === 'confirmed') {
       return {
         kind: 'confirmed',
-        title: "You're confirmed",
-        body: "Thank you for confirming. We'll send project updates and future pilot invitations as the work develops.",
+        title: 'Email confirmed',
+        body: "Thank you. You'll receive Society of Renewal updates and future opportunities to participate.",
       } satisfies ConfirmState;
     }
 
@@ -52,7 +52,7 @@ async function resolveConfirmation(
       return {
         kind: 'already',
         title: 'Already confirmed',
-        body: "Your email is already confirmed. Watch your inbox for Society of Renewal updates.",
+        body: 'This email is already set to receive Society of Renewal updates.',
       } satisfies ConfirmState;
     }
 
@@ -60,7 +60,7 @@ async function resolveConfirmation(
       return {
         kind: 'invalid',
         title: 'Link expired or invalid',
-        body: 'Request a new confirmation email from the waitlist form and try again.',
+        body: 'Return to the waitlist form to request a new confirmation email.',
       } satisfies ConfirmState;
     }
 
@@ -105,7 +105,7 @@ export default async function ConfirmPage({
             href="/"
             className="rounded-full border border-white/10 bg-white/5 px-4 py-2 font-medium text-slate-100 transition hover:bg-white/10"
           >
-            Return home
+            Return to the site
           </Link>
           <Link
             href="mailto:care@societyofrenewal.org"

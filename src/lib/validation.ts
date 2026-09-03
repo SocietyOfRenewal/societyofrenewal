@@ -20,7 +20,8 @@ export const waitlistFormSchema = z
       ctx.addIssue({
         path: ['reason'],
         code: z.ZodIssueCode.custom,
-        message: 'Share a short note (40+ characters) about your need.',
+        message:
+          'Share a short note (40+ characters) about why this future path may be relevant.',
       });
     }
   });

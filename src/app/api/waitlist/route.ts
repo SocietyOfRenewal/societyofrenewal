@@ -86,7 +86,7 @@ export async function POST(request: NextRequest) {
     if (existing?.status === 'confirmed') {
       return NextResponse.json(
         {
-          message: 'You are already confirmed for early access.',
+          message: 'This email is already confirmed for project updates.',
           status: 'confirmed',
         },
         { status: 409 },
