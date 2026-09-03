@@ -4,11 +4,11 @@ Quick links into the Society of Renewal knowledge base.
 
 ## Core Materials
 
-- [Manifesto](manifesto.md)
-- [Landing Page Copy](content/landing-page.md)
-- [Content Hub & Roadmap](content/README.md)
-- [Charter of Renewal](charter/README.md)
-- [Founding Book](founding-book/README.md)
+- [Manifesto](manifesto.md) - Published public diagnosis and call to coordination
+- [Landing Page Copy](content/landing-page.md) - Canonical current copy for the public site
+- [Content Hub & Roadmap](content/README.md) - Current artifacts and proposed program directions
+- [Charter of Renewal](charter/README.md) - Draft constitutional framework
+- [Founding Book](founding-book/README.md) - Philosophical and scientific foundation in development
 - [Essentia Whitepaper v0.7.0](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md)
 - [Academy beta](https://academy.societyofrenewal.org/)
 
