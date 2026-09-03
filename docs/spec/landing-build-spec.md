@@ -97,11 +97,12 @@ This specification is written for the Society of Renewal product, design, and en
 
 ## 5. Content Requirements
 
-- **Hero eyebrow:** `A manifesto for the work after outrage`
+- **Hero eyebrow:** `A manifesto for what we can build together`
 - **Hero title:** `Your anger is not the threat. Your coordination is.`
-- **Hero introduction:** `The Society of Renewal begins with a simple refusal: no one should disappear alone inside systems built to classify suffering instead of answering it.`
+- **Hero introduction:** `The Society of Renewal begins with a simple commitment: to meet suffering with care, understanding, and shared responsibility—and to build systems that help people remain connected, capable, and free.`
 - **Primary CTA:** `Read the manifesto →`
-- **Secondary CTA:** `Join the waitlist`
+- **Secondary CTA:** `Listen · 23 min`
+- **Tertiary CTA:** `Join the waitlist`
 - **Status disclosure:** `Early-stage and public. No UBI program, currency, civic identity, or voting system is live today.`
 - **Project status:** Manifesto = published; Charter = draft; Essentia = v0.1.0 prototype with proposed v0.7.0 whitepaper; Academy = early beta.
 - **Waitlist disclosure:** Joining records interest and enables email updates. It does not create membership, civic identity, voting rights, selection, or a promise of benefits.
@@ -344,7 +345,7 @@ export function WaitlistForm() {
 
 ## 8. Page Composition
 
-1. Full-bleed manifesto hero with original water imagery, overlaid navigation, two actions, and a plain current-status disclosure.
+1. Full-bleed manifesto hero with original water imagery, overlaid navigation, three actions, and a plain current-status disclosure.
 2. Ruled “What exists now” inventory: Manifesto, draft Charter, Essentia prototype, and Academy beta.
 3. Large manifesto excerpt linking into the complete reading route.
 4. Three concise commitments drawn from the manifesto.
@@ -497,6 +498,8 @@ KV_REST_API_TOKEN=optional
 - [ ] `/manifesto` renders the complete canonical Markdown and is included in the sitemap.
 - [ ] `/manifesto#listen` exposes a keyboard-accessible, non-autoplay audio player with a direct MP3 download and the full text transcript on the same page.
 - [ ] Landing and FAQ copy clearly distinguishes live, beta, prototype, draft, and proposed states.
+- [ ] FAQ 03 explains “the machine” as a systemic pattern rather than a single villain, acknowledges that some suffering is inherent to life, and rejects destructive or ends-justify-the-means interpretations.
+- [ ] Landing and FAQ language invites care, learning, compassion, democratic cooperation, and honest revision without weakening the manifesto itself.
 - [ ] Analytics events fire for `page_view`, `ripple_activated`, `waitlist_submit_attempt`, `waitlist_submit_success`, `waitlist_submit_error`.
 - [ ] Page passes automated (axe, Lighthouse) and manual keyboard accessibility checks.
 

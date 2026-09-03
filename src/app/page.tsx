@@ -11,7 +11,7 @@ const currentWork = [
   {
     name: 'Manifesto',
     state: 'Published here',
-    detail: 'The diagnosis, the refusal, and the case for coordination.',
+    detail: 'The shared concern, the values, and the case for coordination.',
     href: '/manifesto',
   },
   {
@@ -41,9 +41,9 @@ const currentWork = [
 ];
 
 const commitments = [
-  'Food, shelter, healthcare, and meaningful control over one’s own life.',
-  'Democratic institutions ordinary people can understand, challenge, and change.',
-  'Coordination grounded in mutual aid, public goods, and accountable power.',
+  'Reliable access to food, shelter, healthcare, and meaningful control over one’s own life.',
+  'Institutions ordinary people can understand, question, shape, and improve.',
+  'Coordination grounded in mutual aid, public goods, compassion, and accountable power.',
 ];
 
 export default function Page() {
@@ -70,16 +70,17 @@ export default function Page() {
           >
             <div className="max-w-5xl">
               <p className="font-mono text-xs tracking-[0.28em] text-cyan-100/80 uppercase sm:text-sm">
-                A manifesto for the work after outrage
+                A manifesto for what we can build together
               </p>
               <h1 className="mt-6 max-w-[17ch] text-[clamp(3rem,6.2vw,7rem)] leading-[0.9] font-semibold tracking-[-0.06em] text-balance text-white">
                 Your anger is not the threat.
                 <br /> Your coordination is.
               </h1>
               <p className="mt-8 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-xl">
-                The Society of Renewal begins with a simple refusal: no one
-                should disappear alone inside systems built to classify
-                suffering instead of answering it.
+                The Society of Renewal begins with a simple commitment: to meet
+                suffering with care, understanding, and shared
+                responsibility—and to build systems that help people remain
+                connected, capable, and free.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Link
@@ -122,12 +123,12 @@ export default function Page() {
                 What exists now
               </p>
               <h2 className="mt-4 max-w-lg text-4xl leading-tight font-semibold tracking-[-0.04em] text-white sm:text-5xl">
-                Ambition without false claims.
+                A large vision, honestly begun.
               </h2>
               <p className="mt-6 max-w-lg leading-relaxed text-slate-300">
-                The vision is large. The implementation is not there yet. These
-                are the public artifacts you can inspect today and the state
-                each one is actually in.
+                We are starting with public work you can inspect, question, and
+                help improve. Here is what exists today, what remains a
+                proposal, and where we still have more to learn.
               </p>
             </Reveal>
 
@@ -172,8 +173,9 @@ export default function Page() {
               From the manifesto
             </p>
             <blockquote className="mt-8 max-w-5xl text-4xl leading-[1.08] font-semibold tracking-[-0.045em] text-balance text-white sm:text-6xl lg:text-7xl">
-              “One person can tell the truth. Another can confirm it. Ten can
-              refuse. A hundred can protect the ten.”
+              “The individual still has to make the choice. But other people can
+              keep the door visible long enough for the choice to become
+              possible.”
             </blockquote>
             <Link
               href="/manifesto"
@@ -191,13 +193,14 @@ export default function Page() {
                 What we are trying to build
               </p>
               <h2 className="mt-4 max-w-xl text-4xl leading-tight font-semibold tracking-[-0.04em] text-white sm:text-5xl">
-                Compassion as infrastructure. Coordination as practice.
+                Compassion as a foundation. Coordination as a practice.
               </h2>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
-                The next world begins with those who choose compassion as
-                infrastructure. The proposal is to make dignity, learning,
-                material security, and accountable participation structural—not
-                charitable afterthoughts.
+                We want to turn compassion into dependable practice: places to
+                learn, ways to meet essential needs, and institutions people can
+                understand, shape, and improve together. The work begins by
+                listening, testing ideas, and remaining accountable to the
+                people they affect.
               </p>
             </div>
             <ol className="border-t border-white/15">
@@ -245,7 +248,9 @@ export default function Page() {
 
         <section>
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-8 md:grid-cols-[0.7fr_1.3fr] lg:px-12">
-            <h2 className="text-xl font-semibold text-white">Read the work</h2>
+            <h2 className="text-xl font-semibold text-white">
+              Explore the work
+            </h2>
             <div className="grid gap-x-8 gap-y-5 text-sm sm:grid-cols-2">
               <Link
                 href="/manifesto"
@@ -254,7 +259,7 @@ export default function Page() {
                 The manifesto →
               </Link>
               <Link href="/faq" className="text-slate-300 hover:text-white">
-                Honest project FAQ →
+                Project FAQ →
               </Link>
               <Link
                 href="https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/charter"

@@ -9,7 +9,7 @@ import type { ReactNode } from 'react';
 export const metadata: Metadata = {
   title: 'Project FAQ — Society of Renewal',
   description:
-    'A plain account of what the Society of Renewal proposes, what exists today, and what remains unbuilt.',
+    'A clear account of what the Society of Renewal is exploring, what exists today, and how people can take part.',
   alternates: { canonical: '/faq' },
 };
 
@@ -23,9 +23,10 @@ const faqs: FaqItem[] = [
   {
     question: 'What is the Society of Renewal?',
     answer: [
-      'The Society of Renewal is an early-stage civic project exploring how dignity, material security, education, and accountable coordination could become infrastructure. It is not currently a government, public authority, benefit program, or operating monetary system.',
+      'The Society of Renewal is an early-stage civic project exploring how care, learning, material security, and democratic participation could be supported by durable public institutions. It is not currently a government, public authority, benefit program, or operating monetary system.',
       <span key="artifacts">
-        The work is public across the{' '}
+        The work is public so people can understand it, question it, and help
+        improve it. The starting points are the{' '}
         <Link href="/manifesto" className="underline hover:text-white">
           manifesto
         </Link>
@@ -46,10 +47,25 @@ const faqs: FaqItem[] = [
     ],
   },
   {
-    question: 'What does the manifesto add?',
+    question: 'What does the manifesto mean by “the machine”?',
     answer: [
-      'It names the problem more directly than the earlier landing copy: systems can turn human suffering into an acceptable operating cost without requiring a single villain.',
-      'Its answer is coordination—people comparing notes, sharing risk, building mutual aid, using leverage carefully, and creating material counterexamples to domination.',
+      'The manifesto uses “the machine” as shorthand for a pattern, not a secret organization or a single villain. Some suffering is inherent to life; its concern is the suffering that human systems create, deepen, or leave unanswered when people could reduce it together. It does not argue that institutions are inherently evil or that any means are justified in changing them. It asks how we can respond through compassion, understanding, personal responsibility, democratic cooperation, and the patient work of building better choices.',
+      <span key="summary">
+        <strong className="font-semibold text-white">In short:</strong> The
+        “machine” is the web of economic, political, bureaucratic, and cultural
+        systems that turn human beings into workers, consumers, patients,
+        tenants, statistics, and problems to be managed. It survives by
+        isolating us, convincing us that structural failures are personal
+        failures, exhausting us, and making cooperation feel impossible. Raging
+        against it does not mean blind anger or destroying institutions. It
+        means preserving our inner freedom, refusing cruelty and dehumanization,
+        building solidarity, and organizing around shared human needs. Personal
+        responsibility still matters, but real freedom requires real choices.
+        Change happens when isolated people compare notes, protect one another,
+        organize, withdraw cooperation from harmful systems, and build better
+        ones. The machine does not fear our anger nearly as much as it fears our
+        coordination.
+      </span>,
     ],
   },
   {
@@ -155,7 +171,7 @@ const faqs: FaqItem[] = [
   {
     id: 'money-creation',
     question:
-      '“You can’t just create money out of thin air.” What is the claim?',
+      'How is money created today, and what does that mean for Essentia?',
     answer: [
       'The narrow factual point is that modern money is created under rules: commercial-bank lending creates deposits, while central-bank operations create or transform central-bank liabilities. Creation is constrained by regulation, capital, monetary policy, demand, and trust; it does not create real resources by itself.',
       <span key="boe">
@@ -196,7 +212,7 @@ const faqs: FaqItem[] = [
     question: 'How can I contribute right now?',
     answer: [
       [
-        'Read the manifesto and say where it is sharp, incomplete, or wrong.',
+        'Read the manifesto and share what resonates, what is unclear, and what needs more care.',
         'Review the draft Charter and Essentia whitepaper in GitHub.',
         'Test the public Academy beta without entering information you do not want stored.',
         'Join the waitlist for project updates and future pilot invitations.',
@@ -207,8 +223,8 @@ const faqs: FaqItem[] = [
   {
     question: 'What is the timeline?',
     answer: [
-      'There is no responsible date to promise yet. The next credible milestones are smaller: keep the public documents internally consistent, complete the Academy product path, publish verifiers and adversarial tests for Essentia, and design any pilot with legal, security, economic, and community review.',
-      'Progress should be judged by inspectable artifacts and tested systems—not by the size of the claim.',
+      'There is no responsible date to promise yet. The next meaningful milestones are smaller: keep the public documents internally consistent, complete the Academy product path, publish independent verification and stress tests for Essentia, and design any pilot through legal, security, economic, and community review.',
+      'Progress will be shared through inspectable artifacts, tested systems, lessons learned, and honest revision.',
     ],
   },
 ];
@@ -224,12 +240,13 @@ export default function FaqPage() {
               Project FAQ · September 2026
             </p>
             <h1 className="mt-5 max-w-4xl text-5xl leading-[0.98] font-semibold tracking-[-0.055em] text-balance text-white sm:text-7xl">
-              What is real, what is proposed, and what remains unbuilt.
+              What exists today, what we are exploring, and how you can take
+              part.
             </h1>
             <p className="mt-8 max-w-3xl text-lg leading-relaxed text-slate-300">
-              This page deliberately distinguishes public artifacts from working
-              software, and working software from live civic services. That
-              distinction is part of the project’s accountability.
+              Clear distinctions between public ideas, working software, and
+              live civic services help people understand the project, question
+              its assumptions, and participate without having to guess.
             </p>
           </div>
         </header>
@@ -277,17 +294,17 @@ export default function FaqPage() {
           <div className="mt-14 flex flex-col gap-6 border border-cyan-200/20 bg-cyan-950/25 p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
             <div>
               <p className="font-mono text-xs tracking-[0.2em] text-cyan-200/70 uppercase">
-                Start with the argument
+                Begin with shared purpose
               </p>
               <p className="mt-2 text-xl font-semibold text-white">
-                Read the manifesto before the architecture.
+                Read or listen to the manifesto, then explore the design.
               </p>
             </div>
             <Link
-              href="/manifesto"
+              href="/manifesto#listen"
               className="inline-flex min-h-11 items-center justify-center bg-cyan-100 px-5 text-sm font-semibold text-slate-950 hover:bg-white"
             >
-              Read the manifesto&nbsp;→
+              Read or listen&nbsp;→
             </Link>
           </div>
         </section>

@@ -15,7 +15,7 @@
 
 **Eyebrow:**
 
-> A manifesto for the work after outrage
+> A manifesto for what we can build together
 
 **Title:**
 
@@ -23,7 +23,7 @@
 
 **Introduction:**
 
-> The Society of Renewal begins with a simple refusal: no one should disappear alone inside systems built to classify suffering instead of answering it.
+> The Society of Renewal begins with a simple commitment: to meet suffering with care, understanding, and shared responsibility—and to build systems that help people remain connected, capable, and free.
 
 **Primary actions:**
 
@@ -37,7 +37,7 @@
 
 ## Project Position
 
-> The next world begins with those who choose compassion as infrastructure. The proposal is to make dignity, learning, material security, and accountable participation structural—not charitable afterthoughts.
+> We want to turn compassion into dependable practice: places to learn, ways to meet essential needs, and institutions people can understand, shape, and improve together. The work begins by listening, testing ideas, and remaining accountable to the people they affect.
 
 The site must distinguish present capability from intended design:
 
