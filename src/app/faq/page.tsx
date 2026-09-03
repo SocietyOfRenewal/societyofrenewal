@@ -23,7 +23,7 @@ const faqs: FaqItem[] = [
   {
     question: 'What is the Society of Renewal?',
     answer: [
-      'The Society of Renewal is an early-stage civic project exploring how care, learning, material security, and democratic participation could be supported by durable public institutions. It is not currently a government, public authority, benefit program, or operating monetary system.',
+      'The Society of Renewal is an early-stage civic project exploring how care, learning, material security, and democratic participation could be supported by durable public institutions. It is not a government or public authority; it is a public effort to develop, test, and improve these ideas together.',
       <span key="artifacts">
         The work is public so people can understand it, question it, and help
         improve it. The starting points are the{' '}
@@ -71,21 +71,21 @@ const faqs: FaqItem[] = [
   {
     question: 'Is this a political movement or a government?',
     answer: [
-      'Its aims are political in the broad sense: it concerns power, institutions, rights, public goods, and how people make binding decisions together. It is not affiliated with a political party.',
-      'The Society is not presently a government and has no legal authority. “Civic society” describes the project’s intended direction, not a current jurisdiction or recognized status.',
+      'The Society engages political questions in the broad sense: power, institutions, rights, public goods, and how people make decisions together. It is not affiliated with a political party.',
+      'The Society is not presently a government and has no legal authority. “Civic society” describes the kind of participatory institutions we hope to build, not a current jurisdiction or recognized status.',
     ],
   },
   {
     question: 'Can I join? Do I have to relocate or give up citizenship?',
     answer: [
-      'You can join the waitlist from anywhere. That does not yet create formal Society membership, a civic identity, voting rights, or access to benefits.',
-      'Nothing in the proposal asks people to give up an existing citizenship or violate local law. Any future participation is intended to be voluntary and additive.',
+      'You can join the waitlist from anywhere. Formal Society membership, civic identity, voting, and benefits are not live yet.',
+      'Future participation is intended to be voluntary and additive, not a replacement for anyone’s existing citizenship or obligations under local law.',
     ],
   },
   {
     question: 'Is the Freedom Floor or UBI available now?',
     answer: [
-      'No. There is no active Society of Renewal UBI program and no announced date for one.',
+      'Not yet. The Freedom Floor and UBI remain proposals, and there is no active Society of Renewal benefit program today.',
       'The Freedom Floor is a policy proposal for reliable access to essentials. The Charter and Essentia whitepaper describe possible mechanisms, but funding, legal structure, identity safeguards, vendors, pilot regions, and public rules would all need to exist before a real pilot could begin.',
     ],
   },
@@ -132,7 +132,7 @@ const faqs: FaqItem[] = [
     question: 'How do the Need and Lottery paths work?',
     answer: [
       'The draft Charter proposes a Need Path for urgent hardship and a provably random Lottery Path when future pilot capacity is limited.',
-      'No draw is currently running, no randomness procedure has been published for production use, and joining the waitlist is not an application for a current benefit. The form records which future path is relevant to you.',
+      'No draw or benefit selection is running today. The waitlist simply lets people indicate whether a future Need or Lottery pilot would be relevant to them while those processes are still being designed.',
     ],
   },
   {
@@ -165,7 +165,7 @@ const faqs: FaqItem[] = [
     question: 'How does safety work without defaulting to punishment?',
     answer: [
       'The Charter prioritizes prevention, material stability, education, de-escalation, restorative repair, and minimum necessary force. It does not claim that every active threat can be handled without intervention.',
-      'No Society-operated safety network exists today. In an emergency, use the legitimate services and resources available where you live.',
+      'No Society-operated safety network exists today, so emergencies still depend on the services and community resources available where you live.',
     ],
   },
   {
@@ -198,13 +198,13 @@ const faqs: FaqItem[] = [
         </Link>
         .
       </span>,
-      'That observation does not prove that Essentia’s monetary proposal will work. A credible pilot would still need legal analysis, public parameters, fraud controls, reserve and redemption design, economic modeling, audits, and evidence from real use.',
+      'That observation is only a starting point for Essentia’s monetary proposal. Any credible pilot would still need legal analysis, public parameters, fraud controls, reserve and redemption design, economic modeling, audits, and evidence from real use.',
     ],
   },
   {
     question: 'Is Essent money or legal tender?',
     answer: [
-      'Not today. No public Essent currency exists, and the Society cannot declare legal tender. “Legal tender” is a status defined by applicable law, not by a project calling an instrument money.',
+      'Essent is a proposed medium of exchange within a future network; no public Essent currency exists today. Legal-tender status is defined by applicable law, not by the Society or by what an instrument is called.',
       'The whitepaper proposes Essent as a transferable medium of exchange within a future network. Whether it could legally operate, be accepted, convert to national currency, or create tax obligations would depend on jurisdiction, implementation, and regulated partners.',
     ],
   },
@@ -217,7 +217,7 @@ const faqs: FaqItem[] = [
         'Test the public Academy beta without entering information you do not want stored.',
         'Join the waitlist for project updates and future pilot invitations.',
       ],
-      'There is no public contribution-reward program, vendor-onboarding program, or formal governance process yet.',
+      'Formal contribution rewards, vendor onboarding, and governance are still future work. For now, the most useful contributions are thoughtful critique, testing, discussion, and helping the public work improve.',
     ],
   },
   {
