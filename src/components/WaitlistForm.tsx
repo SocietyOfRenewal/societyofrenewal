@@ -21,9 +21,9 @@ import type { z } from 'zod';
 type SubmissionStatus = 'idle' | 'success' | 'exists' | 'error';
 
 const lotteryCopy =
-  'Records interest in a future random-selection path. No draw is active.';
+  'Marks the random-selection path as most relevant if a future pilot has limited capacity. No drawing is active.';
 const needCopy =
-  'Records interest in future need-based consideration. This does not guarantee priority or benefits.';
+  'Marks the need-based path as most relevant if a future pilot opens. This is not an application or promise of priority.';
 
 type WaitlistFormValues = z.input<typeof waitlistFormSchema>;
 
@@ -109,7 +109,7 @@ export default function WaitlistForm() {
         reason: parsed.path === 'need' ? parsed.reason : '',
         turnstileToken: undefined,
       });
-      toast.success('Check your inbox to confirm your place.');
+      toast.success('Check your inbox to confirm your email.');
       try {
         track('waitlist_submit_success', { path: parsed.path });
       } catch {
@@ -125,9 +125,9 @@ export default function WaitlistForm() {
         type: 'manual',
         message:
           (data as { message?: string } | null)?.message ??
-          'You are already on the waitlist.',
+          'This email is already on the waitlist.',
       });
-      toast.info('You are already confirmed. Watch your inbox for updates.');
+      toast.info('This email is already confirmed for project updates.');
       try {
         track('waitlist_submit_error', { reason: 'exists' });
       } catch {
@@ -215,18 +215,21 @@ export default function WaitlistForm() {
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="text-sm font-medium text-slate-100">
-              Future pilot path
+              Possible future pilot path
             </p>
             <p className="text-sm text-slate-400">
-              Tell us which path would be relevant if a pilot opens.
+              Tell us which path may be most relevant. This does not affect
+              project updates.
             </p>
           </div>
           <label className="flex items-center gap-3 text-sm text-slate-300">
-            <span className="font-medium text-slate-200">Need-based</span>
+            <span className="font-medium text-slate-200">
+              Need-based path
+            </span>
             <Switch
               checked={path === 'need'}
               onCheckedChange={handlePathChange}
-              aria-label="Toggle to request need-based consideration"
+              aria-label="Indicate that a future need-based path may be relevant"
             />
           </label>
         </div>
@@ -275,7 +278,7 @@ export default function WaitlistForm() {
                 htmlFor="reason"
                 className="text-sm font-semibold tracking-wide text-slate-100"
               >
-                Optional context
+                Why this may matter
               </Label>
               <span className="text-xs text-slate-500">
                 Minimum 40 characters
@@ -285,7 +288,7 @@ export default function WaitlistForm() {
               id="reason"
               rows={4}
               aria-invalid={Boolean(errors.reason)}
-              placeholder="Share why need-based consideration would matter to you..."
+              placeholder="Briefly share why a future need-based pilot may be relevant to you..."
               {...register('reason')}
               className="rounded-xl border-white/10 bg-white/5 text-slate-100 placeholder:text-slate-500"
             />
@@ -293,8 +296,8 @@ export default function WaitlistForm() {
               <p className="text-sm text-rose-300">{errors.reason.message}</p>
             ) : (
               <p className="text-xs text-slate-500">
-                Keep this concise. Do not include medical records, account
-                numbers, or other sensitive documents.
+                Share only what you are comfortable storing. Do not include
+                medical records, account numbers, or other sensitive documents.
               </p>
             )}
           </motion.div>
@@ -310,7 +313,8 @@ export default function WaitlistForm() {
           {isSubmitting ? 'Submitting…' : 'Join the Waitlist'}
         </RippleButton>
         <p className="text-center text-sm text-slate-400">
-          Paths record future pilot interest. No selection is active.
+          The waitlist is for project updates. No membership, benefit, or pilot
+          selection is active.
         </p>
       </div>
 
@@ -347,7 +351,7 @@ export default function WaitlistForm() {
               </AlertTitle>
               <AlertDescription className="text-sm text-slate-300">
                 {status === 'success' &&
-                  'We emailed a confirmation link. Confirm it to join the waitlist.'}
+                  'We sent a confirmation link. Confirm your email to receive project updates.'}
                 {status === 'exists' &&
                   'This email is already confirmed for project updates.'}
                 {status === 'error' &&
