@@ -27,7 +27,7 @@ This specification is written for the Society of Renewal product, design, and en
 - Waitlist form capturing email, invitation path (`lottery` or `need`), and optional context while maintaining full keyboard/screen-reader accessibility.
 - Postgres-backed double opt-in with hashed email dedupe, per-IP rate limiting, and optional Cloudflare Turnstile verification.
 - Above-the-fold payload ≤200 KB (excluding the Lottie JSON), with graceful handling of `prefers-reduced-motion`.
-- Deep links to the Manifesto, draft Charter, Founding Book Parts A and B, Academy beta, and Essentia v0.8.0 research architecture.
+- Deep links to the Manifesto, draft Charter, Founding Book Parts A and B, Academy beta, and Essentia v0.9.0 monetary and civic research architecture.
 
 ### 1.2 Non-Goals
 
@@ -104,7 +104,7 @@ This specification is written for the Society of Renewal product, design, and en
 - **Secondary CTA:** `Read the manifesto`
 - **Tertiary CTA:** `Follow the work`
 - **Status disclosure:** `The Society is still in formation. Its public documents and prototypes are real; formal membership, civic identity, voting, currency, and the Freedom Floor are not live yet.`
-- **Project status:** Manifesto = published and unchanged; Founding Book Parts A and B = complete working drafts; Charter = draft derived from the Founding Book; Essentia v0.1.0 = runnable research prototype; Essentia v0.8.0 = current research architecture, not implemented; Academy = early beta.
+- **Project status:** Manifesto = published and unchanged; Founding Book Parts A and B = complete working drafts; Charter = draft derived from the Founding Book; Essentia v0.1.0 = runnable research prototype; Essentia v0.9.0 = current monetary and civic research architecture, not implemented; Academy = early beta.
 - **Waitlist disclosure:** Joining records interest and enables email updates. It does not create membership, civic identity, voting rights, selection, a benefit application, or a promise of benefits.
 - **Canonical source:** `docs/content/landing-page.md`.
 

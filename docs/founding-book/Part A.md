@@ -63,7 +63,7 @@ A person cannot exercise meaningful freedom while every decision is held hostage
 
 Personal responsibility remains real. People still make choices, cause harm, keep promises, break promises, learn, and refuse to learn. But agency is not an on-off switch. It expands with safety, knowledge, health, time, support, and credible alternatives. It contracts under terror, exhaustion, pain, deprivation, and isolation.
 
-The Society commits to a Freedom Floor: reliable access to the material conditions required for life with dignity. Universal Basic Income may become one instrument of that floor, but no currency design or payment mechanism is entitled to survive if it fails to deliver actual food, shelter, healthcare, communication, safety, and participation.
+The Society commits to a Freedom Floor: reliable access to the material conditions required for life with dignity. A recurring Universal Basic Income is central to that commitment because freedom requires resources a person can direct without asking permission. The Society will develop `𝒰`, `ℛ`, and `ℰ` to make that income real, but no currency design or payment mechanism is entitled to survive if it fails to deliver actual food, shelter, healthcare, communication, safety, and participation.
 
 A floor that disappears during a market panic is not a floor.
 
@@ -292,11 +292,11 @@ Values state what we refuse to sacrifice. Findings describe what appears to happ
 
 Every consequential claim should disclose whether it is a moral premise, a replicated finding, context-dependent evidence, a working hypothesis, a design conjecture, or an unknown. Confidence should track evidence, not enthusiasm.
 
-### Test before scaling
+### Build hypotheses into evidence
 
-No monetary promise, identity regime, governance procedure, safety system, or automated decision process should become difficult to reverse before it has survived simulation, adversarial review, bounded pilots, and independent evaluation.
+Revolutionary institutions cannot wait for evidence from a world in which they already exist. They must begin as explicit hypotheses, build the smallest real form that can teach us something, and expose the result to adversarial review.
 
-The higher the consequence of failure, the smaller and more observable the first test should be.
+No monetary system, identity regime, governance procedure, safety system, or automated decision process should become difficult to reverse or indispensable to survival before it has survived the kinds of tests its consequences require. The higher the consequence of failure, the more observable, repairable, and independently evaluated the first dependent use must be.
 
 ### Publish failure
 
@@ -308,7 +308,7 @@ Part A names the common ground: dignity, interdependence, agency, truth, care, a
 
 Part B asks whether our proposed mechanisms can actually honor it.
 
-It examines what scarcity does and does not do to human cognition; what cash transfers, education, prevention, restorative practice, and deliberation have achieved under real conditions; how trust emerges and fails; how money acquires acceptance; how a Freedom Floor can be indexed to real life; why convertibility is a balance-sheet and production problem rather than a line of code; how identity can resist fraud without enclosing the person; and when a distributed ledger is useful rather than ceremonial.
+It examines what scarcity does and does not do to human cognition; what cash transfers, education, prevention, restorative practice, and deliberation have achieved under real conditions; how trust emerges and fails; how money acquires acceptance without intrinsic value or conventional redemption; how a Freedom Floor can be indexed to real life; how `𝒰`, `ℛ`, and `ℰ` can turn equal civic issuance into usable income; what makes that income produce output rather than shortages; how identity can resist fraud without enclosing the person; and when a distributed ledger is useful rather than ceremonial.
 
 The purpose is not to prove that care always scales. Nothing so broad can be honestly proven in advance.
 

@@ -4,10 +4,10 @@
 - [Charter Outline](outline.md) - Development roadmap
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
-- [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
+- [Part IV: Open Participation, Membership, and Federation](Part%20IV.md)
 - [Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)
 - [Founding Book Part A](../founding-book/Part%20A.md) - Moral commitments
-- [Founding Book Part B](../founding-book/Part%20B.md) - Current scientific and economic basis
+- [Founding Book Part B](../founding-book/Part%20B.md) - Scientific, economic, and technical basis
 
 ---
 
@@ -15,23 +15,27 @@
 
 ## Status
 
-The Charter is a draft.
+The Charter is a draft derived from the Founding Book.
 
-[Part B of the Founding Book](../founding-book/Part%20B.md) is the scientific, economic, and technical basis for the Society. The Charter derives its mechanisms from that foundation.
+[Part A](../founding-book/Part%20A.md) states the moral covenant. [Part B](../founding-book/Part%20B.md) develops the scientific, economic, institutional, and technical hypotheses from which the Society's mechanisms are designed.
 
-Parts II, III, IV, and VI are proposals. A mandatory blockchain, one permanent DID, ranked-choice voting as a universal default, liquid democracy, public reputation, Universal Basic Income funding, Essential Unit conversion, machine governance, and specific safety institutions remain subject to Part B's evidence gates before ratification.
+Part B does not require every mechanism to have been demonstrated at civilization scale before it can be attempted. Revolutionary institutions necessarily begin as hypotheses. It does require each hypothesis to be stated clearly enough to model, challenge, test, measure, and improve.
 
-No mechanism becomes constitutional merely because it appears in a prototype or draft.
+No implementation becomes constitutional merely because it is familiar. No novel mechanism is excluded merely because the existing world has not already built it.
 
-## 1. The central hypothesis
+## 1. The central hypotheses
 
-The Society of Renewal is exploring a testable claim:
+The Society begins with a testable social hypothesis:
 
 > Reliable material security, usable knowledge, social connection, accountable institutions, and compassionate intervention can reduce preventable suffering and reduce the situations in which coercion appears necessary.
 
-The claim is directional, not absolute.
+It also begins with a monetary hypothesis:
 
-It does not mean:
+> A cryptographically accountable network can create a positive-value, broadly accepted currency through shared agreement, equal civic issuance, useful exchange, standing acceptance commitments, dense trade loops, productive credit, transparent rules, and a stable real unit of account. If that equilibrium becomes durable, an Essential Unit can convert through an Essential Settlement Receivable into enough Essent to provide a real and usable universal income.
+
+These hypotheses are directional rather than absolute.
+
+They do not mean:
 
 - poverty causes every harm;
 - cash alone repairs trauma, illness, exclusion, or violence;
@@ -41,20 +45,22 @@ It does not mean:
 - trust removes the need for verification;
 - decentralization guarantees democracy;
 - cryptography makes external facts true;
-- a token balance is equivalent to purchasing power;
-- or any existing Society design has been validated at scale.
+- any quantity of newly issued money is harmless;
+- a nominal token balance automatically equals purchasing power;
+- outside exchange liquidity and internal purchasing power are the same thing;
+- or any current implementation has already been validated at scale.
 
 ## 2. What the evidence supports
 
-The evidence reviewed in Part B supports several bounded conclusions.
+The evidence reviewed in Part B supports several bounded conclusions and identifies several plausible mechanisms worth testing.
 
 ### 2.1 Material conditions affect agency
 
 Scarcity, instability, and chronic stress can narrow attention and increase cognitive load. Unconditional cash transfers have often improved material outcomes and some dimensions of well-being, while effects vary by setting and outcome.
 
-The Charter may therefore treat material security as important infrastructure for agency.
+Large transfers do not mechanically become equivalent inflation. The rural Kenya experiment reviewed in Part B introduced purchasing power exceeding 15 percent of local GDP and found substantial real activity with very little measured local inflation. Its conditions do not generalize automatically, but they demonstrate that productive slack, trade, supply response, distribution, and confidence in the unit change the result.
 
-It may not claim that one payment design will automatically eliminate violence, illness, exploitation, or despair.
+The Charter may therefore treat material security as infrastructure for agency and direct monetary research toward the mechanisms that turn new demand into production rather than scarcity rents.
 
 ### 2.2 Learning and prevention matter
 
@@ -72,15 +78,30 @@ The Charter may therefore guarantee restorative options and invest in their qual
 
 It may not coerce victims into participation, substitute dialogue for fact-finding, or treat restoration as proof that risk has ended.
 
-### 2.4 Trust can support exchange and cooperation
+### 2.4 Shared acceptance can create money
 
-Money and institutions work partly because people expect others to recognize claims, honor obligations, and follow rules. Mutual-credit and complementary-currency systems show that reciprocal acceptance can create useful liquidity under bounded conditions.
+Money works because people expect other people and institutions to accept it. Commodity redemption and a conventional debtor are possible foundations, but they are not the definition of money.
 
-The Charter may therefore authorize experiments in trust-based credit and clearing.
+Commercial-bank deposits and mutual credit are inside money, where one participant's asset is another participant's liability. Irredeemable fiat base money and bearer tokens can function as outside money, where value arises from acceptance, institutional credibility, useful exchange, scarcity or issuance rules, and expectations about future use.
 
-It may not claim that agreement alone creates food, shelter, medicine, energy, outside currency, or solvency.
+Laboratory monetary experiments, complementary currencies, digital payment adoption, and Bitcoin establish that a unit without intrinsic commodity value or a sovereign redemption promise can coordinate exchange and acquire real purchasing power. They do not establish that every issuance rule will work or that value cannot collapse.
 
-### 2.5 Participation can improve legitimacy and knowledge
+The Charter may therefore authorize Essentia to create both:
+
+- outside `ℰ` through equal civic issuance and publicly authorized monetary operations;
+- inside `ℰ` through mutual, producer, and public credit with explicit counterparties and loss rules.
+
+The constitutional question is not whether every unit has a conventional liability behind it. It is whether the issuance rule, distribution, acceptance network, productive response, monetary governance, and failure process preserve dignity and usable purchasing power.
+
+### 2.5 Minting and inflation are not identical events
+
+Minting changes the nominal quantity of a currency. Inflation is a decline in what that currency buys.
+
+New issuance can contribute to inflation, but the effect runs through spending, saving, desired real balances, velocity, productive capacity, imports, exchange rates, market power, expectations, and distribution. If additional demand reaches unused capacity and finances production, output can rise. If it reaches fixed supply or people rapidly abandon the unit, prices can rise sharply.
+
+The Charter shall not treat the raw count of minted units as a complete causal model. It shall require monetary policy to measure real activated claims, output, shortages, prices, acceptance, velocity, concentration, and external leakage.
+
+### 2.6 Participation can improve legitimacy and knowledge
 
 Deliberative and polycentric institutions can use dispersed knowledge and create meaningful public voice when participation has real authority, adequate information, feedback, and review.
 
@@ -88,7 +109,7 @@ The Charter may therefore distribute authority and require participation.
 
 It may not treat one voting method as universally democratic or a consultation as meaningful when decision-makers can ignore it without explanation.
 
-### 2.6 Privacy and verification can coexist imperfectly
+### 2.7 Privacy and verification can coexist imperfectly
 
 Purpose-bound credentials, selective disclosure, public commitments, independent witnesses, and auditable processes can reduce unnecessary exposure while preserving some verification.
 
@@ -109,28 +130,36 @@ Rights do not depend on wealth, productivity, reputation, conformity, technical 
 The Society distinguishes:
 
 - a principle;
-- a proposal;
-- a simulation;
+- a hypothesis;
+- a model;
 - a prototype;
+- an experiment;
 - a bounded pilot;
 - a verified service;
 - and a guaranteed right.
 
-Public language must not collapse these categories.
+Public language must not collapse these categories. The distinction exists to make invention safer, not to make invention impossible.
 
-### 3.3 Real settlement
+### 3.3 Real purchasing power and accountable issuance
 
-A Freedom Floor is measured by successful access to essentials, not nominal issuance.
+A Freedom Floor is measured by what people can actually obtain, not by a fixed nominal token count.
 
-Any monetary article must identify:
+Any monetary article or protocol must disclose:
 
-- who owes performance;
-- what real capacity or assets support it;
-- how providers are settled;
-- how price and availability are measured;
-- what happens when ℰ loses value;
-- what happens when external reserves fail;
-- and who absorbs loss.
+- the real entitlement being targeted;
+- the issuance class used to meet it;
+- who receives newly issued value;
+- whether the issue is outside money or credit money;
+- the internal purchasing-power rate used for settlement;
+- the quantity and capacity of relevant goods and services;
+- how providers can reuse or exchange what they receive;
+- how supply bottlenecks are financed and addressed;
+- how external exchange and imports are handled;
+- how inflation, shortages, confidence, and concentration are measured;
+- what happens when acceptance falls;
+- and who bears credit losses or purchasing-power dilution.
+
+An outside-money issue does not require a conventional debtor. It still changes claims on real output and must remain publicly accountable.
 
 ### 3.4 Method by decision type
 
@@ -152,64 +181,146 @@ All coercion requires necessity, proportionality, time limits, documentation, re
 
 ### 3.7 Technical proportionality
 
-A shared blockchain or Byzantine fault tolerant ledger is justified only when the trust and failure model requires it.
+A shared blockchain or Byzantine fault tolerant ledger is justified when the trust and failure model requires it.
 
-The simplest architecture capable of independent verification, continuity, privacy, and correction should be preferred.
+The architecture must support independent verification, continuity, privacy, correction, and eventual federation. The implementation may begin with simpler components, but it must not quietly centralize powers that the constitutional design intends to distribute.
 
 ### 3.8 Ecological constraint
 
 Economic and technical systems must account for energy, material throughput, local ecology, and future capacity. Monetary abundance does not excuse physical overshoot.
 
-## 4. The Freedom Floor
+## 4. The Freedom Floor monetary architecture
 
-The Charter retains the goal of a Freedom Floor: reliable access to the material conditions of meaningful agency.
+The Charter retains the goal of a Freedom Floor: a universal real-value entitlement sufficient to protect meaningful agency.
 
-Its implementation is not yet constitutional fact.
+The intended monetary flow is:
 
-The current research architecture distinguishes:
+```text
+𝒰 -> ℛ -> ℰ
+```
 
-1. **Essential Units (𝒰):** a person-held entitlement measured against a regional essential basket;
-2. **Essent (ℰ):** a transferable settlement and mutual-credit instrument;
-3. **Essential Settlement Receivables (`ℛ`):** provider claims created after delivery;
-4. **External Liquidity Bridge:** reserves, revenues, credit, contracts, and payment partners connecting internal claims to the outside economy.
+### 4.1 Essential Unit (`𝒰`)
 
-𝒰 may support bounded conversion to ℰ after real liquidity exists. It may not promise unlimited conversion based only on an external price feed.
+`𝒰` is both an indexed unit of account and a person-held entitlement. It measures the real cost of the ratified Freedom Floor rather than a fixed quantity of dollars, euros, or `ℰ`.
 
-If ℰ becomes nearly valueless, minting an enormous quantity of ℰ does not preserve the Freedom Floor. Direct provision, reserves, procurement, reciprocal settlement, and honest coverage limits must carry the guarantee.
+Prices may be quoted in `𝒰` while payment clears in `ℰ`. This separates the real promise from the changing denomination of the settlement currency.
 
-The [Essentia v0.8.0 research architecture](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) defines the current model.
+### 4.2 Essential Settlement Receivable (`ℛ`)
 
-## 5. Evidence gates before ratification
+`ℛ` is the short-lived, non-circulating claim created whenever a person activates `𝒰`.
 
-No operational article governing money, identity, voting, safety, or automated decisions should be ratified without:
+Its beneficiary may be:
 
-- a public claim and mechanism;
-- a threat model;
-- comparison with simpler alternatives;
-- preregistered success and stop conditions;
-- simulation where appropriate;
-- adversarial review;
-- a bounded pilot;
-- independent evaluation;
-- an appeal and remedy process;
-- a rollback or transition plan;
-- and public results, including failure.
+- a provider who delivered a good or service;
+- the member requesting unrestricted conversion;
+- an authorized payment agent acting for the member.
 
-The greater the potential harm, the stronger the evidence and smaller the first deployment must be.
+`ℛ` remains denominated in `𝒰` until settlement. It carries the explicit settlement obligation and is extinguished when the beneficiary receives the agreed settlement.
+
+### 4.3 Essent (`ℰ`)
+
+`ℰ` is the common transferable money of Essentia.
+
+It is not defined as a fixed claim on another currency or commodity. Its value is intended to arise from coordinated acceptance, useful exchange, equal civic issuance, network services, standing offers, productive credit, and confidence in the monetary rule.
+
+`ℰ` may enter circulation through:
+
+- equal outside civic issuance;
+- settlement of activated `𝒰` claims;
+- mutual credit;
+- producer credit;
+- public investment;
+- bridge and liquidity operations.
+
+Each issuance class remains auditable even when ordinary users hold one fungible currency.
+
+### 4.4 Conversion is a core objective
+
+A person must be able to use `𝒰` directly for essentials or convert it through `ℛ` into unrestricted `ℰ`.
+
+The internal settlement rule targets real purchasing power:
+
+```text
+ℰ settlement = activated 𝒰 × current internal ℰ-per-𝒰 rate
+```
+
+If one `𝒰` currently requires a very large number of `ℰ`, the large integer may reflect denomination rather than a larger real claim. The protocol must distinguish:
+
+1. neutral redenomination, which scales every `ℰ` balance and price together;
+2. indexed settlement of the same real `𝒰` claim;
+3. activation of additional real `𝒰` claims;
+4. external redemption into national currency or another asset.
+
+Only the third necessarily increases the real claims being exercised. The second can affect expectations and existing holders, but its nominal size alone is not a sufficient inflation measure.
+
+### 4.5 Internal purchasing power and external exchange
+
+Essentia has two different price questions:
+
+```text
+Q_int(r, t) = ℰ required to obtain one 𝒰 inside region r at time t
+```
+
+```text
+Q_ext(a, x, t) = units of external asset a obtainable for x ℰ after fees and market impact
+```
+
+The Freedom Floor targets `Q_int`. External cash-out and import capacity depend on `Q_ext` and the External Liquidity Bridge.
+
+A thin external market must not define the value of an internal economy by itself. A stable internal market must not be misrepresented as unlimited external convertibility.
+
+### 4.6 Essential Settlement Receivables as a supply map
+
+Aggregated `ℛ` records reveal where real demand is not being met fast enough. Essentia shall use that information, without exposing personal transactions, to direct producer credit, public investment, procurement, training, inventory finance, housing development, care capacity, logistics, energy, and supplier recruitment.
+
+The principal defense against inflation is not simply reducing universal income. It is increasing the supply and competitive capacity needed to honor it, while addressing monopoly capture and genuine physical scarcity.
+
+### 4.7 External Liquidity Bridge
+
+The External Liquidity Bridge connects Essentia to currencies, imports, taxes, debts, and providers outside the `ℰ` network.
+
+It may contain reserves, revenue, credit facilities, exchange markets, procurement contracts, payment partners, and cross-node clearing relationships.
+
+It is important for interoperability and early confidence. It is not defined as one-to-one backing for all `ℰ` and is not the sole source of `ℰ` value.
+
+## 5. Research and ratification
+
+The Founding Book is allowed to state an ambitious hypothesis before it can state the final implementation.
+
+The Charter shall require Essentia to develop that hypothesis through:
+
+- formal models with competing assumptions;
+- deterministic and agent-based simulation;
+- a founding market that coordinates participants and providers at the same time;
+- experiments in outside civic issuance without promised fixed external redemption;
+- direct `𝒰 -> ℛ -> ℰ` conversion;
+- producer credit and supply-coupled issuance;
+- controlled external exchange;
+- recurring universal-income pilots large enough to affect ordinary life;
+- independent economic, legal, security, accessibility, and human-rights review;
+- public negative results and visible redesign.
+
+The burden of evidence rises with dependency and irreversibility. A simulation may begin from a plausible mechanism. A pilot people use for groceries requires stronger operational protection. A guaranteed right requires demonstrated capacity, continuity, and correction.
+
+This order protects people without defining the existing economy as the boundary of the possible.
 
 ## 6. Relationship to later Charter parts
 
 ### Part II
 
-Identity, governance, income, and education articles are design proposals. They require amendment to reflect plural identity, method-by-decision governance, the new economic layers, and research gates.
+Identity, governance, income, and education articles shall implement the book's plural identity, decision-by-type, monetary, and research requirements.
 
 ### Part III
 
-Safety and restorative articles state important constraints but require professional, legal, medical, human-rights, and empirical review before operational use. Specific tools and timelines are not validated merely by inclusion in the draft.
+Safety and restorative articles state important constraints but require professional, legal, medical, human-rights, and empirical development before operational use. Specific tools and timelines are not validated merely by inclusion in the draft.
 
 ### Part IV
 
-Membership and federation must distinguish open participation from high-assurance eligibility for voting or recurring benefits. Federation also requires financial resolution, exposure limits, legal structure, and exit.
+Membership and federation must distinguish open participation from high-assurance eligibility for voting or recurring benefits. Federation also requires portable entitlements, cross-node monetary clearing, financial resolution, legal structure, and exit.
+
+### Part V
+
+Economy and Treasury shall define the monetary controller, `𝒰` indexing, `ℛ` settlement, outside and inside `ℰ` issuance, the founding market, provider acceptance, producer finance, the External Liquidity Bridge, public monetary accounts, loss allocation, and emergency operation.
 
 ### Part VI
 
@@ -217,11 +328,11 @@ Privacy and technology rules must satisfy purpose limitation, recovery, accessib
 
 ## 7. Ratification principle
 
-The Charter may bind the Society to values before every mechanism is known.
+The Charter may bind the Society to dignity, equal standing, a real Freedom Floor, privacy, accountable power, ecological continuity, and public correction before every mechanism reaches maturity.
 
-It may not bind future participants to a mechanism whose evidence is weak, whose failure cannot be contained, or whose promise cannot be financed.
+It should not freeze one untested equation or implementation as eternal law. It should require the Society to keep developing, testing, and replacing mechanisms until the promised conditions become real.
 
-A constitutional promise should be stronger than a product roadmap.
+A constitutional promise should be more durable than a product roadmap and more ambitious than the institutions we inherited.
 
 ---
 

@@ -5,7 +5,7 @@
 - [Part I: Research Basis and Constitutional Implications](Part%20I.md)
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
-- [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
+- [Part IV: Open Participation, Membership, and Federation](Part%20IV.md)
 - [Founding Book](../founding-book/README.md) - Philosophical foundation
 - [Main Project Outline](../content/README.md) - Overall project structure
 
@@ -218,4 +218,4 @@ Part VI codifies information governance as a dignity-bound system: open by defau
 
 ---
 
-> Continue to read → [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
+> Continue to read → [Part IV: Open Participation, Membership, and Federation](Part%20IV.md)

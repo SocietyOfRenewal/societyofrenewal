@@ -8,7 +8,7 @@
 - [Part B: The Science of Renewal](../founding-book/Part%20B.md) - Evidence and economic architecture
 - [Content Hub](README.md) - Program roadmap and navigation
 - [Landing Build Spec](../spec/landing-build-spec.md) - Implementation requirements
-- [Essentia](https://github.com/SocietyOfRenewal/essentia) - Runnable prototype and v0.8.0 research architecture
+- [Essentia](https://github.com/SocietyOfRenewal/essentia) - Runnable prototype and v0.9.0 monetary and civic research architecture
 - [Academy beta](https://academy.societyofrenewal.org/) - Guardian-led learning platform in active development
 
 ---
@@ -45,18 +45,18 @@
 
 **Introduction:**
 
-> Large claims deserve public scrutiny. We publish the Society's principles, evidence, prototypes, and open questions so people can inspect the work, challenge its assumptions, and help improve it.
+> Large claims deserve public scrutiny. We publish the Society's principles, hypotheses, evidence, models, prototypes, and open questions so people can inspect the work, challenge its assumptions, and help make it real.
 
 The public inventory must distinguish each artifact's current state:
 
 - The Manifesto is published and remains unchanged.
 - Part A and Part B of the Founding Book are complete working drafts.
-- Part A states the moral covenant; Part B states the evidence, uncertainty, economic architecture, and research gates.
-- The Charter of Renewal is a draft derived from the Founding Book with Part B and has not been ratified.
+- Part A states the moral covenant. Part B develops the evidence, monetary hypothesis, economic architecture, and research program from which the Charter and Essentia are derived.
+- The Charter of Renewal is a draft derived from the Founding Book and has not been ratified.
 - Essentia v0.1.0 is runnable prototype software that does not implement the current architecture.
-- Essentia v0.8.0 is the current research architecture. It is a specification, not an implemented network.
+- Essentia v0.9.0 is the current monetary and civic research architecture. It makes direct `𝒰 -> ℛ -> ℰ` conversion, equal civic issuance, coordinated acceptance, and productive capacity part of the core hypothesis. It is a specification, not an implemented network.
 - The Academy is an early beta with guardian authentication and learner-profile foundations.
-- The Freedom Floor, ℰ, 𝒰, civic identity, binding voting, benefit selection, and convertibility services are not live.
+- The Freedom Floor, `𝒰`, `ℛ`, `ℰ`, civic identity, binding voting, benefit selection, and conversion services are not live.
 
 ## Manifesto Bridge
 
@@ -106,7 +106,7 @@ Use this excerpt without changing the manifesto itself:
 - [Read Part B](../founding-book/Part%20B.md)
 - [Read the Draft Charter](../charter/README.md)
 - [Explore the Founding Book](../founding-book/README.md)
-- [Explore the Essentia prototype and v0.8.0 research architecture](https://github.com/SocietyOfRenewal/essentia)
+- [Explore the Essentia prototype and v0.9.0 monetary and civic research architecture](https://github.com/SocietyOfRenewal/essentia)
 - [Open the Society of Renewal Academy beta](https://academy.societyofrenewal.org/)
 
 ---

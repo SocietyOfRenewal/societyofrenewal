@@ -4,20 +4,32 @@
 
 - [Society of Renewal Manifesto](../manifesto.md) - Public diagnosis and call to coordination
 - [Part A: The Covenant of Renewal](Part%20A.md) - Moral commitments and the Dignity Constraint
-- [Part B: The Science of Renewal](Part%20B.md) - Evidence, uncertainty, economic design, and research gates
+- [Part B: The Science of Renewal](Part%20B.md) - Evidence, hypotheses, economic design, and research program
 - [Outline](outline.md) - Book structure and development status
-- [Charter of Renewal](../charter/README.md) - Draft constitutional framework
-- [Essentia Research Architecture v0.8.0](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) - Protocol direction derived from Part B
+- [Charter of Renewal](../charter/README.md) - Draft constitutional framework derived from the book
+- [Essentia Monetary and Civic Research Architecture v0.9.0](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) - Protocol architecture derived from Part B
 
 ---
 
-The Founding Book is the philosophical and scientific foundation of the Society of Renewal.
+The Founding Book is the guiding philosophical, scientific, economic, and institutional foundation of the Society of Renewal.
 
-It does not claim that the Society has already been proven. It separates three different questions:
+The direction runs outward from this book:
 
-1. **What must not be sacrificed?** Part A states the moral commitments.
-2. **What does the evidence support?** Part B examines mechanisms, uncertainty, and failure.
-3. **What should be built and tested?** Later parts will turn the surviving hypotheses into institutions, protocols, safeguards, and pilots.
+```text
+Part A: values and boundaries
+      ↓
+Part B: evidence, hypotheses, and design constraints
+      ↓
+Charter: rights, powers, and constitutional commitments
+      ↓
+Essentia and other institutions: implementation
+      ↓
+Observed results
+      ↓
+The book revised by evidence
+```
+
+The Charter and Essentia do not determine what Part B must justify after the fact. Part B determines what they should become.
 
 ## Current parts
 
@@ -32,49 +44,76 @@ Part A establishes:
 - privacy for people and transparency for institutions;
 - democratic participation without one sacred voting method;
 - identity without total legibility;
-- an economy accountable to real goods, obligations, and ecological limits;
+- an economy accountable to people, production, and ecological limits;
 - public correction as a civic duty.
 
-Part A is normative. Science can test whether a mechanism honors those commitments. It cannot derive inherent human worth from a dataset.
+Part A is normative. Science can test whether a mechanism honors those commitments. It cannot derive inherent worth from a dataset.
 
 ### Part B: The Science of Renewal
 
-Part B provides the current evidence and systems basis for:
+Part B begins with hypotheses that matter enough to investigate, including the hypothesis that a cryptographically accountable network can deliberately create a new monetary equilibrium.
+
+It provides the current basis for:
 
 - scarcity, material security, and agency;
 - learning, prevention, restoration, and necessary force;
 - trust, cooperation, and institutional design;
 - polycentric and deliberative governance;
 - identity, proof of personhood, privacy, and recovery;
-- money, mutual credit, token adoption, stablecoin failure, and real purchasing power;
-- a three-layer Freedom Floor architecture;
-- the technical boundary between public evidence and private life;
+- money as a social coordination technology;
+- outside money, mutual credit, token adoption, network effects, seigniorage, and inflation mechanisms;
+- an indexed Freedom Floor using `𝒰`, `ℛ`, and `ℰ`;
+- internal purchasing-power targeting and external exchange;
+- supply-coupled monetary issuance;
+- public evidence and private human life;
 - ecological constraints;
-- staged pilots, stop conditions, and falsification tests.
+- simulations, founding-market experiments, pilots, and falsification tests.
 
-Its central economic constraint is that software cannot guarantee purchasing power by minting a larger number of tokens. `𝒰` represents a real entitlement, `ℛ` records the provider obligation created when that entitlement is honored, and `ℰ` is a settlement instrument. External liquidity and provider capacity connect those internal claims to the outside economy.
+Its central monetary hypothesis is:
+
+> A cryptographically accountable network can create a positive-value, broadly accepted currency through equal civic issuance, useful exchange, standing acceptance commitments, dense trade loops, productive credit, transparent monetary policy, and a stable real unit of account. If that equilibrium becomes durable, `𝒰` can convert through `ℛ` into enough `ℰ` to provide a real and usable universal income.
+
+The architecture does not require every unit of `ℰ` to be another person's conventional debt. It supports both outside civic money and inside credit money. It makes the creation rule, distribution, real purchasing power, supply response, and failure mechanisms public.
+
+## The monetary layers
+
+The intended flow is:
+
+```text
+𝒰 -> ℛ -> ℰ
+```
+
+- `𝒰`, the Essential Unit, measures a real cost-of-living entitlement and can also serve as the stable unit in which prices are quoted.
+- `ℛ`, the Essential Settlement Receivable, preserves the activated real claim while it is cleared. Its beneficiary may be a provider, the member requesting unrestricted conversion, or an authorized payment agent.
+- `ℰ`, Essent, is the common transferable money. It may enter circulation through equal civic issuance, mutual credit, producer credit, public investment, or bridge operations under different public rules.
+
+The External Liquidity Bridge connects Essentia to national currencies, imports, and institutions that do not yet accept `ℰ`. It is a catalyst and interoperability layer, not the source of all monetary value.
+
+A large nominal `ℰ` settlement is not automatically a large real issue. Denomination, indexed settlement, additional real entitlement, and external redemption are different operations. Part B requires Essentia to measure the real claim, productive response, willingness to hold `ℰ`, velocity, shortages, prices, and external leakage rather than treating the raw mint count as the causal variable.
 
 ## Relationship to the Charter
 
-The Charter remains a draft constitutional proposal.
+The Charter is the proposed constitutional expression of the book.
 
-Part B supplies the research basis from which Charter mechanisms are written. The Charter may protect values before every mechanism is settled, but blockchain identity, voting methods, proof of personhood, Universal Basic Income funding, and education policy remain provisional until they satisfy Part B's evidence and design gates.
+It can bind the Society to dignity, equal standing, material security, privacy, accountable power, and public correction. Specific monetary controllers, identity systems, voting procedures, consensus protocols, and safety mechanisms remain adjustable because the book's research program exists to discover which implementations work.
 
 ## Relationship to Essentia
 
-The [Essentia v0.8.0 research architecture](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) is derived from Part B.
+The [Essentia v0.9.0 architecture](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) translates Part B into a protocol research program.
 
-It defines the monetary architecture through:
+It includes:
 
-- `𝒰`, a real-cost essential-basket entitlement;
-- `ℛ`, the provider settlement bridge;
-- `ℰ`, a mutual-credit and settlement instrument;
-- an external-liquidity bridge;
-- coverage accounting;
-- bounded conversion;
-- circuit breakers;
-- transparent failure modes;
-- and a staged research program before any public economic promise.
+- indexed `𝒰` entitlements;
+- `ℛ` activation and settlement;
+- direct `𝒰 -> ℛ -> ℰ` conversion as a core monetary goal;
+- outside civic `ℰ` and inside credit `ℰ`;
+- a founding market that coordinates consumers, providers, suppliers, workers, and public institutions at launch;
+- internal purchasing-power measurement distinct from external exchange liquidity;
+- supply-coupled issuance and producer finance;
+- public monetary accounting;
+- neutral redenomination;
+- an External Liquidity Bridge for interoperability;
+- staged simulation, live experiments, and recurring-income pilots.
 
 ## Current status
 
@@ -92,7 +131,7 @@ Still to be written:
 - Part G: Objections, edge cases, and public questions
 - Annexes and replication materials
 
-The book is public and corrigible. Strong claims should gain precision as evidence improves, not become permanent because they appeared in an early draft.
+The book is public and corrigible. Novelty is not treated as disproof. Confidence grows through clearer mechanisms, better models, real experiments, negative results, and systems that eventually work in the lives of the people depending on them.
 
 ---
 

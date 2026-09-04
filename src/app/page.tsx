@@ -19,7 +19,7 @@ const currentWork = [
     name: 'Founding Book',
     state: 'Parts A-B drafted',
     detail:
-      'The moral covenant, scientific basis, economic architecture, and research gates for the Society.',
+      'The guiding moral and scientific foundation from which the Charter, Essentia, and later institutions are derived.',
     href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/founding-book',
     external: true,
   },
@@ -33,9 +33,9 @@ const currentWork = [
   },
   {
     name: 'Essentia',
-    state: 'v0.8.0 research design',
+    state: 'v0.9.0 research design',
     detail:
-      'The economic and technical architecture derived from Part B. The runnable v0.1.0 code is a separate narrow research prototype.',
+      'The monetary and civic architecture derived from Part B, centered on 𝒰, ℛ, ℰ, equal civic issuance, coordinated acceptance, and productive capacity. The runnable v0.1.0 code is a separate narrow prototype.',
     href: 'https://github.com/SocietyOfRenewal/essentia',
     external: true,
   },
@@ -307,7 +307,7 @@ export default function Page() {
                 rel="noopener"
                 className="text-slate-300 hover:text-white"
               >
-                Essentia v0.8.0 research architecture →
+                Essentia v0.9.0 research architecture →
               </Link>
               <Link
                 href="https://academy.societyofrenewal.org/"

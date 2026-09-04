@@ -1,265 +1,568 @@
 ## Navigation
 
-- [Charter Home](README.md) - Overview and navigation
-- [Charter Outline](outline.md) - Development status and roadmap
+- [Charter Home](README.md) - Overview and status
+- [Charter Outline](outline.md) - Development roadmap
 - [Part I: Research Basis and Constitutional Implications](Part%20I.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
-- [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
-- [Founding Book](../founding-book/README.md) - Philosophical foundation
-- [Main Project Outline](../content/README.md) - Overall project structure
+- [Part IV: Open Participation, Membership, and Federation](Part%20IV.md)
+- [Founding Book Part A](../founding-book/Part%20A.md) - Moral covenant
+- [Founding Book Part B](../founding-book/Part%20B.md) - Scientific, economic, and technical basis
 
 ---
 
-> **Draft status.** This Part applies the principles and constraints established in [Part B of the Founding Book](../founding-book/Part%20B.md) to identity, platform, governance, monetary, and education mechanisms. Its details remain proposals until they are threat-modeled, tested where appropriate, independently reviewed, and ratified.
+> **Draft status.** This Part derives proposed operating rules from [Part B of the Founding Book](../founding-book/Part%20B.md). It states the direction of the Society while leaving implementation details open to modeling, experiments, independent review, and ratification.
 
+# Part II - Operational Articles
 
-# PART II — Operational Articles of the Society of Renewal
+_Identity, public knowledge, governance, the Freedom Floor, and education_
 
-_Identity · Platform · Governance · Universal Basic Income · Education_
+## Preamble
 
-## Preamble to Part II
+The Society of Renewal exists to make dignity, agency, knowledge, and material security practical rather than ceremonial.
 
-The Society of Renewal recognizes that dignity, participation, and access to knowledge are the foundation of a just civilization. This Part establishes the core operating systems of the Society: how people become recognized; how we speak and decide together; how we secure material safety for all members; and how we ensure lifelong learning. All systems described here must align with **Part I** (the Dignity Constraint), prioritizing restorative guidance over punishment and continuous refactoring toward greater compassion and clarity.
+No implementation under this Part may make participation depend on wealth, public humiliation, one permanent identity number, one proprietary platform, or one technical mechanism that cannot be questioned or replaced.
 
-No implementation of these Articles may be used to dominate, humiliate, exclude, or erase any conscious being.
-
----
-
-## Article 1 — Identity
-
-### Section 1.1 — Right to Self-Sovereign Identity
-
-Every member has the right to a self-sovereign digital identity. This identity shall be expressed as a **Decentralized Identifier (DID)** anchored on the **Essentia blockchain**. No state, corporation, institution, council, delegate, or algorithm may revoke, alter, or impersonate a member’s DID.
-
-### Section 1.2 — Nature of the DID
-
-A DID is the cryptographic declaration: “This is me, and I control proof that I am me.” The DID shall include:
-
-- (a) a public key or equivalent verification primitive; and
-- (b) optional attestations voluntarily provided or received by the member (skills, credentials, contributions, restorative agreements, etc.).
-
-No member is compelled to disclose private data beyond what is strictly required for fair participation in Society functions.
-
-### Section 1.3 — Uniqueness and Proof-of-Personhood
-
-To prevent fraud, extraction, and automated abuse, each DID representing a human member shall be verifiably unique to that living person. The Society may use any of the following, alone or in combination, to establish uniqueness:
-
-- (a) web-of-trust vouching by existing members in good standing;
-- (b) consensual one-time verification using external documents or biometrics under dignity constraints;
-- (c) other mechanisms approved by governance that preserve autonomy and do not create permanent surveillance artifacts.
-
-### Section 1.4 — Protection of the Vulnerable
-
-If a new member is in crisis and cannot yet safely manage their cryptographic keys, a **temporary custodial arrangement** may be created. Any such custody:
-
-- (a) must be transparently logged;
-- (b) must include a mandatory path to transfer full control to the member once stabilized;
-- (c) must be monitored by an oversight circle empowered to intervene against abuse.
-
-Permanent dependency on custodianship is prohibited.
-
-### Section 1.5 — Use of Identity
-
-The DID is the member’s single credential for:
-
-- (a) participation in governance;
-- (b) receipt of Universal Basic Income;
-- (c) access to shared platforms for learning and discourse;
-- (d) participation in restorative processes when harm occurs;
-- (e) authorship and amendment of the Charter itself.
-
-No parallel identity hierarchy shall be created. No “higher class” of identity shall exist.
+The Founding Book guides interpretation. Where an operational mechanism conflicts with the evidence, uncertainty, or constraints stated in Part B, the mechanism must change.
 
 ---
 
-## Article 2 — Platform
+## Article 1 - Identity, eligibility, and recovery
 
-### Section 2.1 — The Knowledge Commons (Essentia)
+### Section 1.1 - Right to person-controlled identity
 
-The Society shall maintain a shared knowledge base (“**Essentia**”) that records:
+Every person has the right to control the credentials used to represent them in Society systems.
 
-- (a) the Charter of Renewal and its full revision history;
-- (b) educational materials in fields including but not limited to science, health, civic process, conflict resolution, ecology, and craft;
-- (c) public proposals, debates, and research relevant to Society governance.
+No state, company, council, validator, administrator, or algorithm may claim ownership of a person's identity. An institution may issue, verify, suspend, or revoke a credential within its lawful purpose. It may not erase the person represented by that credential or quietly make all other civic access depend on one revocable account.
 
-### Section 2.2 — Public Access
+### Section 1.2 - Plural and purpose-bound credentials
 
-Essentia shall be openly readable by all persons, including non-members. Learning is not a privilege of citizenship; it is a right of consciousness. Reasonable rate-limiting and moderation may be applied to prevent sabotage, but access to truth and knowledge must remain maximally open.
+The Society shall not require one public identifier for every function.
 
-### Section 2.3 — Contribution and Stewardship
+Separate credentials may establish different facts, including:
 
-Any member in good standing may propose additions, corrections, or revisions. Edits shall be tracked with full version history and attributable to the submitting DID. The Society shall elect or delegate **Knowledge Stewards** to review, merge, and curate content for clarity, accuracy, and alignment with the Dignity Constraint. Stewards are caretakers, not gatekeepers; their authority is subject to governance recall.
+- membership or participation;
+- eligibility for equal civic issuance;
+- eligibility for a specific benefit or pilot;
+- voting eligibility for a defined jurisdiction or decision;
+- professional authorization;
+- provider status;
+- stewardship or administrative authority;
+- age or residency range;
+- completion of a learning requirement where that requirement is legitimate.
 
-### Section 2.4 — Persistence and Censorship Resistance
+A credential shall disclose no more than the function requires. Pairwise or unlinkable identifiers should be used where public correlation would create unnecessary surveillance.
 
-The Charter and its historical states, along with other critical records, shall be redundantly stored using decentralized infrastructure. No single actor shall be capable of erasing, secretly rewriting, or monopolizing access to the Charter or its recorded deliberations.
+### Section 1.3 - Assurance proportional to consequence
 
-### Section 2.5 — The Civic Commons (Social Layer)
+The strength of identity assurance must match the consequence of error.
 
-The Society shall maintain an open social layer — a networked forum for discourse, coordination, and mutual aid — which must:
+Reading public materials requires no identity. Joining a discussion may require only anti-abuse controls. Receiving a recurring per-person monetary issue or casting a binding vote requires stronger evidence that one living eligible person is not being counted repeatedly.
 
-- (a) be interoperable where technically and ethically possible;
-- (b) allow members (via their DID) to speak, signal needs, propose action, and challenge ideas;
-- (c) allow non-members to witness and learn, except where privacy is required for safety or dignity.
+The Society shall not demand maximum identification for low-risk participation merely because stronger identification is required elsewhere.
 
-Incitement to dehumanize or erase others is incompatible with the Dignity Constraint and may be removed. Disagreement, critique, testimony, and dissent are protected.
+### Section 1.4 - Personhood and uniqueness
 
----
+No proof-of-personhood method is presumed complete.
 
-## Article 3 — Governance
+High-assurance eligibility may combine independent signals such as:
 
-### Section 3.1 — Foundational Principle
+- in-person or remote human attestation;
+- community vouching with conflict limits;
+- privacy-preserving document checks;
+- liveness or biometric evidence when genuinely voluntary and safely handled;
+- device or credential history;
+- duplicate-pattern analysis;
+- challenge and investigation;
+- periodic re-attestation;
+- independent appeal.
 
-All authority in the Society flows from informed, voluntary participation. Governance exists to coordinate will, allocate resources, and refine the Charter — not to dominate individuals.
+No raw biometric template, government document image, household history, or intimate record may be placed on a public ledger.
 
-### Section 3.2 — One Member, One Voice
+A person denied or challenged must receive an understandable reason, continuity of essential access where feasible, a timely human review, and a path to correct the record.
 
-Each DID representing a member in good standing carries equal baseline voting power. No permanent class of superior voices shall exist. Delegation, where used, is always voluntary and reversible.
+### Section 1.5 - Recovery and assisted access
 
-### Section 3.3 — Ranked-Choice Collective Decisions
+Key loss, disability, poverty, age, crisis, coercion, or lack of technical skill may not become permanent civic exclusion.
 
-For any decision presenting three or more options, the default mechanism is **Ranked-Choice Voting (RCV)**:
+Every consequential credential system requires:
 
-- (a) Members rank available options in order of preference.
-- (b) The option with the fewest first-preference votes is removed.
-- (c) Those ballots are reallocated to each voter’s next available preference.
-- (d) The process repeats until one option secures majority support.
+- more than one recovery path;
+- a way to replace compromised guardians;
+- time delays and alerts for high-risk recovery;
+- protection against abusive family, institutional, or technical custodians;
+- assisted access that preserves the person's authority as much as possible;
+- an emergency process that expires automatically;
+- an appeal when recovery is denied or abused.
 
-RCV ensures broad-consensus outcomes and prevents domination by plurality factions.
+Temporary custody must be limited, reviewable, and designed to return control.
 
-### Section 3.4 — Delegative (Liquid) Democracy
+### Section 1.6 - Portability, expiry, and revocation
 
-For ongoing policy matters and specialized questions, the Society shall support **Delegative Democracy**:
+People must be able to export usable evidence of their own credentials, subject to the privacy rights of others.
 
-- (a) Any member may vote directly on any issue;
-- (b) Any member may delegate their vote to another member they trust;
-- (c) Delegation may be scoped to a topic domain;
-- (d) Delegation is revocable at any time and takes immediate effect;
-- (e) A delegate may themselves delegate, forming chains of trust, provided such chains remain inspectable.
+Credentials shall expire, rotate, or be re-attested according to their risk. Revocation shall be scoped to the credential and reason. Loss of one role or eligibility claim may not silently revoke unrelated identity, expression, appeal, or personhood.
 
-This structure scales informed decision-making without forcing disengagement or creating a permanent ruling caste.
+### Section 1.7 - No identity caste
 
-### Section 3.5 — Expression of Intensity
+No universal reputation score shall determine dignity, voting power, essential access, or the amount of equal civic issuance.
 
-The Society may authorize alternative mechanisms (including **quadratic voting**) for resource allocation and prioritization, where the _strength_ of preference materially affects collective well-being. Any such mechanism must be publicly documented, mathematically transparent, and subject to periodic review.
-
-### Section 3.6 — Ledger of Record
-
-All proposals, votes, delegations, tallies, and ratified outcomes shall be immutably committed to the **Essentia blockchain** in a verifiable form. Full human-readable texts may live off-chain, but each record must include a cryptographic reference (e.g., a hash) proving which exact text was decided.
-
-### Section 3.7 — Privacy and Safety
-
-Members shall be protected from coercion and retaliation. While tallies, delegations, and proposal states must be publicly auditable, individual ballot choices may be shielded using cryptographic methods that allow verification without exposing personal vote content. No mechanism may force a member to publicly reveal their stance under threat.
-
-### Section 3.8 — Charter Refactoring Cycle
-
-The Charter shall undergo periodic **Refactoring Cycles**:
-
-- (a) Members may submit amendment proposals;
-- (b) Proposals are discussed in the civic commons and documented in Essentia;
-- (c) Proposals proceed to formal vote under this Article;
-- (d) Ratified amendments are integrated into the Charter and their hashes recorded on-chain;
-- (e) A full diff of changes becomes part of the permanent public record.
-
-No clause of this Charter is above revision except the Dignity Constraint and the right of conscious beings to exist without humiliation or erasure.
+Operational trust may be assessed within a limited context. A provider may have a delivery record. A borrower may have a credit limit. A steward may have an audit history. Those records may not become a general rank of human worth.
 
 ---
 
-## Article 4 — Universal Basic Income
+## Article 2 - Essentia and the civic commons
 
-### Section 4.1 — The Freedom Floor
+### Section 2.1 - Essentia as a protocol suite
 
-Every member is guaranteed a material baseline sufficient to sustain life with dignity, including reliable access to food, shelter, basic healthcare, communication, and safety. This guarantee is not conditional on labor, status, health, identity, or compliance.
+Essentia is the Society's proposed infrastructure for public evidence, private operations, monetary clearing, identity, decisions, and research.
 
-### Section 4.2 — Universal Basic Income
+Essentia is not constitutionally required to be one blockchain. Each function shall use the smallest architecture that can preserve integrity, privacy, availability, correction, and shared control under its actual trust model.
 
-To uphold the Freedom Floor, each member shall receive a recurring **Universal Basic Income (UBI)**. UBI shall be issued in Society currencies defined and maintained by the Society and shall arrive as a right, not as charity.
+### Section 2.2 - Public evidence plane
 
-### Section 4.3 — Stability of Value
+The Society shall publish the records necessary to inspect public power, including:
 
-UBI must retain real purchasing power over time:
+- canonical Charter text and revisions;
+- proposals and decision procedures;
+- budgets, appropriations, and institutional spending;
+- monetary issuance by class and authority;
+- aggregate `𝒰`, `ℛ`, and `ℰ` accounting;
+- provider commitments and aggregate coverage;
+- monetary and price-index methods;
+- official software release hashes;
+- audit findings;
+- emergency actions and expiration times;
+- aggregate outcome and failure measures.
 
-- (a) Payout amounts shall be indexed to the cost of essential goods and services;
-- (b) When the cost of living rises, UBI must adjust upward to preserve dignity;
-- (c) The Society shall not silently erode UBI through inflation or devaluation.
+Public evidence may be recorded through signed append-only logs, independent witnesses, content addressing, replicated ledgers, or Byzantine fault tolerant consensus where the trust model requires it.
 
-### Section 4.4 — Dual-Currency Implementation (Optional Mechanism)
+### Section 2.3 - Private operational plane
 
-The Society may maintain distinct currency classes to protect stability and prevent exploitation:
+Personal balances, household information, health data, ballots, private communications, identity evidence, recovery secrets, provider invoices, safety records, and restorative cases shall remain compartmentalized.
 
-- (a) a general medium of exchange (“**Essent**,” name subject to ratification) for free economic activity;
-- (b) a basic-needs allocation instrument (“**Essential Units**,” name subject to ratification) whose primary function is to secure access to necessities.
+Private data shall be:
 
-Essential Units may be guaranteed redeemable for core goods and services, restricted from speculative hoarding, and — where appropriate — time-limited so that meeting immediate needs is prioritized over accumulation. Any such mechanism must be transparent and auditable by all members.
+- collected for a stated purpose;
+- minimized;
+- access-controlled;
+- logged when accessed;
+- retained only as long as the purpose requires;
+- exportable or correctable where lawful;
+- protected from public correlation;
+- subject to independent incident review.
 
-### Section 4.5 — Distribution
+A public proof of process integrity must not expose the private life of the person affected.
 
-UBI shall be delivered to each member’s DID-linked wallet on a predictable cadence via verifiable smart contracts operating on the Essentia blockchain. No person or committee shall have discretionary power to interrupt or selectively deny these payments once membership is established, except where a member voluntarily exits the Society or is found (through due process consistent with this Charter) to have maliciously forged identity for extraction.
+### Section 2.4 - Knowledge Commons
 
-### Section 4.6 — Funding
+Foundational educational and civic materials shall be openly readable and reusable under public licenses wherever legally possible.
 
-The Society shall define, publish, and ratify one or more funding streams sufficient to maintain the Freedom Floor. These may include pooled contributions, common-resource dividends, cooperative revenues, mission-aligned investment yields, or controlled issuance of Society currency. Any funding mechanism must be transparent, collectively reviewable, and subject to amendment through governance.
+The Knowledge Commons shall preserve:
 
-### Section 4.7 — No Humiliation Clause
+- the Founding Book and its evidence record;
+- the Charter and its history;
+- public research, data dictionaries, models, and negative results;
+- educational material in science, health, civics, conflict navigation, ecology, craft, and care;
+- public explanations of Society systems in language ordinary people can use.
 
-Receipt of UBI shall never be conditioned on invasive questioning, moral judgment, surveillance of private life, coerced labor, or forced public disclosure of suffering. Poverty is a systems failure. Assistance is a repair function, not an indictment.
+Knowledge is not a privilege of membership.
 
----
+### Section 2.5 - Stewardship and correction
 
-## Article 5 — Education
+Members and non-members may propose corrections or additions under published procedures. Knowledge stewards may curate for accuracy, clarity, safety, and scope, but their authority must be documented, reviewable, and recallable.
 
-### Section 5.1 — Education as a Right and a Duty
+A correction shall preserve enough history to show what changed and why. The purpose of versioning is accountable learning, not permanent embarrassment.
 
-Access to learning is a right of every member and every visitor, and the cultivation of understanding is a shared duty of the Society. Education is essential infrastructure, equivalent in importance to water, shelter, and energy.
+### Section 2.6 - Civic Commons
 
-### Section 5.2 — Universal Access
+The Society may operate interoperable spaces for discussion, mutual aid, learning, proposals, and coordination.
 
-All foundational educational materials maintained by the Society shall be offered at no cost to the learner. No person shall be denied education on the basis of wealth, origin, age, disability, formal credentials, past harm, or current hardship.
+Disagreement, criticism, testimony, satire, and dissent are protected. Direct threats, targeted harassment, fraud, doxxing, and incitement to dehumanize or erase others may be limited under published rules with notice and appeal.
 
-### Section 5.3 — Lifelong Learning
+No engagement algorithm may quietly become the governor of civic attention.
 
-Education is recognized as a lifelong arc. Children, adolescents, adults, and elders are equal subjects of learning. The Society shall provide opportunities for reskilling, healing, growth, and exploration at every stage of life.
+### Section 2.7 - Models and automated systems
 
-### Section 5.4 — Content of Learning
+Any model used to allocate resources, flag fraud, establish eligibility, moderate speech, recommend a safety response, or influence a binding decision must have a public decision register describing:
 
-The Society shall prioritize:
+- its purpose;
+- responsible institution;
+- training or rule basis where disclosure is lawful;
+- inputs and outputs;
+- known limitations and error rates;
+- protected groups and disparate-impact testing;
+- human authority and override;
+- appeal and correction;
+- incident history;
+- review or expiration date.
 
-- (a) critical thinking, media literacy, and the ability to evaluate claims;
-- (b) emotional regulation, conflict navigation, and restorative practice;
-- (c) scientific, ecological, and technical literacy;
-- (d) creative expression and cultural continuity;
-- (e) practical skills that support individual and collective resilience (food systems, health support, engineering, cooperative economics, care work, governance fluency).
-
-Learners shall be invited to understand how the Society works — including identity systems, governance processes, and UBI — so that participation is informed, not symbolic.
-
-### Section 5.5 — Peer Teaching and Community Circles
-
-Any member may teach. Any member may ask to learn. The Society shall maintain structures for circles, apprenticeships, mentorships, and project-based learning so that knowledge is transmitted horizontally as well as vertically. Elders, practitioners, caregivers, and local stewards are recognized as essential educators alongside formally trained instructors.
-
-### Section 5.6 — Physical and Digital Learning Spaces
-
-The Society shall maintain accessible spaces — physical and digital — where any learner may safely enter, connect, study, create, or ask for guidance without fear of ridicule or exclusion. These learning spaces are sanctuaries. No coercive enforcement mechanism (policing, surveillance intimidation, punitive removal) may operate inside a learning sanctuary except to prevent immediate physical harm.
-
-### Section 5.7 — Education Over Punishment
-
-When a member causes harm, the first mandated response of the Society shall be educational and restorative, not carceral. This includes:
-
-- (a) making those harmed safe and heard;
-- (b) helping the person who caused harm confront causes and consequences;
-- (c) guiding both parties, where possible and consensual, toward repair.
-
-Education is declared the primary instrument of social order and collective safety.
-
----
-
-## Closing Clause of Part II
-
-Part II defines how we function. These Articles become active **law-of-operation** for the Society of Renewal upon ratification.
-
-Because perfection is not assumed and authority is dangerous when left unexamined, Part II is subject to the Refactoring Cycle defined in **Article 3.8**. Any implementation that drifts toward domination, humiliation, corruption, secrecy, exclusion, coercion, or abandonment of those in need is a violation of the Charter’s core ethic and must be corrected.
-
-The Society of Renewal exists to prove that intelligence and compassion, joined and iterated, are enough to govern.
+A machine may assist judgment. It may not become the unanswerable source of public power.
 
 ---
 
-> Continue to read → [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
+## Article 3 - Governance that learns
+
+### Section 3.1 - Equal civic standing
+
+Every eligible member has equal baseline civic standing.
+
+Wealth, `ℰ` balances, investment, reputation, technical authority, provider volume, office, credentials, or contribution history may not purchase additional baseline votes.
+
+### Section 3.2 - Procedure follows the decision
+
+No single voting rule governs every question.
+
+Before a binding process begins, the Society shall identify the decision class, affected population, rights at risk, available evidence, implementation authority, review period, and appropriate procedure.
+
+Decision classes include:
+
+- constitutional amendment;
+- election or recall of a role;
+- ordinary policy;
+- local operational choice;
+- budget allocation;
+- technical standard;
+- scientific or factual assessment;
+- emergency action;
+- adjudicative or appellate decision.
+
+The procedure may use direct voting, representative voting, ranked methods, approval methods, proportional methods, sortition, deliberative assemblies, expert review, delegation, negotiation, or combinations of these. The Charter shall not claim that one method produces democracy by itself.
+
+### Section 3.3 - Deliberation before aggregation
+
+Consequential decisions require enough time and information for meaningful participation.
+
+The record should include:
+
+- the question in plain language;
+- material alternatives;
+- expected benefits and harms;
+- costs and capacity requirements;
+- minority and dissenting analyses;
+- conflicts of interest;
+- uncertainty;
+- implementation and reversal plans.
+
+A vote may close a decision. It does not replace the work required to understand the decision.
+
+### Section 3.4 - Delegation
+
+A member may delegate participation or operational authority when delegation is useful.
+
+Delegation must be:
+
+- voluntary;
+- scoped to a role, topic, decision, or period;
+- visible to the delegator;
+- revocable;
+- incapable of silently purchasing more baseline civic standing;
+- subject to concentration limits and conflict rules where necessary.
+
+Direct participation by the member overrides an ordinary delegation for that decision unless the member knowingly created a different legal arrangement.
+
+### Section 3.5 - Sortition and expertise
+
+Randomly selected assemblies may improve representation and deliberation. Expert bodies may improve factual and technical work. Neither automatically gains final political authority.
+
+The Society shall distinguish:
+
+- evidence production;
+- recommendation;
+- public deliberation;
+- authorization;
+- implementation;
+- audit;
+- appeal.
+
+No one body should control every stage of a consequential decision.
+
+### Section 3.6 - Rights constrain majorities
+
+A majority may not vote away the Dignity Constraint, erase a class of persons, authorize humiliation, create secret law, abolish meaningful appeal, or make basic civic standing depend on wealth.
+
+Emergency limits on ordinary rights must be necessary, proportionate, time-bounded, reviewable, and automatically expire unless renewed through a lawful process.
+
+### Section 3.7 - Ballot privacy and public verification
+
+Binding ballots should remain private when publicity could enable coercion or retaliation. Eligibility, ballot validity, tally procedure, and final result should be independently verifiable without publishing each person's choice.
+
+No internet voting system shall be declared secure merely because it uses cryptography. Binding remote voting requires an independently reviewed threat model, accessible verification, recovery, coercion analysis, software supply-chain security, and a non-digital participation path.
+
+### Section 3.8 - Decision record
+
+Every binding decision shall identify:
+
+- the exact text or action decided;
+- the eligible decision body;
+- procedure and software version;
+- evidence and dissent;
+- tally or basis for authority;
+- implementers;
+- budget and dependencies;
+- expected outcomes;
+- appeal path;
+- review or expiration date.
+
+### Section 3.9 - Refactoring and amendment
+
+The Charter and its implementations shall undergo regular review.
+
+Amendments must preserve a readable history, reasons, predicted effects, dissent, and later observed outcomes. No mechanism becomes sacred because it was technically difficult to build or politically difficult to approve.
+
+---
+
+## Article 4 - The Freedom Floor and monetary commons
+
+### Section 4.1 - The right
+
+Every person has an equal claim to a material floor sufficient for life with dignity and meaningful choice.
+
+The full Freedom Floor includes reliable access to food, shelter, healthcare, communication, energy, water, transportation, safety, and an unrestricted share of purchasing power for ordinary human agency.
+
+The right is universal. Operational activation may begin in measured stages while the Society builds the capacity to honor it. A partial pilot must be named as partial.
+
+### Section 4.2 - Essential Unit (`𝒰`)
+
+`𝒰` is the indexed unit of real purchasing power and the periodic entitlement held by a person.
+
+The amount shall be derived from a transparent basket that combines observed prices, actual availability, minimum quality, household context, disability and accessibility costs, and public judgment about what ordinary participation requires.
+
+`𝒰` is not a fixed number of `ℰ`, dollars, euros, or any other settlement currency.
+
+### Section 4.3 - Essential Settlement Receivable (`ℛ`)
+
+Activating `𝒰` creates `ℛ`, a short-lived settlement claim denominated in `𝒰` until settlement.
+
+The beneficiary may be:
+
+- a provider who supplied an essential good or service;
+- the member requesting unrestricted conversion;
+- an authorized payment agent acting under the member's direction.
+
+Each `ℛ` shall identify its beneficiary, amount, basket and region version, settlement route, deadline, rate evidence, status, and responsible clearing authority.
+
+The explicit settlement obligation resides in `ℛ`. It is extinguished when settled and may not disappear through administrative silence.
+
+### Section 4.4 - Essent (`ℰ`)
+
+`ℰ` is the common transferable money of the Essentia network.
+
+It is not defined as a promise to redeem every unit for a fixed quantity of national currency, gold, or reserve assets.
+
+`ℰ` may enter circulation through:
+
+1. **outside civic issuance**, distributed under an equal public rule or used to settle activated `𝒰`;
+2. **mutual credit**, created as matched positive and negative positions for reciprocal trade;
+3. **producer credit**, created against a bounded plan to expand useful capacity;
+4. **public investment**, authorized for stated infrastructure and capacity goals;
+5. **bridge and liquidity operations**, issued or retired under transparent temporary rules.
+
+The issuance class shall remain auditable even when ordinary `ℰ` is fungible in use.
+
+### Section 4.5 - Core settlement flow
+
+The intended monetary flow is:
+
+```text
+𝒰 -> ℛ -> ℰ
+```
+
+A person may activate `𝒰` through:
+
+- direct purchase from a participating provider; or
+- unrestricted conversion into transferable `ℰ`.
+
+Direct conversion is part of the monetary hypothesis, not a discretionary reward added only after a reserve fund can finance it conventionally.
+
+The default internal settlement target for activated amount `u` is:
+
+```text
+E_target = u * Q_int(r, t)
+```
+
+where `Q_int(r, t)` is the independently estimated amount of `ℰ` required to obtain one `𝒰` of purchasing power inside region `r` during period `t`.
+
+### Section 4.6 - Internal value and external exchange
+
+Internal purchasing power and external cash-out are different promises.
+
+`Q_int` is estimated from ordinary `ℰ` transactions, standing offers, repeat acceptance, supplier reuse, availability, and practical market depth. Transactions mechanically settled at the current `Q_int` may not be treated as independent proof that the rate is correct.
+
+`Q_ext(a, t)` describes what amount of an outside currency or asset can actually be obtained for quantity `a` of `ℰ` after fees, spread, and market impact.
+
+The Freedom Floor follows internal purchasing power. External conversion follows external demand, bridge capacity, and law. The interface must show the difference.
+
+### Section 4.7 - Equal civic issuance
+
+The rule for ordinary per-person civic issuance shall be public, predictable, and equal before explicit need adjustments expressed through `𝒰`.
+
+Founders, investors, validators, administrators, providers, and officeholders may not receive a private monetary creation right.
+
+Outside civic issuance creates no conventional individual debtor. It still changes claims on real output and the distribution of purchasing power. The Society shall publish its nominal amount, estimated real amount in `𝒰`, recipients, authority, and observed effects.
+
+### Section 4.8 - Coordinated founding market
+
+A monetary network shall not begin by distributing isolated wallets and hoping usefulness appears later.
+
+Before material civic issuance begins, a founding market should establish:
+
+- participating households and workers;
+- providers covering a meaningful share of the pilot basket;
+- suppliers that let providers reuse `ℰ`;
+- quantity-limited standing offers quoted in `𝒰`;
+- known shares of settlement accepted in `ℰ`;
+- exposure limits for `ℰ` and `ℛ`;
+- producer-credit capacity for likely bottlenecks;
+- a bridge plan for unavoidable outside costs;
+- a public monetary rule and failure process.
+
+The purpose is to make expected acceptance common knowledge and select the useful monetary equilibrium deliberately.
+
+### Section 4.9 - Production and supply
+
+The Society shall measure activated real claims against deliverable real capacity.
+
+New purchasing power may mobilize idle labor, inventories, equipment, knowledge, and trade. It may also reach a physical or institutional bottleneck and raise prices, queues, imports, or shortages.
+
+Monetary policy shall therefore be joined to supply policy. Aggregated `ℛ`, orders, prices, wait times, and availability should guide producer credit, procurement, training, construction, logistics, public provision, and cooperative investment.
+
+The first response to a category shortage should address the shortage rather than reduce the person's dignity floor by default.
+
+### Section 4.10 - Monetary control
+
+No single money-supply formula shall be treated as a complete theory of inflation.
+
+The monetary authority shall monitor at least:
+
+- internal `ℰ/𝒰` purchasing-power change;
+- prices and availability by category;
+- activated `𝒰`;
+- productive capacity and inventories;
+- desired and observed `ℰ` balances;
+- transaction velocity and concentration;
+- provider acceptance, reuse, and exit;
+- `ℛ` aging and settlement failure;
+- producer-credit performance;
+- external exchange depth and leakage;
+- import dependence;
+- rent capture and market power;
+- confidence in the issuance rule.
+
+Available responses include supply investment, procurement, obligation clearing, credit-limit changes, voluntary indexed savings instruments, bridge operations, temporary auctions, neutral redenomination, anti-monopoly measures, and transparent changes to non-essential issuance.
+
+A large nominal number of `ℰ` is not by itself evidence of excessive real issuance. A neutral rebase must scale all balances, prices, wages, credit limits, debts, and contracts together.
+
+### Section 4.11 - External Liquidity Bridge
+
+The External Liquidity Bridge connects Essentia to national currencies, imports, regulated obligations, and participants who do not accept `ℰ`.
+
+It may use reserves, revenue, grants, credit facilities, payment partners, market makers, procurement contracts, guarantees, and cross-node clearing.
+
+The bridge is a catalyst and shock absorber. It is not the metaphysical backing of `ℰ` and need not cover every unit one-for-one.
+
+Its assets, commitments, limits, concentration, losses, and legal ownership must be publicly auditable.
+
+### Section 4.12 - Failure must be named accurately
+
+The system shall distinguish:
+
+- a denomination problem;
+- internal monetary depreciation;
+- external liquidity failure;
+- provider-network failure;
+- credit default;
+- physical shortage;
+- identity fraud;
+- governance failure.
+
+Each failure requires a different response. No institution may disguise a shortage as a token problem, a loss of confidence as a reserve problem, or a failed provider settlement as successful UBI delivery.
+
+### Section 4.13 - No humiliation or disposability
+
+Receipt of the Freedom Floor shall not depend on coerced labor, moral judgment, public suffering, political agreement, hidden behavioral scoring, or invasive surveillance.
+
+Fraud controls shall target the disputed claim and preserve appeal. They may not turn one anomaly into the disappearance of a person.
+
+### Section 4.14 - Evidence and activation
+
+Before people materially depend on a Freedom Floor service, the Society shall publish:
+
+- its entitlement and basket rules;
+- identity and appeal process;
+- issuance and settlement code or independently reproducible specification;
+- provider and supply coverage;
+- internal rate method;
+- external exchange limits;
+- expected failure modes;
+- continuity plan;
+- pilot results and negative findings;
+- authority to pause, change, or resume the system.
+
+The Society may test an unproven monetary hypothesis. It may not pretend the test has already succeeded.
+
+---
+
+## Article 5 - Education, prevention, and learning
+
+### Section 5.1 - Learning as a right
+
+Every person shall have access to foundational learning without price, pedigree, age, disability, origin, prior harm, or current hardship becoming a barrier.
+
+### Section 5.2 - Lifelong and plural education
+
+Education is not limited to school. The Society shall support children, adults, elders, caregivers, workers, people in recovery, people changing fields, and people learning for curiosity or joy.
+
+Learning may occur through teachers, peers, apprenticeships, mentors, projects, public practice, machine assistance, and self-directed study.
+
+### Section 5.3 - Priority capabilities
+
+Foundational learning should include:
+
+- critical thinking and claim evaluation;
+- media and information literacy;
+- emotional regulation and conflict navigation;
+- health, consent, and safety;
+- scientific and ecological literacy;
+- technical and craft skills;
+- care work and mutual aid;
+- cooperative economics;
+- civic process and monetary literacy;
+- creative expression and cultural continuity.
+
+### Section 5.4 - Accessibility
+
+Learning systems shall support different languages, disabilities, sensory needs, literacy levels, schedules, devices, and connectivity conditions.
+
+No person shall lose civic standing because one educational interface or teaching style failed them.
+
+### Section 5.5 - Prevention and restoration
+
+The Society shall invest in knowledge, material stability, social connection, treatment, de-escalation, and early support because preventing harm is generally less destructive than responding after crisis.
+
+When harm occurs, educational and restorative options should be available where safe, voluntary for the harmed person, and appropriate to the case.
+
+Education does not replace immediate protection, fact-finding, due process, boundaries, or the least restrictive effective intervention when serious danger remains.
+
+### Section 5.6 - Outcomes, not completion theater
+
+Course completion is an input, not proof of safety or understanding.
+
+The Society shall measure whether people can use what they learned, whether support arrives earlier, whether preventable harm falls, whether excluded people gain access, and whether programs cause unintended burdens.
+
+Negative results and adverse effects shall remain visible.
+
+---
+
+## Closing clause
+
+Part II defines the operating direction of the Society.
+
+Its mechanisms remain accountable to the Founding Book, the Dignity Constraint, public evidence, practical experience, and the people who must live with the result.
+
+The Society does not prove intelligence and compassion by declaring them sufficient.
+
+It proves them by building systems that people can rely on, correcting those systems when they fail, and refusing to make anyone disposable during the experiment.
+
+---
+
+> Continue to read -> [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)

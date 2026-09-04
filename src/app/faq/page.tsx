@@ -45,7 +45,7 @@ const faqs: FaqItem[] = [
         'A draft Charter of Renewal derived from the research in Part B.',
         'A live Academy beta with guardian authentication and learner-profile foundations.',
         'Essentia v0.1.0: runnable research software that tests a narrow ledger model but does not implement the current architecture.',
-        'Essentia v0.8.0: the current economic and technical research architecture, not an implemented network.',
+        'Essentia v0.9.0: the current monetary and civic research architecture, not an implemented network.',
       ],
     ],
   },
@@ -101,33 +101,33 @@ const faqs: FaqItem[] = [
   {
     question: 'Is the Freedom Floor or UBI available now?',
     answer: [
-      'No. The Freedom Floor is the proposed guarantee of reliable access to food, shelter, basic healthcare, communication, and safety. Universal Basic Income is one possible mechanism, not the definition of the floor.',
-      'There is no active Society UBI program or launch date. Real delivery would require provider capacity, contracts, funding, reserves, credit rules, legal structure, identity safeguards, public accounting, and successful bounded pilots.',
+      'No. The Freedom Floor is the proposed guarantee of reliable access to food, shelter, basic healthcare, communication, safety, and enough unrestricted purchasing power for ordinary human choice. The core monetary hypothesis is that each person receives an indexed 𝒰 entitlement that can be activated through ℛ and settled into enough ℰ to function as a real UBI.',
+      'There is no active Society UBI program or launch date. Making that promise real requires coordinated acceptance of ℰ, adequate production and provider capacity, supply finance, transparent issuance and monetary control, reliable identity and governance, and an External Liquidity Bridge for costs that still leave the network. Those mechanisms must be built and tested together rather than treating reserves as the source of all value.',
     ],
   },
   {
     question: 'What are ℰ, 𝒰, and ℛ?',
     answer: [
       [
-        '𝒰, or Essential Units, are proposed person-held entitlements measured against a regional basket of essential goods and services. They are not intended as a speculative asset.',
-        'ℰ, or Essent, is a proposed transferable settlement and mutual-credit instrument for exchange within participating networks.',
-        'ℛ, or Essential Settlement Receivable, is the claim a provider earns after delivering an 𝒰-funded good or service.',
+        '𝒰, or Essential Unit, is the indexed real unit and the periodic entitlement held by a person. It measures the intended cost-of-living floor rather than a fixed quantity of another currency.',
+        'ℛ, or Essential Settlement Receivable, is the short-lived bridge claim created when 𝒰 is activated. Its beneficiary may be a provider, the member requesting unrestricted conversion, or an authorized payment agent.',
+        'ℰ, or Essent, is the proposed common money. It may enter circulation through equal outside civic issuance as well as mutual, producer, and public credit.',
       ],
-      'The separation matters. 𝒰 states what a person is entitled to receive. ℛ records what the provider is owed. ℰ is one possible settlement rail. None of these instruments is currently issued.',
+      'The intended flow is 𝒰 -> ℛ -> ℰ. 𝒰 fixes the real claim, ℛ preserves it while settlement occurs, and ℰ is the money people can use. None of these instruments is currently issued.',
     ],
   },
   {
     question: 'Can software assign 𝒰 enough real-world value to function as UBI?',
     answer: [
-      'Shared acceptance can create real purchasing power when people and institutions expect the instrument to remain useful and when reciprocal demand, useful production, enforceable obligations, or external reserves make that expectation rational. Bitcoin is one example of market value emerging without a sovereign issuer, but it does not show that any token can guarantee a stable standard of living.',
-      'Software can define the entitlement, enforce accounting rules, coordinate acceptance, net obligations, and publish evidence. It cannot manufacture food, housing, medicine, energy, labor, or external currency. The guarantee becomes real only when institutions have enough provider capacity and settlement resources to honor it.',
+      'Yes, conceivably. Money has value because people expect other people and institutions to accept it. Bitcoin demonstrated that a cryptographic object without a sovereign redemption promise can acquire substantial exchange value. Laboratory monetary experiments have also shown intrinsically worthless tokens becoming useful media of exchange inside a shared system.',
+      'Essentia is designed to do more than print a balance. Software can make issuance predictable, prevent counterfeiting, create common knowledge about acceptance, coordinate a founding market, discover closed trade loops, route credit toward shortages, and help unused capacity become real production. The hypothesis is that those mechanisms can make ℰ valuable enough for an indexed 𝒰 entitlement to become a real UBI. That has to be tested, but the absence of a traditional liability does not make it impossible.',
     ],
   },
   {
     question: 'What happens if ℰ becomes nearly valueless?',
     answer: [
-      'The protocol must not respond by promising an unlimited quantity of newly minted ℰ. Dividing a target amount by a collapsing ℰ price can produce an enormous nominal payout while creating no new purchasing power and worsening dilution and sell pressure.',
-      'The v0.8.0 design keeps 𝒰 spendable only within published capacity and settles providers through a waterfall: obligation netting, mutual-credit ℰ within limits, treasury ℰ already authorized, external reserves or payment partners, direct procurement, and only then voluntary deferred settlement. Optional 𝒰-to-ℰ conversion is bounded by reserves, executable market depth, monetary limits, and stress controls. If those resources are insufficient, conversion pauses rather than pretending the floor has been funded.',
+      'A very large number of ℰ is not automatically a very large real issue. If prices, wages, balances, and contracts are all expressed in equally large numbers, the problem may be denomination and can be repaired with a neutral rebase. The protocol must distinguish that from a real loss of purchasing power.',
+      'If ℰ actually buys less inside the network, the internal ℰ-per-𝒰 rate rises and the current 𝒰 claim settles into more ℰ. That indexed conversion is a core part of the design, not an optional feature reserved for a mature reserve fund. The danger is not the integer itself. The danger is activating more real claims than production can meet, or losing confidence so quickly that people no longer want to hold or accept ℰ. Essentia must respond by coordinating supply, financing bottlenecks, strengthening useful demand, changing issuance, and rebasing when only the denomination is broken. External cash-out remains a separate market-liquidity question.',
     ],
   },
   {
@@ -148,7 +148,7 @@ const faqs: FaqItem[] = [
         budget-capped contribution claims, two prototype asset types, and
         public-signal governance.
       </span>,
-      'It does not implement the v0.8.0 target. Missing work includes double-entry economic accounting, essential baskets, provider receivables, mutual credit, reserve and coverage reporting, executable conversion, plural identity and recovery, binding private elections, durable public logs, and independent validation.',
+      'It does not implement the v0.9.0 target. Missing work includes the 𝒰 index, ℛ activation and settlement, outside civic issuance, mutual and producer credit, internal purchasing-power measurement, founding-market coordination, supply finance, external exchange, plural identity and recovery, binding private elections, durable public logs, and independent validation.',
     ],
   },
   {
@@ -194,8 +194,8 @@ const faqs: FaqItem[] = [
   {
     question: 'What is the privacy and identity position?',
     answer: [
-      'Institutions should become more transparent as their power increases, while personal privacy should become stronger as vulnerability increases. Public rules, budgets, liabilities, coverage, and official actions should be inspectable. Private lives should not be.',
-      'The research no longer assumes one permanent DID should connect every civic function. Identity should be plural and purpose-bound, with selective disclosure, recovery, assisted access, anti-fraud review, and appeal. No proof-of-personhood method is treated as solved.',
+      'Institutions should become more transparent as their power increases, while personal privacy should become stronger as vulnerability increases. Public rules, budgets, issuance, settlement claims, coverage, and official actions should be inspectable. Private lives should not be.',
+      'Identity should be plural and purpose-bound rather than collapsed into one permanent public identifier, with selective disclosure, recovery, assisted access, anti-fraud review, and appeal. No proof-of-personhood method is treated as solved.',
     ],
   },
   {
@@ -209,16 +209,16 @@ const faqs: FaqItem[] = [
     id: 'money-creation',
     question: 'How is money created, and what did Bitcoin actually prove?',
     answer: [
-      'Modern money is created under institutional rules: commercial-bank lending creates deposits, while central-bank operations create or transform central-bank liabilities. Money works because people expect it to settle obligations and remain acceptable, not because the physical or digital unit contains value by itself.',
-      'Bitcoin demonstrated that a non-sovereign digital asset can acquire a market price through scarcity, transferability, credible rules, network effects, liquidity, expectations, and speculation. It did not prove that code can guarantee stable purchasing power, that a fixed supply is ideal for everyday exchange, or that a token can fund a real UBI without productive capacity or claims on outside value.',
-      'Essentia therefore treats monetary acceptance as an institutional and economic achievement to test. It does not use token price as proof that the Freedom Floor is funded.',
+      'Money is a coordination technology. Bank deposits are liabilities, but that is not the only possible monetary form. Irredeemable fiat base money and bearer tokens can function as outside money because people expect continued acceptance and because prices, contracts, institutions, and other users coordinate around the same unit.',
+      'Bitcoin demonstrated that a non-sovereign cryptographic asset with no redemption promise can acquire substantial value through credible rules, transferability, scarcity, network effects, liquidity, and expectations. It also demonstrated that a monetary network can exist before established institutions agree that it should.',
+      'Essentia takes the next problem seriously: deliberately create a more useful and equitable monetary equilibrium, distribute civic issuance equally, measure the real floor in 𝒰, settle it through ℛ into ℰ, and finance the production needed to keep that income usable. Bitcoin is precedent for possibility, not a template for the final design.',
     ],
   },
   {
     question: 'Is Essent money or legal tender?',
     answer: [
       'Not today. No public ℰ currency exists, and the Society cannot declare legal tender. Legal-tender status is defined by applicable law.',
-      'The v0.8.0 architecture proposes ℰ first as a bounded mutual-credit and settlement instrument among consenting participants. Whether it could later operate more broadly, convert to national currency, or create tax and regulatory obligations depends on jurisdiction, implementation, counterparties, and real use.',
+      'The v0.9.0 architecture proposes ℰ as a common currency with two broad creation paths: outside civic issuance distributed under public equal rules, and inside credit issued against reciprocal trade or productive capacity. Whether it becomes widely accepted money depends on actual use, adoption, governance, providers, and law. It is not legal tender today.',
     ],
   },
   {
@@ -226,7 +226,7 @@ const faqs: FaqItem[] = [
     answer: [
       [
         'Read the manifesto and say what resonates, what is unclear, or where the argument needs more care.',
-        'Review Part A, Part B, the draft Charter, and the Essentia v0.8.0 research architecture.',
+        'Review Part A, Part B, the draft Charter, and the Essentia v0.9.0 research architecture and monetary model.',
         'Challenge assumptions, find counterevidence, and propose better experiments or stop conditions.',
         'Test the Academy beta or Essentia v0.1.0 prototype and report what you find.',
         'Share relevant research, lived experience, translation, design, legal, economic, safety, accessibility, or technical work.',
@@ -238,8 +238,8 @@ const faqs: FaqItem[] = [
   {
     question: 'What is the timeline?',
     answer: [
-      'There is no responsible launch date to promise. The sequence begins with document development, open research, deterministic economic simulation, shadow accounting, independent review, and small pilots that do not make anyone depend on an unvalidated system.',
-      'A real 𝒰 pilot comes only after provider capacity, settlement resources, coverage, privacy, appeal, and stop conditions exist. ℰ conversion comes later still, after real market depth and reserve-backed limits can be measured. Progress will be reported through inspectable artifacts, tested systems, negative results, and honest revision.',
+      'There is no responsible launch date to promise. The sequence begins with formal models, open research, a coordinated founding market, shadow accounting, and small experiments in outside ℰ issuance, acceptance, and price formation.',
+      'Direct 𝒰 -> ℛ -> ℰ conversion belongs in the early monetary experiments because it is the central hypothesis, not a feature to postpone until conventional reserves can fund it. Later stages add producer credit, external exchange, and recurring allocations large enough to affect ordinary life. Dependency grows only as continuity, privacy, appeal, and operational protection improve.',
     ],
   },
 ];

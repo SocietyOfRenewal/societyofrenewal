@@ -12,7 +12,7 @@ export default function SiteFooter() {
             An open civic project testing whether care, knowledge, material
             security, and accountable institutions can reduce avoidable
             suffering. The Founding Book and Charter are drafts. Essentia
-            v0.1.0 is a prototype; v0.8.0 is a research architecture.
+            v0.1.0 is a prototype; v0.9.0 is the current research architecture.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-3">

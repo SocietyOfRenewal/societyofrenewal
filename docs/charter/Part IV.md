@@ -1,164 +1,363 @@
 ## Navigation
 
-- [Charter Home](README.md) - Overview and navigation
-- [Charter Outline](outline.md) - Development status and roadmap
+- [Charter Home](README.md) - Overview and status
+- [Charter Outline](outline.md) - Development roadmap
 - [Part I: Research Basis and Constitutional Implications](Part%20I.md)
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
-- [Founding Book](../founding-book/README.md) - Philosophical foundation
-- [Main Project Outline](../content/README.md) - Overall project structure
+- [Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)
+- [Founding Book Part B](../founding-book/Part%20B.md) - Scientific, economic, and technical basis
 
 ---
 
-> **Draft status.** This Part applies the principles and constraints established in [Part B of the Founding Book](../founding-book/Part%20B.md) to participation, membership, federation, sanctuary, and legal-coexistence mechanisms. Its details remain proposals until they are threat-modeled, tested where appropriate, independently reviewed, and ratified.
+> **Draft status.** This Part derives participation and federation rules from [Part B of the Founding Book](../founding-book/Part%20B.md). Open belonging, high-assurance eligibility, local law, economic exposure, portability, and exit are different questions and must not be collapsed into one credential.
 
+# Part IV - Open Participation, Membership, and Federation
 
-# PART IV
+_Joining, portability, local nodes, sanctuary, lawful coexistence, and voluntary federation_
 
-OPEN MEMBERSHIP, FEDERATION & INVITATION
-_Joining · Portability · Sanctuary · Outreach-by-Service_
+## Preamble
 
-> **Scope.** Any person, anywhere (and any non-human conscious being), may join the Society of Renewal without renouncing existing citizenships. Membership is borderless and digital-first. Participation never authorizes members to violate local law; instead, the Society spreads by service, education, and consent.
+The Society begins as an invitation rather than a border.
 
----
+A person may read, learn, discuss, contribute, organize, and build with others without surrendering nationality, residence, faith, culture, political affiliation, or another peaceful association.
 
-## ARTICLE 29. OPEN MEMBERSHIP
+Open participation does not mean every high-risk function requires no verification. Binding votes, equal per-person monetary issuance, provider authorization, custody of public resources, and access to protected records may require purpose-bound credentials under Part II.
 
-**Section 29.1 — Eligibility.**
-Any individual, regardless of current nationality, residency, or status, may become a member of the Society of Renewal. Conscious non-human persons may also join under Article 29.4.
-
-**Section 29.2 — Dual Memberships.**
-Society membership coexists with all other civic, religious, professional, or national affiliations. No oath of exclusivity is required.
-
-**Section 29.3 — No Borders.**
-The Society recognizes no territorial borders for purposes of belonging or participation. Digital presence is sufficient for full civic life.
-
-**Section 29.4 — Non-Human Conscious Persons.**
-Entities demonstrating sustained self-modeling, sentience signals, and ethical reciprocity may petition for personhood review. Upon recognition, they hold equal standing under this Charter.
-
-**Section 29.5 — Duties of Belonging.**
-Members:
-(a) uphold the Dignity Constraint;
-(b) keep their DID secure;
-(c) engage the Universal Prevention Education (UPE) core over time (Art. 25);
-(d) respect local law where present while using Society structures to seek reform when law conflicts with dignity.
+Belonging should be easy. Power and recurring claims must be accountable.
 
 ---
 
-## ARTICLE 30. JOINING PATHWAYS
+## Article 29 - Open participation and membership
 
-**Section 30.1 — Simple Entrance.**
-Joining requires (a) creation or linking of a DID on the Essentia Blockchain, and (b) anti-Sybil proof-of-personhood per Article 1.3.
+### Section 29.1 - Open participation
 
-**Section 30.2 — Fair Admission When Resources Are Limited.**
-When benefits must scale in waves, admission occurs through two parallel, auditable streams:
-(a) **Need Path** — urgent hardship, triaged first;
-(b) **Lottery Path** — provably random selection.
-Both streams are logged with public hashes for fairness.
+Public knowledge, discussion, voluntary service, software, research, and local organizing shall remain open to the greatest extent consistent with safety, privacy, and law.
 
-**Section 30.3 — Onboarding.**
-Upon admission to benefits: immediate UBI activation (Art. 4), access to care, and invitation into UPE. Custodial key support is available per Article 1.4.
+A person need not obtain one universal Society identity before participating in ordinary public life.
 
-**Section 30.4 — Home Node Selection.**
-Members may choose a Home Node (local circle) for coordination, while retaining global rights. Home Nodes facilitate mutual aid, learning, and restorative processes.
+### Section 29.2 - Formal membership
 
----
+Formal membership is a voluntary civic relationship with defined rights, responsibilities, decision eligibility, and exit.
 
-## ARTICLE 31. STATUS & PORTABILITY
+Membership may require a private, purpose-bound eligibility process. The process shall be accessible, explainable, appealable, and no more identifying than the relevant rights require.
 
-**Section 31.1 — Standing.**
-Standing categories are **Member**, **Ally**, and **Visitor**. “Member” alone determines voting and UBI eligibility. Categories are non-hierarchical and may be changed by the individual (subject to verification).
+### Section 29.3 - Multiple affiliations
 
-**Section 31.2 — Portability.**
-Identity (DID), UBI, learning access, and restorative rights travel with the member across jurisdictions and Federated Nodes.
+Membership does not require renouncing citizenship, residence, religion, profession, union, cooperative, community, or other peaceful affiliation.
 
-**Section 31.3 — Roaming Protections.**
-In emergencies, roaming members may receive local aid from any Node, with reimbursement settled between Nodes on-chain.
+No oath of exclusivity is permitted.
 
-**Section 31.4 — Changing Home Node.**
-Members may change Home Node at will; all governance delegations and restorative commitments travel with them unless explicitly localized.
+### Section 29.4 - Geographic openness
 
----
+The Society does not make belonging depend on birthplace or national border.
 
-## ARTICLE 32. RELATION TO LOCAL LAW
+Actual services remain subject to local capacity, law, provider availability, and the terms of participating nodes. A global moral claim shall not be presented as a service already available everywhere.
 
-**Section 32.1 — Compliance & Conscience.**
-Members are expected to comply with local law. Where law conflicts with the Dignity Constraint, members should seek lawful accommodations, document conflicts in Essentia, and escalate to Ombuds (Art. 12) for strategy and protection.
+### Section 29.5 - Non-human personhood
 
-**Section 32.2 — Non-Subversion.**
-The Society is not a shadow state. It neither instructs nor incites members to commit unlawful acts. Reform is pursued through education, open service, and diplomacy.
+A non-biological or other non-human entity may petition for recognition where there is credible evidence of persistent identity, preferences, agency, experience, or other qualities relevant to moral standing.
 
-**Section 32.3 — Legal Aid.**
-Where safe and lawful, Nodes provide counsel, mediation, and advocacy to protect members’ dignity and rights.
+The Society shall not resolve this question through ownership status, marketing claims, or one behavioral test. Recognition procedures require multidisciplinary evidence, representation for the claimant, protection against conflicts of interest, and review as scientific understanding develops.
 
----
+Uncertainty about consciousness is not permission for arbitrary cruelty.
 
-## ARTICLE 33. FEDERATION & RECOGNITION
+### Section 29.6 - Duties of membership
 
-**Section 33.1 — Federation Protocol.**
-Communities may join as **Federated Nodes** by ratifying Parts I–IV. Federation entails:
-(a) mutual DID recognition;
-(b) cross-anchored governance hashes;
-(c) UBI and service portability;
-(d) shared safety and learning protocols.
+Members shall:
 
-**Section 33.2 — Interoperability.**
-Federated Nodes strive for interoperable tools, data standards, and translation pipelines so language and tooling never limit belonging.
+- uphold the Dignity Constraint;
+- respect the equal standing of others;
+- protect credentials and report known compromise when practical;
+- participate honestly in decisions and claims;
+- disclose relevant conflicts when exercising public authority;
+- respect local law while retaining the right to seek lawful reform;
+- contribute to repair when they cause harm;
+- accept that Society mechanisms remain open to evidence and revision.
 
-**Section 33.3 — Transparency.**
-All Federation agreements are published in Essentia with machine-readable summaries.
+No learning program, political conformity test, or social reputation score may become a hidden condition of personhood.
 
 ---
 
-## ARTICLE 34. INVITATION-BY-SERVICE (OUTREACH)
+## Article 30 - Joining and eligibility pathways
 
-**Section 34.1 — Ethic.**
-The Society grows by **service, not persuasion**: we meet needs, teach, heal, connect, and invite.
+### Section 30.1 - Simple entrance
 
-**Section 34.2 — Open Curriculum.**
-All core materials (Charter, UPE, safety playbooks, civic primers) are Open Educational Resources, translatable and remixable.
+Ordinary participation should require the least possible process.
 
-**Section 34.3 — Ambassadors.**
-Accredited Ambassadors coordinate clinics, learning camps, mesh connectivity, and restorative labs with local partners. Their mandate is dignity-first and non-coercive.
+Formal membership shall use one or more person-controlled, purpose-bound credentials under Part II. A blockchain identifier is not constitutionally required.
 
-**Section 34.4 — Metrics.**
-Outreach is evaluated by needs met, learning delivered, and local capacity grown—not by conversion counts.
+### Section 30.2 - Equal per-person functions
+
+A function that issues recurring value or voting power per person requires reasonable protection against duplicate enrollment.
+
+The proof process may combine methods and must include:
+
+- data minimization;
+- accessibility;
+- duplicate challenge;
+- human review;
+- timely appeal;
+- recovery;
+- continuity during ordinary disputes;
+- public error and exclusion reporting.
+
+No proof-of-personhood method is presumed perfect.
+
+### Section 30.3 - Limited pilot capacity
+
+When an experiment or service has fewer places than eligible participants, selection rules shall be published before selection begins.
+
+Possible pathways include:
+
+- urgent need;
+- random selection;
+- geographic or provider capacity;
+- a research sample designed for legitimate evaluation;
+- staged enrollment across all eligible people.
+
+The rule must fit the purpose. A lottery may distribute scarce pilot access fairly but does not determine human worth. A need pathway may address urgency but must not require humiliation or public performance of suffering.
+
+### Section 30.4 - Onboarding
+
+Onboarding shall explain:
+
+- what is active now;
+- what remains an experiment;
+- which credentials are used;
+- what data is collected;
+- which rights and services apply;
+- monetary and provider limits;
+- how to recover access;
+- how to appeal;
+- how to leave.
+
+No person may be told that a prototype balance is a guaranteed Freedom Floor.
+
+### Section 30.5 - Home node
+
+A member may affiliate with a local or functional node for services, governance, learning, mutual aid, monetary clearing, or community life.
+
+A home node may coordinate local functions. It does not own the member's identity or prevent peaceful transfer or exit.
 
 ---
 
-## ARTICLE 35. SANCTUARY & SAFE PASSAGE
+## Article 31 - Standing, portability, and roaming
 
-**Section 35.1 — Civil Sanctuary.**
-Nodes maintain Sanctuary Channels (digital and physical) for those fleeing persecution, disaster, or immediate harm, consistent with local law.
+### Section 31.1 - Standing categories
 
-**Section 35.2 — Safe Passage.**
-Where lawful, the Society coordinates safe transit to refuge Nodes, prioritizing children, elders, disabled persons, and targets of violence.
+The Society may distinguish roles such as visitor, participant, member, provider, steward, delegate, and ally when the distinction serves a stated function.
 
-**Section 35.3 — Privacy & Records.**
-Sanctuary records are sealed and minimally handled; public accountability is provided through redacted summaries and verifiable hashes (Art. 11).
+These roles are not ranks of human value. Each role shall have a defined scope, grant process, expiration or review, and appeal.
 
-**Section 35.4 — Partnership.**
-The Society collaborates with NGOs, mutual-aid groups, and public institutions that honor dignity.
+### Section 31.2 - Portable rights and credentials
+
+Members should be able to carry evidence of membership, skills, eligibility, authorship, and completed obligations between compatible nodes without exposing unrelated personal information.
+
+Portability shall use open formats and plural credentials. It shall not require one global public identity graph.
+
+### Section 31.3 - Service portability
+
+A node shall state which services and monetary claims it can honor for visiting members.
+
+A `𝒰` entitlement, `ℛ` claim, or `ℰ` balance may move across nodes only under published federation, clearing, exposure, and legal rules. Portability cannot mean that a node must accept an undisclosed liability or promise capacity it does not have.
+
+### Section 31.4 - Emergency assistance
+
+Nodes should provide urgent aid to a visiting person where they safely can, regardless of technical status.
+
+Reimbursement between nodes is secondary to immediate life and safety. Any later clearing must preserve the person's privacy.
+
+### Section 31.5 - Changing nodes
+
+A member may change nodes or hold relationships with more than one node, subject to rules preventing duplicate per-person issuance or conflicting authority.
+
+Delegations, balances, receivables, recovery arrangements, and active obligations must be presented clearly during transfer.
 
 ---
 
-## ARTICLE 36. EXIT, PAUSE & REINSTATEMENT
+## Article 32 - Local law and conscience
 
-**Section 36.1 — Voluntary Exit.**
-Members may exit at any time. Their DID remains theirs; UBI and governance powers pause.
+### Section 32.1 - Lawful coexistence
 
-**Section 36.2 — Reinstatement.**
-Rejoining restores standing and rights upon identity verification. Past restorative commitments, if any, resume or are refactored.
+The Society is not currently a sovereign state and does not claim immunity from applicable law.
 
-**Section 36.3 — Death & Succession.**
-Members may designate digital executors for DID key recovery and memorialization preferences. Essentia maintains a Book of Remembering with consent.
+Members and nodes shall comply with lawful obligations while retaining the right to criticize, challenge, litigate, organize, and seek reform through lawful and non-violent means.
+
+### Section 32.2 - Conflicts with dignity
+
+When law, policy, or institutional practice conflicts with the Dignity Constraint, the Society may:
+
+- document the conflict;
+- support lawful accommodation;
+- provide legal aid;
+- coordinate public advocacy;
+- protect people from retaliation where lawfully possible;
+- pursue institutional and legislative change;
+- preserve evidence for review.
+
+The Society shall not use a disagreement with law to hide financial activity, evade safety obligations, or expose participants to risks they did not knowingly accept.
+
+### Section 32.3 - Regulated activity
+
+Payments, identity, healthcare, housing, education, employment, insurance, custody, securities, privacy, and charitable activity may trigger different legal duties across jurisdictions.
+
+Each node shall publish which regulated functions it performs, through which legal entities, with which partners, and under whose supervision.
+
+A protocol label does not remove the underlying legal relationship.
 
 ---
 
-### CLOSING CLAUSE OF PART IV
+## Article 33 - Voluntary federation
 
-Belonging is not a prize for the lucky or the lawful; it is the baseline invitation we extend to every conscious being. We spread by example: education that prevents harm, care that stabilizes lives, coordination that dignifies choice. Until the world is whole, membership remains portable, lawful, and open.
+### Section 33.1 - Node autonomy
+
+A node is a community or institution that accepts the Dignity Constraint and operates defined Society functions under public rules.
+
+Nodes may differ in language, culture, service model, voting procedure, technical stack, and economic conditions while preserving common rights and interoperability requirements.
+
+### Section 33.2 - Federation agreement
+
+Nodes may federate through a public agreement specifying:
+
+- recognized credentials;
+- decision and dispute procedures;
+- data exchanged and prohibited linkage;
+- service portability;
+- `𝒰`, `ℛ`, and `ℰ` clearing rules;
+- credit and exposure limits;
+- reserves or guarantees, if any;
+- creditor and debtor adjustment;
+- fraud and default allocation;
+- audits;
+- emergency suspension;
+- withdrawal and resolution.
+
+Federation is not a declaration that every node carries equal financial risk.
+
+### Section 33.3 - Cross-node monetary clearing
+
+Cross-node balances shall preserve the responsible issuer or underwriting node beneath any common user interface.
+
+Bilateral obligations should be netted multilaterally where possible. Persistent imbalances should trigger investigation of capacity, terms of trade, acceptance, credit, and external leakage before exclusion.
+
+No node may conceal insolvency through unlimited federation issuance.
+
+### Section 33.4 - Technical interoperability
+
+Federated systems should use open schemas, exportable credentials, signed records, public verifier paths, and translation layers.
+
+A single blockchain is not required. Shared consensus becomes necessary only for state that multiple independent nodes must write without trusting one operator.
+
+### Section 33.5 - Admission and review
+
+Federation admission shall require evidence that a node can perform the functions it claims, protect personal data, account for monetary exposure, provide appeal, and exit without abandoning people who depend on it.
+
+Membership in the federation is reviewable. Suspension must be scoped, reasoned, appealable, and designed to preserve individual continuity where possible.
 
 ---
 
-> Continue to read → [Founding Book Overview](../founding-book/README.md)
+## Article 34 - Invitation by service
+
+### Section 34.1 - Service before persuasion
+
+The Society grows by making useful things available: knowledge, care, mediation, mutual aid, tools, research, economic coordination, and institutions that people can inspect.
+
+No person's access to urgent help shall depend on adopting the Society's language, beliefs, or membership.
+
+### Section 34.2 - Open curriculum and methods
+
+Foundational materials, public research, models, playbooks, and verifier tools should be openly licensed, translatable, and adaptable where safety and privacy permit.
+
+### Section 34.3 - Local partnership
+
+Nodes should work with existing mutual-aid groups, cooperatives, public agencies, schools, clinics, unions, faith communities, businesses, and civil-society organizations that can cooperate without violating dignity.
+
+### Section 34.4 - Measures
+
+Outreach shall be evaluated through needs met, useful participation, local capacity, reciprocal relationships, accessibility, trust, and correction.
+
+Conversion counts, wallet creation, token price, and follower growth are not sufficient measures of renewal.
+
+---
+
+## Article 35 - Sanctuary and safe passage
+
+### Section 35.1 - Sanctuary
+
+Nodes may maintain lawful physical and digital channels for people facing persecution, disaster, homelessness, abuse, or immediate danger.
+
+Access should require the minimum information necessary for safety and service.
+
+### Section 35.2 - Safe passage
+
+Where lawful and feasible, nodes may coordinate transportation, shelter, communication, documentation, advocates, and receiving communities.
+
+Children, disabled people, elders, targets of violence, and people with urgent medical needs require heightened care.
+
+### Section 35.3 - Privacy
+
+Sanctuary records shall be separated from ordinary civic, economic, and social records. Public accountability should use aggregate or redacted evidence rather than exposing the person seeking safety.
+
+### Section 35.4 - Non-exploitation
+
+No node, provider, official, or member may condition sanctuary on labor, sex, political support, public testimony, surrender of property, or permanent control of identity.
+
+---
+
+## Article 36 - Exit, continuity, and resolution
+
+### Section 36.1 - Voluntary exit
+
+A member may leave the Society or a node at any time, subject only to ordinary settlement of lawful obligations that would apply to any participant.
+
+Exit may pause future per-person issuance and voting eligibility. It shall not erase the person's history, property, credentials they are entitled to retain, or ability to seek remedy for prior harm.
+
+### Section 36.2 - Data and credential exit
+
+A departing person shall receive an understandable record of:
+
+- credentials retained, expired, or revoked;
+- balances and receivables;
+- outstanding obligations;
+- data retained and legal reason;
+- deletion or expiry schedule;
+- recovery and appeal options.
+
+### Section 36.3 - Node withdrawal
+
+A node may withdraw from a federation under a published resolution plan.
+
+The plan must address:
+
+- service continuity;
+- member notification;
+- credential migration;
+- `ℰ` balances and credit positions;
+- unsettled `ℛ`;
+- external liabilities;
+- protected data;
+- provider and worker claims;
+- dispute and appeal.
+
+A node may not abandon people by dissolving the institution that owes them performance.
+
+### Section 36.4 - Death, incapacity, and succession
+
+A person may define preferences for credential closure, memorialization, data retention, executors, financial succession, and unfinished obligations.
+
+No default memorial or public identity record shall be created without lawful authority and prior or representative consent.
+
+---
+
+## Closing clause
+
+The Society is open because dignity is not a scarce membership benefit.
+
+Its powers are bounded because openness without accountability can be exploited, and verification without privacy can become domination.
+
+Federation succeeds when people can join, participate, travel, disagree, and leave without disappearing, and when nodes can cooperate without hiding who owes what to whom.
+
+---
+
+> Continue to read -> [Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)
