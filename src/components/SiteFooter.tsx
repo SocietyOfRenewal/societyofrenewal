@@ -9,9 +9,10 @@ export default function SiteFooter() {
             Society of Renewal
           </p>
           <p className="leading-relaxed">
-            An open civic project testing whether care, knowledge, and material
-            security can scale better than fear. The Charter and Founding Book
-            are drafts. Essentia is a prototype. The Academy is in beta.
+            An open civic project testing whether care, knowledge, material
+            security, and accountable institutions can reduce avoidable
+            suffering. The Founding Book and Charter are drafts. Essentia
+            v0.1.0 is a prototype; v0.8.0 is a research architecture.
           </p>
         </div>
         <div className="flex flex-wrap gap-x-6 gap-y-3">

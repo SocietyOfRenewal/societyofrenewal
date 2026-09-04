@@ -3,76 +3,83 @@
 ## Navigation
 
 - [Outline](outline.md) - Development status and roadmap
-- [Part I: The Scientific Basis of Renewal](Part%20I.md)
+- [Part I: Research Basis and Constitutional Implications](Part%20I.md)
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
 - [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
 - [Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)
+- [Founding Book Part A](../founding-book/Part%20A.md) - Moral commitments
+- [Founding Book Part B](../founding-book/Part%20B.md) - Evidence, uncertainty, and research gates
 
 ---
 
-The Charter of Renewal is the foundational constitutional document for the Society of Renewal. It establishes the principles, operational systems, and safeguards that govern a society built on dignity, education, and restorative justice rather than punishment and coercion.
+The Charter of Renewal is the Society's draft constitutional framework.
 
-## Overview
+It is not ratified law, and the mechanisms described in its later parts are not live services. The Charter states proposed rights, constraints, institutions, and operating rules. The Founding Book separates the moral covenant from the empirical and technical questions those mechanisms must survive.
 
-The Charter is organized into core parts:
+## Research basis
 
-- **[Part I: The Scientific Basis of Renewal](Part%20I.md)** - Core principles including the Dignity Constraint, education as governance, and Universal Basic Income as cognitive infrastructure
-- **[Part II: Operational Articles](Part%20II.md)** - Identity, platform, governance, UBI, and education systems
-- **[Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)** - Safety protocols, restorative justice, and defense mechanisms
-- **[Part IV: Open Membership, Federation & Invitation](Part%20IV.md)** - Membership, federation, and global expansion
-- **[Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)** - Information freedom, privacy-as-agency, transparency of power, and anti-domination doctrine
+[Part B of the Founding Book](../founding-book/Part%20B.md) is the scientific and economic basis for the Society.
 
-## Current Status
+It establishes the evidence and design constraints for mechanisms including:
 
-This is a **draft version** of the Charter. The current implementation includes Parts I-IV and Part VI, with additional sections (Parts V and VII-XI) planned for future development.
+- purpose-bound, recoverable identity rather than one permanent identifier for every civic function;
+- a ledger architecture chosen from the trust model rather than a mandatory blockchain;
+- voting methods selected by decision type rather than one universal default;
+- education and prevention paired with emergency protection when necessary;
+- operational trust signals that cannot become a civil caste;
+- a Freedom Floor tied to real capacity and funding;
+- and bounded `𝒰` flexibility through `ℛ`, `ℰ`, reserves, and executable liquidity.
 
-### What's Complete
+Part I records the constitutional implications of that foundation. Parts II, III, IV, and VI remain design proposals and must satisfy Part B before ratification.
 
-- **Part I** – Principles and Dignity Constraint
-- **Part II** – Operational Articles (Identity, Platform, Governance, UBI, Education)
-- **Part III** – Safeguards, Restoration & Peacekeeping
-- **Part IV** – Open Membership, Federation & Invitation
-- **Part VI** – Data, Privacy & Tech Ethics
+## Current parts
 
-### What's Still Needed
+### Part I - Research Basis and Constitutional Implications
 
-- **Part V** – Economy & Treasury
-- **Part VII** – Health, Care & Accessibility
-- **Part VIII** – Environment & Commons
-- **Part IX** – Institutions & Roles
-- **Part X** – Implementation & Ratification
-- **Part XI** – Interoperability & Treaties
-- **Definitions & Annexes**
+Defines the central hypothesis, bounded evidence conclusions, constitutional constraints, the three-layer Freedom Floor model, and evidence gates for ratification.
 
-## Key Principles
+### Part II - Operational Articles
 
-### The Dignity Constraint
+Proposes identity, platform, governance, income, and education systems. Its mechanisms must satisfy Part B, especially the identity, voting, and economic constraints.
 
-No policy, process, tool, or tactic may demean, dehumanize, or erase any conscious being. This is the fundamental boundary on all power and authority.
+### Part III - Safeguards, Restoration & Peacekeeping
 
-### Education as Governance
+Proposes prevention, de-escalation, restorative options, protective intervention, review, and defense. Its specific institutions, tools, and timelines require professional, legal, medical, human-rights, and empirical review.
 
-Rather than using punishment and coercion, the Society of Renewal uses education, understanding, and restorative processes to maintain social order and address harm.
+### Part IV - Open Membership, Federation & Invitation
 
-### Universal Basic Income
+Proposes participation, membership, federation, sanctuary, and external relations. It must distinguish open participation from high-assurance eligibility for voting or recurring benefits and add financial exposure, legal, and exit rules.
 
-UBI provides a "Freedom Floor" - guaranteed access to basic needs that removes the desperation that often leads to harmful behavior.
+### Part VI - Data, Privacy & Tech Ethics
 
-### Restorative Justice
+States information-freedom, privacy, transparency, and anti-domination commitments. Its mechanisms must remain compatible with purpose limitation, plural identity, recovery, accessibility, and the separation between public institutional evidence and private human life.
 
-When harm occurs, the focus is on understanding root causes, making victims whole, and reintegrating those who caused harm through education and support.
+## Still required
 
-## Related Documents
+- **Part V - Economy & Treasury:** derived from Part B and the Essentia v0.8.0 research architecture, including settlement, reserves, credit, procurement, loss allocation, and coverage.
+- **Part VII - Health, Care & Accessibility**
+- **Part VIII - Environment & Commons**
+- **Part IX - Institutions & Roles**
+- **Part X - Implementation, Evidence Gates & Ratification**
+- **Part XI - Interoperability, Federation & Treaties**
+- **Definitions, playbooks, threat models, and annexes**
 
-- [Founding Book](../founding-book/README.md) - The philosophical and scientific foundation
-- [Main Project Outline](../content/README.md) - Overall project structure
-- [Landing Page](../content/landing-page.md) - Public-facing introduction
+## Ratification rule
 
-### Continue Reading
+A value may be constitutional before every mechanism is known.
 
-> Continue to read → [Part I: The Scientific Basis of Renewal](Part%20I.md)
+A mechanism should not become constitutional merely because it appears in a draft or runnable prototype. Before ratification, consequential mechanisms need a threat model, comparison with simpler alternatives, public success and stop conditions, bounded pilots where appropriate, independent evaluation, appeal, and a transition path.
+
+## Current status
+
+- Part A of the Founding Book: complete working draft
+- Part B of the Founding Book: complete working draft
+- Charter: draft, derived from the Founding Book and not ratified
+- Essentia v0.1.0: runnable research prototype, not an implementation of the current architecture
+- Essentia v0.8.0: current research architecture, not implemented
+- Freedom Floor, ℰ, 𝒰, civic identity, binding voting, and benefit systems: not live
 
 ---
 
-_This Charter is a living document that evolves through the Refactoring Cycle, ensuring continuous improvement while maintaining the core principles of dignity and renewal._
+> Continue to read -> [Part I: Research Basis and Constitutional Implications](Part%20I.md)

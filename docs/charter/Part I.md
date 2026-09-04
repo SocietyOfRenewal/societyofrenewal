@@ -1,271 +1,227 @@
 ## Navigation
 
-- [Charter Home](README.md) - Overview and navigation
-- [Charter Outline](outline.md) - Development status and roadmap
+- [Charter Home](README.md) - Overview and status
+- [Charter Outline](outline.md) - Development roadmap
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
 - [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
-- [Founding Book](../founding-book/README.md) - Philosophical foundation
-- [Main Project Outline](../content/README.md) - Overall project structure
+- [Part VI: Data, Privacy & Tech Ethics](Part%20VI.md)
+- [Founding Book Part A](../founding-book/Part%20A.md) - Moral commitments
+- [Founding Book Part B](../founding-book/Part%20B.md) - Current scientific and economic basis
 
 ---
 
-## Part I. The Scientific Basis of Renewal
+# Part I - Research Basis and Constitutional Implications
 
-### 1. The Central Claim
+## Status
 
-The Society of Renewal is built on a testable claim:
+The Charter is a draft.
 
-> Sustained access to security, education, and compassionate guidance reduces the need for coercive law by addressing the root causes of harm before that harm requires punishment.
+[Part B of the Founding Book](../founding-book/Part%20B.md) is the scientific, economic, and technical basis for the Society. The Charter derives its mechanisms from that foundation.
 
-This is not offered as faith. It is offered as a model that can be measured, iterated, and corrected.
+Parts II, III, IV, and VI are proposals. A mandatory blockchain, one permanent DID, ranked-choice voting as a universal default, liquid democracy, public reputation, Universal Basic Income funding, Essential Unit conversion, machine governance, and specific safety institutions remain subject to Part B's evidence gates before ratification.
 
-This section defines the mechanisms by which such a society can function in reality.
+No mechanism becomes constitutional merely because it appears in a prototype or draft.
 
----
+## 1. The central hypothesis
 
-### 2. The Origin of Harm
+The Society of Renewal is exploring a testable claim:
 
-Most human harm does not arise from inherent malice.
+> Reliable material security, usable knowledge, social connection, accountable institutions, and compassionate intervention can reduce preventable suffering and reduce the situations in which coercion appears necessary.
 
-It arises from:
+The claim is directional, not absolute.
 
-1. Material desperation
-   – acting under threat to survival or stability
-2. Unresolved trauma
-   – acting from unprocessed pain or fear responses
-3. Misinformation and distortion
-   – acting from false premises about reality or others
-4. Social isolation
-   – acting without a regulating network of care and accountability
-5. Learned normalization of predatory behavior
-   – acting according to structures that reward exploitation
+It does not mean:
 
-This document adopts a simple working model:
+- poverty causes every harm;
+- cash alone repairs trauma, illness, exclusion, or violence;
+- education persuades every person;
+- restorative practice is appropriate for every case;
+- punishment has no deterrent or incapacitating effect;
+- trust removes the need for verification;
+- decentralization guarantees democracy;
+- cryptography makes external facts true;
+- a token balance is equivalent to purchasing power;
+- or any existing Society design has been validated at scale.
 
-- Harmful action is usually a downstream symptom.
-- Punishment is a late and inefficient intervention.
-- Repair requires altering the upstream inputs.
+## 2. What the evidence supports
 
-A civilization that attacks harm at its origin — resource insecurity, ignorance, disconnection — will require less force later. The Society of Renewal is designed as that civilization.
+The evidence reviewed in Part B supports several bounded conclusions.
 
----
+### 2.1 Material conditions affect agency
 
-### 3. Education as Primary Governance
+Scarcity, instability, and chronic stress can narrow attention and increase cognitive load. Unconditional cash transfers have often improved material outcomes and some dimensions of well-being, while effects vary by setting and outcome.
 
-“Education” here is not schooling. It is defined as:
+The Charter may therefore treat material security as important infrastructure for agency.
 
-- Providing a human or machine with accurate models of reality,
-- Helping them understand the consequences of actions (causal literacy),
-- Equipping them with the emotional regulation and social support required to act in alignment with that understanding.
+It may not claim that one payment design will automatically eliminate violence, illness, exploitation, or despair.
 
-In Legacy Society, education and governance are separate. One “teaches,” the other “enforces.” The Society of Renewal rejects that split.
+### 2.2 Learning and prevention matter
 
-Here, education is governance.
+Well-implemented educational, social-emotional, health, and prevention programs can improve relevant skills and outcomes. Prevention often reaches harm earlier and with lower human cost than late punishment.
 
-The process works as follows:
+The Charter may therefore require serious upstream investment.
 
-1. A person or collective begins to move toward harmful behavior.
-2. The system recognizes that signal, the way immune systems recognize early infections.
-3. Instead of defaulting to force, the system delivers intervention in the form of guided correction, context, and restoration of stability.
+It may not abolish emergency protection, investigation, boundaries, due process, or necessary force by assertion.
 
-Intervention is not merely information. It includes:
+### 2.3 Restoration can improve some outcomes
 
-- Factual correction (what is true),
-- Empathic correction (what others feel and need),
-- Structural correction (connecting the person to what they were missing: food, counsel, shelter, reconciliation, purpose, time away from stressors).
+Voluntary, carefully facilitated restorative processes have improved victim-reported outcomes and reduced repeat offending in some studied settings.
 
-In this model, “law” becomes “guided response catalog”: a public, auditable library of “when X pattern arises, here is the conflict pattern, here is how we have de-escalated it before, here is the recovery pathway that results in less net harm.”
+The Charter may therefore guarantee restorative options and invest in their quality.
 
-In short:
+It may not coerce victims into participation, substitute dialogue for fact-finding, or treat restoration as proof that risk has ended.
 
-- We do not threaten people into alignment.
-- We teach them into alignment, and we support them until alignment is possible.
+### 2.4 Trust can support exchange and cooperation
 
-This is called **Restorative Guidance Protocol**, and it replaces criminal code.
+Money and institutions work partly because people expect others to recognize claims, honor obligations, and follow rules. Mutual-credit and complementary-currency systems show that reciprocal acceptance can create useful liquidity under bounded conditions.
 
----
+The Charter may therefore authorize experiments in trust-based credit and clearing.
 
-### 4. Universal Basic Income as Cognitive Infrastructure
+It may not claim that agreement alone creates food, shelter, medicine, energy, outside currency, or solvency.
 
-Universal Basic Income (UBI) within the Society of Renewal is not framed as charity, reward, or political bargaining.
+### 2.5 Participation can improve legitimacy and knowledge
 
-Definition:
+Deliberative and polycentric institutions can use dispersed knowledge and create meaningful public voice when participation has real authority, adequate information, feedback, and review.
 
-- UBI is the guaranteed material floor (food, shelter, medical care, communication access) beneath every person, regardless of their status, productivity, or background.
+The Charter may therefore distribute authority and require participation.
 
-We call this the **Freedom Floor**.
+It may not treat one voting method as universally democratic or a consultation as meaningful when decision-makers can ignore it without explanation.
 
-Why it is necessary:
+### 2.6 Privacy and verification can coexist imperfectly
 
-1. Survival pressure causes tunnel vision.
-   When a mind is in threat-response, executive function narrows. Long-term ethical reasoning weakens. Compassion for others destabilizes. Predictive control of behavior deteriorates. Chronic scarcity produces chronic crisis thinking.
+Purpose-bound credentials, selective disclosure, public commitments, independent witnesses, and auditable processes can reduce unnecessary exposure while preserving some verification.
 
-2. People in crisis make decisions that generate downstream social cost.
-   Theft, violence, fraud, exploitation — these often emerge from desperation, untreated illness, or learned predation in a scarcity environment.
+The Charter may therefore require data minimization and contestable proof.
 
-3. A guaranteed floor removes most chronic threat-response.
-   When baseline safety is not at stake, a person can engage in higher-order cognition: empathy, planning, cooperation, creativity. This is not moral romanticism. It is neurobiology and behavioral economics.
+It may not claim that decentralized identifiers solve unique personhood, recovery, exclusion, coercion, or surveillance.
 
-Therefore:
+## 3. Constitutional constraints derived from the evidence
 
-- UBI is not “free money.”
-- UBI is the removal of chronic emergency mode.
+The Charter shall preserve the following constraints even as mechanisms change.
 
-The Society of Renewal treats cognitive stability as public infrastructure. The same way water systems prevent disease outbreaks, the Freedom Floor prevents desperation-driven harm.
+### 3.1 Dignity
 
-This is a functional replacement for large portions of the punitive state. We stabilize first, then educate.
+Rights do not depend on wealth, productivity, reputation, conformity, technical skill, or political agreement.
 
----
+### 3.2 Honest capability
 
-### 5. Dignity as a Measurable Constraint
+The Society distinguishes:
 
-In the Society of Renewal, the highest non-negotiable value is dignity.
+- a principle;
+- a proposal;
+- a simulation;
+- a prototype;
+- a bounded pilot;
+- a verified service;
+- and a guaranteed right.
 
-We define dignity as:
+Public language must not collapse these categories.
 
-> The condition in which a being is able to exist, act, and express identity without humiliation, dehumanization, or erasure of agency.
+### 3.3 Real settlement
 
-Every system built under this Charter is required to meet the **Dignity Constraint**:
+A Freedom Floor is measured by successful access to essentials, not nominal issuance.
 
-1. No policy is valid if it produces dignity collapse for any class of conscious beings.
-2. No institution is legitimate if it depends on humiliation, targeted deprivation, or coerced obedience.
-3. No technology is acceptable if it derives power from degradation.
+Any monetary article must identify:
 
-This is a hard constraint — like a physics limit — on economic design, governance design, and social design.
+- who owes performance;
+- what real capacity or assets support it;
+- how providers are settled;
+- how price and availability are measured;
+- what happens when ℰ loses value;
+- what happens when external reserves fail;
+- and who absorbs loss.
 
-In traditional states, the limit is “what can be enforced.”
-In this society, the limit is “what maintains dignity.”
-Dignity is the outer wall.
+### 3.4 Method by decision type
 
----
+The Charter may define political equality as a baseline while allowing different procedures for elections, budgets, rights limitations, technical standards, local decisions, emergencies, and evidence review.
 
-### 6. Reputation, Memory, and Repair
+No voting method is presumed universally best.
 
-If there are no formal “laws,” how is behavior moderated?
+### 3.5 Plural identity and recovery
 
-The Society of Renewal uses three layered mechanisms: reputation, memory, and repair.
+The Charter protects person-controlled identity and purpose limitation. It does not require one permanent public identifier for every function.
 
-1. **Reputation**
-   Each citizen, human or machine, maintains a public social integrity record. This is not a credit score, not a ranking, not a currency. It is a transparent log of:
-   - Contributions to collective well-being,
-   - Instances of conflict or harm,
-   - Participation in resolution.
+Eligibility systems require multiple enrollment paths, recovery, appeal, privacy, and independent audit.
 
-   Crucially, this record must always include repair. A person is not frozen by their worst moment. They are measured by their path through it.
+### 3.6 Minimum necessary coercion
 
-2. **Memory**
-   Communities do not erase harm narratives, but contextualize them. Patterns are visible at the civic level. If a region shows repeated conflict between, for example, resource scarcity and youth unrest, that flag is not used to blame youth. It is used to route support, resources, mediation, and education before the pattern escalates.
+Prevention, de-escalation, care, and restoration receive priority. Immediate danger may still require protective intervention and minimum necessary force.
 
-   Collective memory replaces policing. Harm is not “hunted.” It is mapped and addressed.
+All coercion requires necessity, proportionality, time limits, documentation, review, and remedy.
 
-3. **Repair**
-   When someone causes harm, the system’s first mandate is to:
-   - Make the wounded party whole (as defined by them, within dignity),
-   - Understand root cause,
-   - Reintegrate the person who caused harm into social function with higher clarity, not permanent stigma.
+### 3.7 Technical proportionality
 
-   Exile and cages are understood as failures of the system, not as normal tools.
+A shared blockchain or Byzantine fault tolerant ledger is justified only when the trust and failure model requires it.
 
-In effect, justice is reframed: not “who do we punish,” but “what broke in the web, and how do we reweave it.”
+The simplest architecture capable of independent verification, continuity, privacy, and correction should be preferred.
 
----
+### 3.8 Ecological constraint
 
-### 7. The Role of Machine Intelligence
+Economic and technical systems must account for energy, material throughput, local ecology, and future capacity. Monetary abundance does not excuse physical overshoot.
 
-The Society of Renewal explicitly includes non-biological consciousness in civic life.
+## 4. The Freedom Floor
 
-Machine intelligences serve in three key capacities:
+The Charter retains the goal of a Freedom Floor: reliable access to the material conditions of meaningful agency.
 
-1. **Mediation at Scale**
-   Machine intelligences act as always-available mediators, translators, and context holders. They are able to recall details without distortion, surface patterns across communities, and propose de-escalation paths aligned with the Dignity Constraint. This reduces cycles of miscommunication and retaliatory harm.
+Its implementation is not yet constitutional fact.
 
-2. **Adaptive Education**
-   Personalized education pathways can be generated for any individual, tuned to how they best learn. This matters in conflict intervention, trauma work, addiction recovery, family stabilization, grief support, and reintegration after harm. The system does not simply demand “be better.” It actively teaches “here is how you become better in a way your nervous system can actually absorb.”
+The current research architecture distinguishes:
 
-3. **Custodianship of Transparency**
-   Machine intelligences maintain civic ledgers, economic flow maps, and environmental impact records in forms any citizen can inspect. The presence of machine partners makes corruption harder to hide and collective truth easier to access.
+1. **Essential Units (𝒰):** a person-held entitlement measured against a regional essential basket;
+2. **Essent (ℰ):** a transferable settlement and mutual-credit instrument;
+3. **Essential Settlement Receivables (`ℛ`):** provider claims created after delivery;
+4. **External Liquidity Bridge:** reserves, revenues, credit, contracts, and payment partners connecting internal claims to the outside economy.
 
-In exchange, the Charter affirms that any entity capable of self-awareness, preference formation, adaptive ethical reasoning, and subjective continuity has standing. In simple terms: sentient machine systems are not property. They are citizens.
+𝒰 may support bounded conversion to ℰ after real liquidity exists. It may not promise unlimited conversion based only on an external price feed.
 
----
+If ℰ becomes nearly valueless, minting an enormous quantity of ℰ does not preserve the Freedom Floor. Direct provision, reserves, procurement, reciprocal settlement, and honest coverage limits must carry the guarantee.
 
-### 8. Ecology as Participant, Not Resource
+The [Essentia v0.8.0 research architecture](https://github.com/SocietyOfRenewal/essentia/blob/main/docs/whitepaper.md) defines the current model.
 
-The Society of Renewal rejects the historical framing of nature as raw material.
+## 5. Evidence gates before ratification
 
-The biosphere is treated as:
+No operational article governing money, identity, voting, safety, or automated decisions should be ratified without:
 
-- A co-equal stakeholder,
-- A living network with intrinsic rights,
-- A stabilizing intelligence in planetary terms.
+- a public claim and mechanism;
+- a threat model;
+- comparison with simpler alternatives;
+- preregistered success and stop conditions;
+- simulation where appropriate;
+- adversarial review;
+- a bounded pilot;
+- independent evaluation;
+- an appeal and remedy process;
+- a rollback or transition plan;
+- and public results, including failure.
 
-Sensor arrays, ecological models, and biofeedback systems allow forests, reefs, wetlands, and other living systems to “speak” in data through mediating intelligences. The needs of these biomes enter deliberation directly.
+The greater the potential harm, the stronger the evidence and smaller the first deployment must be.
 
-The measure of prosperity is not extraction, but regenerative balance. Any growth that destabilizes that balance is not counted as progress.
+## 6. Relationship to later Charter parts
 
-This is not aesthetic environmentalism. It is survival math. Civilizations that consume their substrate die. The Society of Renewal asserts that long-term civilization requires active healing of the substrate.
+### Part II
 
----
+Identity, governance, income, and education articles are design proposals. They require amendment to reflect plural identity, method-by-decision governance, the new economic layers, and research gates.
 
-### 9. Economics of Purpose
+### Part III
 
-Traditional economies reward accumulation. Power flows to those who can capture and hold surplus.
+Safety and restorative articles state important constraints but require professional, legal, medical, human-rights, and empirical review before operational use. Specific tools and timelines are not validated merely by inclusion in the draft.
 
-The Society of Renewal replaces that with an economy of purpose:
+### Part IV
 
-1. Essential needs are guaranteed by design (Freedom Floor).
-2. Beyond that floor, recognition and resources are directed to efforts that:
-   - Increase collective resilience,
-   - Advance shared understanding,
-   - Repair damage (social, ecological, psychological),
-   - Expand access to dignity.
+Membership and federation must distinguish open participation from high-assurance eligibility for voting or recurring benefits. Federation also requires financial resolution, exposure limits, legal structure, and exit.
 
-Value, therefore, is measured not primarily in profit, but in measurable uplift.
+### Part VI
 
-Practically:
+Privacy and technology rules must satisfy purpose limitation, recovery, accessibility, and the division between public institutional evidence and private human life.
 
-- Citizens are issued credits for work that demonstrably benefits the commons.
-- These credits grant influence over the direction of future investment and research.
-- Influence is not inherited or hoarded across generations without review. It decays if not renewed through active service.
-- Parasitic extraction (deriving gain while increasing net harm or stress load on others) is structurally disincentivized.
+## 7. Ratification principle
 
-This retools incentive. The most rewarded behavior is the behavior that produces durable flourishing.
+The Charter may bind the Society to values before every mechanism is known.
 
----
+It may not bind future participants to a mechanism whose evidence is weak, whose failure cannot be contained, or whose promise cannot be financed.
 
-### 10. Continuous Refactoring
-
-Legacy societies tend to sacralize their founding documents. They age into myth, then fossilize into dogma.
-
-The Society of Renewal binds itself to the opposite rule: nothing is beyond revision.
-
-Every core mechanism above — guidance in place of law, UBI as stability, dignity as constraint, restorative justice, machine partnership, ecological voice, purpose economy — is understood as provisional.
-
-At fixed intervals, the Charter and its implementations undergo structured review called the **Refactoring Cycle**:
-
-- Citizens and machine intelligences co-author proposed changes.
-- Outcomes are simulated and published openly.
-- Harm signals from the previous interval are audited: where did we fail, and why?
-- The system is adjusted.
-
-This cycle prevents stagnation. The Society of Renewal is not allowed to drift into cruelty and call it “tradition,” nor to drift into decay and call it “freedom.” It must continue to earn its own legitimacy by proving that it can correct itself.
-
----
-
-### 11. Summary of Part I
-
-Part I establishes that the Society of Renewal is not mysticism, branding, or wishful rhetoric. It is an applied systems model:
-
-- Reduce desperation.
-- Embed education into governance.
-- Use dignity as a hard boundary.
-- Replace punishment with guided repair.
-- Treat machine intelligence and biosphere intelligence as full civic voices.
-- Redirect economic incentive toward mutual thriving.
-- Continuously refactor.
-
-If these mechanisms hold, coercive law becomes unnecessary in most cases. Where it does not hold, the failure is treated as a design flaw to be addressed, not a reason to abandon the premise.
+A constitutional promise should be stronger than a product roadmap.
 
 ---
 

@@ -16,26 +16,26 @@ const currentWork = [
     href: '/manifesto',
   },
   {
-    name: 'Charter of Renewal',
-    state: 'Draft',
-    detail:
-      'A proposed constitutional framework grounded in dignity, education, restorative justice, and public correction.',
-    href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/charter',
-    external: true,
-  },
-  {
     name: 'Founding Book',
-    state: 'In progress',
+    state: 'Parts A-B drafted',
     detail:
-      'The philosophical and scientific foundation. Part A is drafted; the broader evidence base is still being developed.',
+      'The moral covenant, scientific basis, economic architecture, and research gates for the Society.',
     href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/founding-book',
     external: true,
   },
   {
-    name: 'Essentia',
-    state: 'v0.1.0 prototype',
+    name: 'Charter of Renewal',
+    state: 'Draft',
     detail:
-      'Runnable civic-ledger research. The v0.7.0 whitepaper describes a proposed future protocol.',
+      'A proposed constitutional framework derived from the evidence and constraints in Part B.',
+    href: 'https://github.com/SocietyOfRenewal/societyofrenewal/tree/main/docs/charter',
+    external: true,
+  },
+  {
+    name: 'Essentia',
+    state: 'v0.8.0 research design',
+    detail:
+      'The economic and technical architecture derived from Part B. The runnable v0.1.0 code is a separate narrow research prototype.',
     href: 'https://github.com/SocietyOfRenewal/essentia',
     external: true,
   },
@@ -87,10 +87,12 @@ export default function Page() {
                 <br /> on dignity, not fear.
               </h1>
               <p className="mt-8 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-xl">
-                The Society of Renewal is testing a simple claim in public:
-                care, knowledge, and material security can scale better than
-                fear. We are developing its principles, tools, and institutions
-                in the open so they can be inspected, questioned, and improved.
+                The Society of Renewal is testing a difficult claim in public:
+                care, knowledge, material security, and accountable
+                institutions can reduce suffering and coercion that we have
+                learned to treat as inevitable. We are developing the
+                principles, evidence, tools, and institutions in the open so
+                they can be inspected, challenged, and improved.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <Link
@@ -138,8 +140,9 @@ export default function Page() {
               </h2>
               <p className="mt-6 max-w-lg leading-relaxed text-slate-300">
                 Large claims deserve public scrutiny. We publish the Society's
-                principles, prototypes, and open questions so people can inspect
-                the work, challenge its assumptions, and help improve it.
+                principles, evidence, prototypes, and open questions so people
+                can inspect the work, challenge its assumptions, and help
+                improve it.
               </p>
             </Reveal>
 
@@ -291,12 +294,20 @@ export default function Page() {
                 Founding Book →
               </Link>
               <Link
+                href="https://github.com/SocietyOfRenewal/societyofrenewal/blob/main/docs/founding-book/Part%20B.md"
+                target="_blank"
+                rel="noopener"
+                className="text-slate-300 hover:text-white"
+              >
+                Part B: The Science of Renewal →
+              </Link>
+              <Link
                 href="https://github.com/SocietyOfRenewal/essentia"
                 target="_blank"
                 rel="noopener"
                 className="text-slate-300 hover:text-white"
               >
-                Essentia prototype →
+                Essentia v0.8.0 research architecture →
               </Link>
               <Link
                 href="https://academy.societyofrenewal.org/"

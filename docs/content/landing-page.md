@@ -4,10 +4,11 @@
 
 - [Manifesto](../manifesto.md) - The public diagnosis and call to coordination
 - [Charter of Renewal](../charter/README.md) - Draft constitutional framework
-- [Founding Book](../founding-book/README.md) - Philosophical and scientific foundation in development
+- [Founding Book](../founding-book/README.md) - Moral foundation, scientific basis, and research program
+- [Part B: The Science of Renewal](../founding-book/Part%20B.md) - Evidence and economic architecture
 - [Content Hub](README.md) - Program roadmap and navigation
 - [Landing Build Spec](../spec/landing-build-spec.md) - Implementation requirements
-- [Essentia](https://github.com/SocietyOfRenewal/essentia) - Runnable prototype and proposed protocol design
+- [Essentia](https://github.com/SocietyOfRenewal/essentia) - Runnable prototype and v0.8.0 research architecture
 - [Academy beta](https://academy.societyofrenewal.org/) - Guardian-led learning platform in active development
 
 ---
@@ -24,13 +25,13 @@
 
 **Introduction:**
 
-> The Society of Renewal is testing a simple claim in public: care, knowledge, and material security can scale better than fear. We are developing its principles, tools, and institutions in the open so they can be inspected, questioned, and improved.
+> The Society of Renewal is testing a difficult claim in public: care, knowledge, material security, and accountable institutions can reduce suffering and coercion that we have learned to treat as inevitable. We are developing the principles, evidence, tools, and institutions in the open so they can be inspected, challenged, and improved.
 
 **Primary actions:**
 
-- Explore the work → - links to `/#work`
+- Explore the work -> links to `/#work`
 - [Read the manifesto](../manifesto.md)
-- Follow the work - links to `/#join`
+- Follow the work -> links to `/#join`
 
 **Current-state disclosure:**
 
@@ -44,16 +45,18 @@
 
 **Introduction:**
 
-> Large claims deserve public scrutiny. We publish the Society's principles, prototypes, and open questions so people can inspect the work, challenge its assumptions, and help improve it.
+> Large claims deserve public scrutiny. We publish the Society's principles, evidence, prototypes, and open questions so people can inspect the work, challenge its assumptions, and help improve it.
 
 The public inventory must distinguish each artifact's current state:
 
-- The Manifesto is published.
-- The Charter of Renewal is a draft and has not been ratified.
-- Part A of the Founding Book is drafted; the broader evidence base remains in development.
-- Essentia v0.1.0 is runnable prototype software; whitepaper v0.7.0 describes a proposed future protocol.
+- The Manifesto is published and remains unchanged.
+- Part A and Part B of the Founding Book are complete working drafts.
+- Part A states the moral covenant; Part B states the evidence, uncertainty, economic architecture, and research gates.
+- The Charter of Renewal is a draft derived from the Founding Book with Part B and has not been ratified.
+- Essentia v0.1.0 is runnable prototype software that does not implement the current architecture.
+- Essentia v0.8.0 is the current research architecture. It is a specification, not an implemented network.
 - The Academy is an early beta with guardian authentication and learner-profile foundations.
-- The Freedom Floor, Essent, Essential Units, civic identity, private voting, and benefit-selection processes are not live services.
+- The Freedom Floor, ℰ, 𝒰, civic identity, binding voting, benefit selection, and convertibility services are not live.
 
 ## Manifesto Bridge
 
@@ -99,11 +102,13 @@ Use this excerpt without changing the manifesto itself:
 ## Resource Links
 
 - [Read the Manifesto](../manifesto.md)
+- [Read Part A](../founding-book/Part%20A.md)
+- [Read Part B](../founding-book/Part%20B.md)
 - [Read the Draft Charter](../charter/README.md)
 - [Explore the Founding Book](../founding-book/README.md)
-- [Explore the Essentia prototype and whitepaper](https://github.com/SocietyOfRenewal/essentia)
+- [Explore the Essentia prototype and v0.8.0 research architecture](https://github.com/SocietyOfRenewal/essentia)
 - [Open the Society of Renewal Academy beta](https://academy.societyofrenewal.org/)
 
 ---
 
-> Continue to read → [Content Hub](README.md)
+> Continue to read -> [Content Hub](README.md)

@@ -2,13 +2,16 @@
 
 - [Charter Home](README.md) - Overview and navigation
 - [Charter Outline](outline.md) - Development status and roadmap
-- [Part I: The Scientific Basis of Renewal](Part%20I.md)
+- [Part I: Research Basis and Constitutional Implications](Part%20I.md)
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
 - [Founding Book](../founding-book/README.md) - Philosophical foundation
 - [Main Project Outline](../content/README.md) - Overall project structure
 
 ---
+
+> **Draft status.** This Part applies the principles and constraints established in [Part B of the Founding Book](../founding-book/Part%20B.md) to participation, membership, federation, sanctuary, and legal-coexistence mechanisms. Its details remain proposals until they are threat-modeled, tested where appropriate, independently reviewed, and ratified.
+
 
 # PART IV
 

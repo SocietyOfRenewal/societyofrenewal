@@ -1,4 +1,4 @@
-# Join the Society of Renewal — Landing Build Spec
+# Join the Society of Renewal - Landing Build Spec
 
 This specification is written for the Society of Renewal product, design, and engineering teams. It captures the end-to-end requirements for a cinematic, production-ready waitlist landing page and the supporting platform work. All guidance is directed at human collaborators; the reference code snippets are illustrative and not intended as prescriptive scaffolding.
 
@@ -22,12 +22,12 @@ This specification is written for the Society of Renewal product, design, and en
 ### 1.1 Goals
 
 - Dark, cinematic, full-bleed hero with project-owned water imagery and an on-load droplet sequence that transitions into the page.
-- Make the manifesto the primary public argument and distinguish every current artifact from future or proposed capability.
+- Present the Society as the primary public project, with the Manifesto as its published diagnosis and call to coordination, and distinguish every current artifact from future or proposed capability.
 - Persistent ripple CTA that glows after the very first hover/focus and remains active thereafter.
 - Waitlist form capturing email, invitation path (`lottery` or `need`), and optional context while maintaining full keyboard/screen-reader accessibility.
 - Postgres-backed double opt-in with hashed email dedupe, per-IP rate limiting, and optional Cloudflare Turnstile verification.
 - Above-the-fold payload ≤200 KB (excluding the Lottie JSON), with graceful handling of `prefers-reduced-motion`.
-- Deep links to the Manifesto, draft Charter, Founding Book, Academy beta, and Essentia Whitepaper v0.7.0.
+- Deep links to the Manifesto, draft Charter, Founding Book Parts A and B, Academy beta, and Essentia v0.8.0 research architecture.
 
 ### 1.2 Non-Goals
 
@@ -61,13 +61,13 @@ This specification is written for the Society of Renewal product, design, and en
 3. **Waitlist Interaction**
    - CTA shows ripple effect on first hover/focus, glow persists for all subsequent interactions.
    - Form collects email, `path`, and optional `reason` (≤800 characters). Validation errors display inline with ARIA support.
-   - Submit triggers `/api/waitlist`. Success → “Check your email” status. Error → alert with retry guidance.
+   - Submit triggers `/api/waitlist`. Success → "Check your email" status. Error → alert with retry guidance.
 
 4. **Footer**
    - Repeat the project-status distinction and link to the Manifesto, FAQ, and public GitHub organization.
 
 5. **Failure & Edge States**
-   - Duplicate email returns polite “already confirmed” messaging.
+   - Duplicate email returns polite "already confirmed" messaging.
    - Rate limit breaches show a friendly cooldown notice (HTTP 429) without revealing thresholds.
    - Form gracefully handles network failures with accessible alerts.
 
@@ -97,15 +97,15 @@ This specification is written for the Society of Renewal product, design, and en
 
 ## 5. Content Requirements
 
-- **Hero eyebrow:** `A manifesto for what we can build together`
-- **Hero title:** `Anger can wake us up. Coordination is how we move forward.`
-- **Hero introduction:** `The Society of Renewal begins with a simple commitment: to meet suffering with care, understanding, and shared responsibility—and to build systems that help people remain connected, capable, and free.`
-- **Primary CTA:** `Read the manifesto →`
-- **Secondary CTA:** `Listen · 23 min`
-- **Tertiary CTA:** `Join the waitlist`
-- **Status disclosure:** `Early-stage and public. No UBI program, currency, civic identity, or voting system is live today.`
-- **Project status:** Manifesto = published; Charter = draft; Essentia = v0.1.0 prototype with proposed v0.7.0 whitepaper; Academy = early beta.
-- **Waitlist disclosure:** Joining records interest and enables email updates. It does not create membership, civic identity, voting rights, selection, or a promise of benefits.
+- **Hero eyebrow:** `An open civic project`
+- **Hero title:** `Building a society on dignity, not fear.`
+- **Hero introduction:** `The Society of Renewal is testing a difficult claim in public: care, knowledge, material security, and accountable institutions can reduce suffering and coercion that we have learned to treat as inevitable. We are developing the principles, evidence, tools, and institutions in the open so they can be inspected, challenged, and improved.`
+- **Primary CTA:** `Explore the work →`
+- **Secondary CTA:** `Read the manifesto`
+- **Tertiary CTA:** `Follow the work`
+- **Status disclosure:** `The Society is still in formation. Its public documents and prototypes are real; formal membership, civic identity, voting, currency, and the Freedom Floor are not live yet.`
+- **Project status:** Manifesto = published and unchanged; Founding Book Parts A and B = complete working drafts; Charter = draft derived from the Founding Book; Essentia v0.1.0 = runnable research prototype; Essentia v0.8.0 = current research architecture, not implemented; Academy = early beta.
+- **Waitlist disclosure:** Joining records interest and enables email updates. It does not create membership, civic identity, voting rights, selection, a benefit application, or a promise of benefits.
 - **Canonical source:** `docs/content/landing-page.md`.
 
 ---
@@ -346,13 +346,13 @@ export function WaitlistForm() {
 ## 8. Page Composition
 
 1. Full-bleed manifesto hero with original water imagery, overlaid navigation, three actions, and a plain current-status disclosure.
-2. Ruled “What exists now” inventory: Manifesto, draft Charter, Essentia prototype, and Academy beta.
+2. Ruled "What exists now" inventory: Manifesto, draft Charter, Essentia prototype, and Academy beta.
 3. Large manifesto excerpt linking into the complete reading route.
 4. Three concise commitments drawn from the manifesto.
 5. Waitlist form with explicit limits on what joining means.
 6. Resource links and a status-aware footer.
 
-The implemented composition in `src/app/page.tsx` and the approved copy in `docs/content/landing-page.md` are authoritative. Examples from the original waitlist-only design have been removed because they implied that benefits and civic infrastructure were already operating.
+The implemented composition in `src/app/page.tsx` and the approved copy in `docs/content/landing-page.md` are authoritative. Do not use waitlist-only examples that imply benefits or civic infrastructure are already operating.
 
 ---
 
@@ -445,7 +445,7 @@ export async function down(db: Kysely<any>): Promise<void> {
 1. Generate a secure token (`crypto.randomBytes(32).toString("hex")`) per signup and store it with the row.
 2. Confirmation link: `${APP_URL}/api/waitlist/confirm?token=<token>`.
 3. Email template (Resend/Postmark):
-   - Subject: “Confirm your Society of Renewal waitlist spot”.
+   - Subject: "Confirm your Society of Renewal waitlist spot".
    - Body: Welcome paragraph, explanation of lottery/need pathways, primary CTA button linking to confirmation URL, plain-text fallback.
 4. Confirmation handler validates token, marks record `confirmed`, sets `confirmed_at`, and optionally logs to analytics.
 5. Token expiry (e.g., 48 h) enforced server-side; expired tokens return 410 with guidance to reapply.
@@ -498,7 +498,7 @@ KV_REST_API_TOKEN=optional
 - [ ] `/manifesto` renders the complete canonical Markdown and is included in the sitemap.
 - [ ] `/manifesto#listen` exposes a keyboard-accessible, non-autoplay audio player with a direct MP3 download and the full text transcript on the same page.
 - [ ] Landing and FAQ copy clearly distinguishes live, beta, prototype, draft, and proposed states.
-- [ ] FAQ 03 explains “the machine” as a systemic pattern rather than a single villain, acknowledges that some suffering is inherent to life, and rejects destructive or ends-justify-the-means interpretations.
+- [ ] FAQ 03 explains "the machine" as a systemic pattern rather than a single villain, acknowledges that some suffering is inherent to life, and rejects destructive or ends-justify-the-means interpretations.
 - [ ] Landing and FAQ language invites care, learning, compassion, democratic cooperation, and honest revision without weakening the manifesto itself.
 - [ ] Analytics events fire for `page_view`, `ripple_activated`, `waitlist_submit_attempt`, `waitlist_submit_success`, `waitlist_submit_error`.
 - [ ] Page passes automated (axe, Lighthouse) and manual keyboard accessibility checks.

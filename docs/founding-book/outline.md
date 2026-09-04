@@ -1,115 +1,161 @@
 ## Navigation
 
-- [Founding Book Home](README.md) - Overview and navigation
-- [Part A: Declaration of Interdependence](Part%20A.md) - Core principles and Dignity Constraint
-- [Charter of Renewal](../charter/) - The constitutional document
+- [Founding Book Home](README.md) - Overview and current status
+- [Part A: The Covenant of Renewal](Part%20A.md) - Moral commitments
+- [Part B: The Science of Renewal](Part%20B.md) - Evidence and research architecture
+- [Charter of Renewal](../charter/README.md) - Draft constitutional framework
 - [Content Hub & Roadmap](../content/README.md) - Overall project structure
 
 ---
 
-This outline records the planned structure of the Founding Book. Part A opens
-with the Declaration of Interdependence; the standalone
-[Society of Renewal Manifesto](../manifesto.md) is the primary public diagnosis
-and call to coordination. The remaining parts expand into evidence, operating
-architecture, safeguards, and implementation playbooks.
+# Founding Book Outline
+
+The standalone [Society of Renewal Manifesto](../manifesto.md) is the public diagnosis of systems that isolate people and the call to coordinated action.
+
+The Founding Book performs a different function. It moves from moral commitments to evidence, architecture, safeguards, implementation, and tests.
+
+## Part A - The Covenant of Renewal
+
+**Status: complete working draft**
+
+1. Status and purpose
+2. Why renewal
+3. Founding commitments
+4. Declaration of Interdependence
+5. The Dignity Constraint
+6. Mutual obligations
+7. Promises the Society must earn
+8. The discipline of renewal
+9. From covenant to inquiry
+
+Part A distinguishes moral commitments from scientific findings and removes premature commitment to one blockchain, identity method, voting rule, monetary formula, or safety institution.
+
+## Part B - The Science of Renewal
+
+**Status: complete working draft**
+
+1. The epistemic constitution
+2. Scarcity, security, and agency
+3. Learning, prevention, restoration, and force
+4. Trust, cooperation, and institutions
+5. Governance that learns
+6. Identity, personhood, privacy, and recovery
+7. Money, value, and the limits of code
+8. The Freedom Floor and the Essentia economic architecture
+9. Technical architecture derived from the evidence
+10. Ecology and physical limits
+11. Research program and evidence gates
+12. Implications for the Society, Charter, and Essentia
+13. Selected research and standards
+
+Part B is not a proof that the Society works. It identifies established mechanisms, supported patterns, context-dependent evidence, working hypotheses, design conjectures, and unknowns. It defines what must be observed before any mechanism becomes a public dependency.
+
+## Part C - Institutional and Technical Architecture
+
+**Status: planned**
+
+1. Institutional map and allocation of authority
+2. Public evidence plane
+3. Private operational systems
+4. Treasury, accounting, and audit
+5. Identity and recovery services
+6. Decision systems by decision type
+7. Knowledge Commons and public research
+8. Essentia node and federation architecture
+9. Interoperability and exit
+10. Accessibility and degraded operation
+
+Part C is derived from Part B. No implementation choice becomes constitutional merely because a prototype exists.
+
+## Part D - Safeguards, Safety, and Defense
+
+**Status: planned**
+
+1. Prevention and crisis preparation
+2. Community safety roles
+3. Immediate threat response
+4. Minimum necessary force
+5. Victim-centered restorative options
+6. Protective separation and due process
+7. Evidence, appeal, and ombuds
+8. Child and vulnerable-person safeguards
+9. Cyber and infrastructure defense
+10. External defense and non-conquest doctrine
+11. Coercion accounting and reduction targets
+
+## Part E - Membership and Federation
+
+**Status: planned**
+
+1. Participation before formal membership
+2. Eligibility and proof-of-personhood limits
+3. Rights, obligations, and exit
+4. Local nodes and polycentric authority
+5. Federation standards
+6. Inter-node economic exposure
+7. Treaties and local law
+8. Sanctuary and safe passage
+9. Diaspora participation
+10. Institutional resolution and secession
+
+## Part F - Transition and Case Studies
+
+**Status: planned**
+
+1. Stage 0 specification and simulation
+2. Shadow accounting
+3. Business mutual-credit pilot
+4. Externally funded 𝒰 pilot
+5. Mixed settlement
+6. Bounded conversion
+7. Node federation
+8. Partial Freedom Floor
+9. Funding and legal structures
+10. Published post-mortems
+
+## Part G - Objections, Edge Cases, and Public Questions
+
+**Status: planned**
+
+1. Does UBI cause inflation?
+2. Can a token create purchasing power?
+3. What happens when ℰ becomes nearly valueless?
+4. Who pays providers?
+5. Who absorbs default?
+6. Who stops an active attacker?
+7. Can restorative justice handle serious harm?
+8. How is duplicate identity prevented?
+9. Can private internet voting be trusted?
+10. What prevents technocracy or founder capture?
+11. Can a global system respect local difference?
+12. When should Essentia be abandoned?
+
+## Annexes
+
+**Status: planned**
+
+- glossary;
+- claim and evidence ledger;
+- basket specifications;
+- accounting schemas;
+- threat models;
+- simulation code;
+- pilot protocols;
+- decision records;
+- audit templates;
+- negative results;
+- Charter crosswalk;
+- version history and attribution.
+
+## Cross-document rule
+
+- The Manifesto states the public diagnosis and call.
+- Part A states the moral covenant.
+- Part B states the evidence, uncertainty, and current design constraints.
+- The Charter states proposed constitutional commitments derived from Part B and must remain within its evidence constraints.
+- Essentia implements only mechanisms that survive the research and pilot gates.
+- No prototype becomes policy merely because it already exists.
 
 ---
 
-# Optional touch-ups to complete the Preamble (add if you like)
-
-- **Ecological covenant:**
-  _We bind our flourishing to the living world that carries us; we will not trade tomorrow’s breath for today’s convenience._
-
-- **Children & future persons:**
-  _We owe the unborn and the newly born a world gentler than the one we received; our decisions must be survivable and repairable across generations._
-
-- **Scientific humility:**
-  _Our claims are testable, our methods falsifiable; when evidence corrects us, we change._
-
-If you weave those three in, the preamble reads like a finished keystone.
-
----
-
-# What comes right after the Preamble
-
-## I. Declaration of Interdependence (opening pages)
-
-This is the earlier declaration: plain-language principles that diagnose the old
-order, name first principles, and state commitments. It complements but does not
-replace the complete [Manifesto](../manifesto.md).
-
-**We hold these to be workable truths.**
-That dignity is the only stable constraint on power.
-That education prevents more harm than punishment ever repaired.
-That material security is cognitive infrastructure, not charity.
-That identity must be owned by the person it represents.
-That truth must be verifiable and privacy must be honored.
-That democracy must learn—ranking nuance, delegating expertise without creating kings.
-That safety without domination is possible, and defense without conquest is necessary.
-That borders cannot bind belonging.
-That the planet is not a resource but a relationship.
-That refactoring—of ideas, systems, and selves—is our duty.
-
-**We reject.**
-Poverty as policy.
-Punishment as pedagogy.
-Secret law, unaccountable code, and disposable people.
-Economies that profit by harm and democracies that mistake noise for consent.
-
-**We therefore commit.**
-To a Society of Renewal that replaces fear with understanding, scarcity with a freedom floor, and cynicism with proofs: identity you own, votes you can verify, funds you can trace, and a Charter you can amend.
-
-_(Sign with your DID. Then begin.)_
-
----
-
-## II. How to Read This Book (1–2 pages)
-
-- **What this is:** A declaration + the full reasoning stack (philosophy, science, economics, civics).
-- **What it isn’t:** The Charter. That lives as a separate, versioned, living document on Essentia.
-- **How it’s organized:** From “why” → “what” → “how” → “proofs” → “playbooks.”
-- **Conventions:** Inline evidence markers, open datasets, versioned footnotes, “What Changed” notes at the end of each chapter.
-
----
-
-# Proposed Structure of the Founding Document (book)
-
-**Part A — Declaration (Why Now)**
-
-1. Preamble (you’ve got it)
-2. Declaration of Interdependence (above)
-3. The Dignity Constraint (philosophy in plain speech)
-
-**Part B — The Science of Renewal (Why It Works)** 4. What scarcity does to minds (behavioral science & neurobiology) 5. Education as prevention (evidence for UPE) 6. Safety without domination (restorative/peacekeeping outcomes) 7. Governance that learns (RCV, liquid democracy, quadratic methods—what studies show) 8. Identity and trust (DIDs, privacy, verification theory) 9. Economies that don’t eat their young (UBI indexing, dual-currency, inflation mechanics) 10. Ecology and interdependence (regeneration, externalities, planetary boundaries)
-
-**Part C — Architecture (What It Is)** 11. Identity on Essentia (DID lifecycle, custody ethics) 12. Platform: Essentia & the Civic Commons (wiki + social layer) 13. Governance: from proposals to ratification (RCV, delegation, privacy-preserving audit) 14. UBI: freedom floor mechanics (issuance, indexing, funding mixes) 15. Education: UPE curriculum & delivery
-
-**Part D — Safeguards & Defense (How We Stay Safe)** 16. Community Safety Network (roles, training, oversight) 17. Interdiction playbooks (active-threat response, ROE/RPE) 18. Defense Corps & planetary defense (non-conquest doctrine) 19. Prevention first (PCI metrics, targets, sunset of coercion)
-
-**Part E — Membership & Federation (How It Spreads)** 20. Open membership & portability 21. Federation protocol & treaties 22. Sanctuary and safe passage 23. Diaspora: living the Charter under other laws
-
-**Part F — Transitions & Case Studies (How We Start)** 24. Bootstrapping a Node (from zero to day-90) 25. Funding on day one (pledges, commons revenue, aligned capital) 26. Pilot results and post-mortems (what we learned, what we changed)
-
-**Part G — Objections, Edge Cases & FAQs** 27. “Won’t UBI cause inflation?” 28. “Who stops a shooter?” 29. “What about bad actors gaming the system?” 30. “Can this work in places with hostile laws?”
-
-**Annexes**
-
-- The Charter (current ratified text, hash-pinned)
-- Playbooks (de-escalation, TPS, interdiction checklists)
-- Data & Methods (study summaries, replication kits)
-- Glossary (DID, UPE, TPS, PCI, etc.)
-- Attribution & Licensing (OER terms)
-
----
-
-## Crosswalk: Book ↔ Charter
-
-- Parts C–E mirror **Charter Parts II–IV** (operations, safety, membership).
-- Part B provides the evidence base you wanted—so the reader sees _why_ the Charter’s choices are justified.
-- Annex includes the **current Charter** (hash + block height), but the canonical Charter remains the living doc on Essentia.
-
----
-
-Future manuscript work should convert the planned parts above into sourced,
-versioned chapters and keep the Charter, Manifesto, and Essentia implementation
-status clearly distinguished.
+> Continue to read → [Part B: The Science of Renewal](Part%20B.md)

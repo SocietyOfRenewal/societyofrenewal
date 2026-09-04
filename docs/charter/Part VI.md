@@ -2,7 +2,7 @@
 
 - [Charter Home](README.md) - Overview and navigation
 - [Charter Outline](outline.md) - Development status and roadmap
-- [Part I: The Scientific Basis of Renewal](Part%20I.md)
+- [Part I: Research Basis and Constitutional Implications](Part%20I.md)
 - [Part II: Operational Articles](Part%20II.md)
 - [Part III: Safeguards, Restoration & Peacekeeping](Part%20III.md)
 - [Part IV: Open Membership, Federation & Invitation](Part%20IV.md)
@@ -10,6 +10,9 @@
 - [Main Project Outline](../content/README.md) - Overall project structure
 
 ---
+
+> **Draft status.** This Part applies the principles and constraints established in [Part B of the Founding Book](../founding-book/Part%20B.md) to privacy, transparency, information-freedom, and technology-governance mechanisms. Its details remain proposals until they are threat-modeled, tested where appropriate, independently reviewed, and ratified.
+
 
 # PART VI — Data, Privacy & Tech Ethics
 
